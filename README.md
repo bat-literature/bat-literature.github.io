@@ -25,10 +25,10 @@ We use [Zotero](https://zotero.org) for managing our literature corpus, and [Pre
 
 ### tracking 
 
-To track the Zotero group and compile a version of the bat literature corpus, the following command is used:
+To track the Zotero group and compile a version of the bat literature corpus, the following command is used (in bash/linux):
 
-```
-ZOTERO_TOKEN=[SECRET] && preston track https://www.zotero.org/groups/5435545/bat_literature_project
+```bash
+ZOTERO_TOKEN=[SECRET] preston track https://www.zotero.org/groups/5435545/bat_literature_project
 ```
 
 Note that this group has access restrictions for copyright reasons. This is why you need to replace the "[SECRET]" with your personal access token.
