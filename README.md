@@ -6,9 +6,9 @@ The Bat Literature Project aims to facilitate discovery of scientific literature
 
  | name | version | date | # references | # pdfs | fingerprint |
  | --- | --- | --- | --- | --- | --- |
- | Bat Literature Corpus | v0.1 | 2024-04-26 | 5055 | 2929 | [hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
+ | Bat Literature Corpus | v0.1 | 2024-04-26 | 5055 | 2929 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
  
- ## workflow 
+## workflow 
 
 We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through various channels such as local storage media (e.g., external harddisk), GitHub pages and Zenodo.
 
@@ -35,12 +35,18 @@ Note that this group has access restrictions for copyright reasons. This is why 
 
 ### publish metadata
 
-To publish the batlit metadata, use the following command
+To publish the batlit metadata only (not pdfs), use the following commands
 
 ```
-preston cp --type provindex [target dir]/data 
+# first copy provenance index
+preston cp --type provindex [target dir]/data
+
+# then copy the provenance 
 preston cp --type prov [target dir]/data
+
 cd [target dir]
+
+# and get the associated zotero metadata
 preston ls\
  | grep "items[?]"\
  | grep hasVersion\
@@ -70,7 +76,7 @@ preston head\
  | preston cat\
  | grep "file/view"\
  | grep hasVersion\
-  | grep hash\
+ | grep hash\
  | wc -l
 ```
 
