@@ -1,6 +1,6 @@
 The Bat Literature Project aims to facilitate discovery of scientific literature on bats (Chiroptera).
 
-:warning: this is a work in progress
+⚠️ this is a work in progress⚠️
 
 ## versions
 
