@@ -4,12 +4,12 @@
 #
 #
 
-cat <(echo "authors,date,title,journal")\
+cat <(echo "id,authors,date,title,journal")\
  <(preston head\
  | preston cat\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat\
  | jq -c .[]\
- | jq --raw-output -c '.data | select(has("creators")) | [(.creators | map(.lastName) | join(" | ")),  .date, .title, .publicationTitle] | @csv')
+ | jq --raw-output -c 'select(.data.creators != null) | [.links.alternate.href, (.data.creators | map(.lastName) | join(" | ")), ( .data.date, .data.title, .data.publicationTitle)] | @csv')
 
