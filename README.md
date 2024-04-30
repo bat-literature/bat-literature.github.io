@@ -258,7 +258,8 @@ preston head\
 
 Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) again a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 10 records in the table below, as well as files in tsv/csv formats include 100 records and all records.
 
-| filename | description |
+| filenames | description |
+| --- | --- |
 | [refs-100.tsv](refs-100.tsv) / [refs-100.csv](refs-100.csv) | author/date/title/journal of first 100 records
 | [refs-100.tsv](refs.tsv) / [refs.csv](refs.csv) | author/date/title/journal of all records
 
