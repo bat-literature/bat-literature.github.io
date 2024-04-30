@@ -258,7 +258,7 @@ Literature records can be extracted from this corpus in various ways. As an exam
 | filenames | description |
 | --- | --- |
 | [refs-100.tsv](refs-100.tsv) / [refs-100.csv](refs-100.csv) | author/date/title/journal of first 100 records
-| [refs-100.tsv](refs.tsv) / [refs.csv](refs.csv) | author/date/title/journal of all records
+| [refs.tsv](refs.tsv) / [refs.csv](refs.csv) | author/date/title/journal of all records
 
 First 10 records shown below as an example:
 
