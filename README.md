@@ -2,13 +2,13 @@ The Bat Literature Project aims to facilitate discovery of scientific literature
 
 ⚠️ this is a work in progress⚠️
 
-## versions
+## Version History
 
  | name | version | date | size | # references | # pdfs | fingerprint |
  | --- | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 5055 | 2929 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
- 
-## workflow 
+
+## Methods
 
 We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through various channels such as local storage media (e.g., external harddisk), GitHub pages and Zenodo.
 
@@ -20,8 +20,6 @@ We use [Zotero](https://zotero.org) for managing our literature corpus, and [Pre
 
 (Bat Literature Corpus) -[:publish]-> (Zenodo BLR)
 ```
-
-## Methods
 
 ### tracking 
 
