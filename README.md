@@ -2,11 +2,18 @@ The Bat Literature Project aims to facilitate discovery of scientific literature
 
 ⚠️ this is a work in progress⚠️
 
+[Introduction](#introduction)
+[Methods](#methods)
+[Results](#results)
+[Discussion](#Discussion)
+
 ## Version History
 
  | name | version | date | size | # references | # pdfs | fingerprint |
  | --- | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 5055 | 2929 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
+
+## Introduction
 
 ## Methods
 
@@ -79,7 +86,6 @@ preston head\
 ```
 
 ## Results
-
 
 ### Example of Tracked Zotero Record
 An example of a tracked Zotero record generated using
@@ -271,3 +277,4 @@ First 10 records shown below as an example:
 | Ski \| Kimmel | 2003 | Population genetics models for the statistics of DNA samples under different demographic scenarios - Maximum likelihood versus approximate methods | International Journal of Applied Mathematics and Computer Science |
 | Freeman | 1998 | Form, Function, and Evolution in Skulls and Teeth of Bats |  |
 
+## Discussion
