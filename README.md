@@ -2,10 +2,7 @@ The Bat Literature Project aims to facilitate discovery of scientific literature
 
 ⚠️ this is a work in progress⚠️
 
-[Introduction](#introduction)
-[Methods](#methods)
-[Results](#results)
-[Discussion](#Discussion)
+[Introduction](#introduction) / [Methods](#methods) / [Results](#results) / [Discussion](#Discussion)
 
 ## Version History
 
