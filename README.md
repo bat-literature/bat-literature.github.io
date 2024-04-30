@@ -262,17 +262,17 @@ Literature records can be extracted from this corpus in various ways. As an exam
 
 First 10 records shown below as an example:
 
-| authors | date | title | journal |
-| --- | --- | --- | --- |
-| Lytras \| Hughes \| Martin \| Swanepoel \| de Klerk \| Lourens \| Kosakovsky Pond \| Xia \| Jiang \| Robertson | 2022 | Exploring the natural origins of SARS-CoV-2 | Genome Biology and Evolution |
-| Crichton \| Krutzsch |  | Reproductive Biology of Bats |  |
-| Callaway | 2023-06-27 | Trove of new coronaviruses uncovered in bats — but threat is unclear | Nature |
-| MooreNov |  | Is the debate over the origin of Covid-19 still worth having? |  |
-| Straka \| Coleman \| Macdonald \| Kingston | 10/2021 | Human dimensions of bat conservation – 10 recommendations to improve and diversify studies of human-bat interactions | Biological Conservation |
-| Goodman \| Jenkins \| Ratrimomanarivo | 2005 | A review of the genus Scotophilus (Mammalia, Chiroptera, Vespertilionidae) on Madagascar, with the description of a new species | Zoosystema |
-| Murray \| Barnett | 1976 | Biology of Bats of the New World Family Phyllostomatidae. Part I | Texas Tech Press |
-| Peters | 1996 | Cardioderma cor | Mammalian Species |
-| Ski \| Kimmel | 2003 | Population genetics models for the statistics of DNA samples under different demographic scenarios - Maximum likelihood versus approximate methods | International Journal of Applied Mathematics and Computer Science |
-| Freeman | 1998 | Form, Function, and Evolution in Skulls and Teeth of Bats |  |
+| id | authors | date | title | journal |
+| --- | --- | --- | --- | --- |
+| https://www.zotero.org/groups/bat_literature_project/items/DP629R8S | Lytras \| Hughes \| Martin \| Swanepoel \| de Klerk \| Lourens \| Kosakovsky Pond \| Xia \| Jiang \| Robertson | 2022 | Exploring the natural origins of SARS-CoV-2 | Genome Biology and Evolution |
+| https://www.zotero.org/groups/bat_literature_project/items/M9C72UYZ | Crichton \| Krutzsch |  | Reproductive Biology of Bats |  |
+| https://www.zotero.org/groups/bat_literature_project/items/VN9XE4RF | Callaway | 2023-06-27 | Trove of new coronaviruses uncovered in bats — but threat is unclear | Nature |
+| https://www.zotero.org/groups/bat_literature_project/items/XTDPQESP | MooreNov |  | Is the debate over the origin of Covid-19 still worth having? |  |
+| https://www.zotero.org/groups/bat_literature_project/items/7XVKBWXP | Straka \| Coleman \| Macdonald \| Kingston | 10/2021 | Human dimensions of bat conservation – 10 recommendations to improve and diversify studies of human-bat interactions | Biological Conservation |
+| https://www.zotero.org/groups/bat_literature_project/items/TDAVUIM9 | Goodman \| Jenkins \| Ratrimomanarivo | 2005 | A review of the genus Scotophilus (Mammalia, Chiroptera, Vespertilionidae) on Madagascar, with the description of a new species | Zoosystema |
+| https://www.zotero.org/groups/bat_literature_project/items/RGN7FZTT | Murray \| Barnett | 1976 | Biology of Bats of the New World Family Phyllostomatidae. Part I | Texas Tech Press |
+| https://www.zotero.org/groups/bat_literature_project/items/EJKT7BRD | Peters | 1996 | Cardioderma cor | Mammalian Species |
+| https://www.zotero.org/groups/bat_literature_project/items/9AB6SDKG | Ski \| Kimmel | 2003 | Population genetics models for the statistics of DNA samples under different demographic scenarios - Maximum likelihood versus approximate methods | International Journal of Applied Mathematics and Computer Science |
+| https://www.zotero.org/groups/bat_literature_project/items/8XLMD3ZP | Freeman | 1998 | Form, Function, and Evolution in Skulls and Teeth of Bats |  |
 
 ## Discussion
