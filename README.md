@@ -11,7 +11,7 @@ If you have any comments, suggestions, or questions, please open an issue via ht
 ## Version History
 
  | name | version | date | size | # references | # pdfs | fingerprint |
- | --- | --- | --- | --- | --- | --- | --- | --- |
+ | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 5055 | 2929 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
 
 ## Introduction
