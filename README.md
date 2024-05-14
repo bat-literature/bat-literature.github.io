@@ -29,7 +29,24 @@ We use [Zotero](https://zotero.org) for managing our literature corpus, and [Pre
 (Bat Literature Corpus) -[:publish]-> (Zenodo BLR)
 ```
 
-### tracking 
+### Curation Workflow
+
+To help keep BatLit current (e.g., add new references) and accurate (e.g., update existing records), we've implemented the following curation workflows: 
+
+#### New References Workflow
+
+1. BatLit community solicits bat literature references and their associated digital copies 
+2. provided literature references and digital copies (e.g., pdfs) are reviewed
+3. on passing review, literature references are added to BatLit
+
+#### Feedback Workflow
+
+1. BatLit Community Solicits feedback on published BatLit versions
+2. on receiving feedback, the batlit curator documents the request in a github issue
+3. open issues are reviewed by the editorial board under guidance of the curator
+4. if needed, existing records are updated to address the provided issue
+
+### Tracking 
 
 To track the Zotero group and compile a version of the bat literature corpus, the following command is used (in bash/linux):
 
@@ -39,7 +56,7 @@ ZOTERO_TOKEN=[SECRET] preston track https://www.zotero.org/groups/5435545/bat_li
 
 Note that this group has access restrictions for copyright reasons. This is why you need to replace the "[SECRET]" with your personal access token.
 
-### publish metadata
+### Publishing Metadata
 
 To publish the batlit metadata only (not pdfs), use the following commands
 
