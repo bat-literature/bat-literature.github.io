@@ -13,6 +13,7 @@ If you have any comments, suggestions, or questions, please open an issue via ht
  | name | version | date | size | # references | # pdfs | fingerprint |
  | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 5055 | 2929 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
+ | Bat Literature Corpus | v0.2 | 2024-05-16/2024-05/17 | 11.6 GiB | 3310 | 5471 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
 
 ## Introduction
 
@@ -62,18 +63,18 @@ To publish the batlit metadata only (not pdfs), use the following commands
 
 ```
 # first copy provenance index
-preston cp --type provindex [target dir]/data
+preston cp --algo md5 --type provindex [target dir]/data
 
 # then copy the provenance 
-preston cp --type prov [target dir]/data
+preston cp --algo md5 --type prov [target dir]/data
 
 cd [target dir]
 
 # and get the associated zotero metadata
-preston ls\
+preston ls --algo md5\
  | grep "items[?]"\
  | grep hasVersion\
- | preston cat --remote file://[source dir]/data\
+ | preston cat --algo md5 --remote file://[source dir]/data\
  > /dev/null
 ```
 
@@ -82,7 +83,7 @@ preston ls\
 Estimating number of references in a corpus version - 
 
 ```
-preston head\
+preston head --algo md5\
  | preston cat\
  | grep "items[?]"\
  | grep hasVersion\
@@ -95,7 +96,7 @@ preston head\
 Estimating number of associated corpus pdfs - 
 
 ```
-preston head\
+preston head --algo md5\
  | preston cat\
  | grep "file/view"\
  | grep hasVersion\
@@ -109,7 +110,7 @@ preston head\
 An example of a tracked Zotero record generated using
 
 ```bash
-preston head\
+preston head --algo md5\
  | preston cat\
  | grep "items[?]"\
  | grep hasVersion\
@@ -283,10 +284,10 @@ Literature records can be extracted from this corpus in various ways. As an exam
 
 First 3 records shown below as an example:
 
-| id | authors | date | title | journal |
-| --- | --- | --- | --- | --- |
-| [zotero:item:DP629R8S](https://www.zotero.org/groups/bat_literature_project/items/DP629R8S) | Lytras \| Hughes \| Martin \| Swanepoel \| de Klerk \| Lourens \| Kosakovsky Pond \| Xia \| Jiang \| Robertson | 2022 | Exploring the natural origins of SARS-CoV-2 | Genome Biology and Evolution |
-| [zotero:item:M9C72UYZ](https://www.zotero.org/groups/bat_literature_project/items/M9C72UYZ) | Crichton \| Krutzsch |  | Reproductive Biology of Bats |  |
-| [zotero:item:VN9XE4RF](https://www.zotero.org/groups/bat_literature_project/items/VN9XE4RF) | Callaway | 2023-06-27 | Trove of new coronaviruses uncovered in bats — but threat is unclear | Nature |
+| id | authors | date | title | journal | doi |
+| --- | --- | --- | --- | --- | --- |
+| https://www.zotero.org/groups/bat_literature_project/items/83IHB73V | Mônico \| Soto-Centeno | 02/2024 | Phylogenetic, morphological and niche differentiation unveil new species limits for the big brown bat ( <i>Eptesicus fuscus</i> ) | Royal Society Open Science | 10.1098/rsos.231384 |
+| https://www.zotero.org/groups/bat_literature_project/items/NR7KIA3E | Albuja V \| Gardner \| Graves | 06/2005 | A new species of Lonchophylla Thomas (Chiroptera: Phyllostomidae) from Ecuador | Proceedings of the Biological Society of Washington | 10.2988/0006-324X(2005)118[442:ANSOLT]2.0.CO;2 |
+| https://www.zotero.org/groups/bat_literature_project/items/TMKVBDSI | Alberico \| Velasco | 1991 | Description of a new broad-nosed bat from Colombia | Bonner zoologische Beiträge |  |
 
 ## Discussion

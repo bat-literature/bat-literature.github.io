@@ -1,0 +1,473 @@
+[
+    {
+        "key": "ILADMHUP",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ILADMHUP",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ILADMHUP",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Görföl et al.",
+            "parsedDate": "2014-11-24",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "ILADMHUP",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "<p><strong>Canines make the difference: a new species of <em>Hypsugo </em>(Chiroptera: Vespertilionidae) from Laos and Vietnam</strong></p>",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Tamás",
+                    "lastName": "Görföl"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Gábor",
+                    "lastName": "Csorba"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Judith L.",
+                    "lastName": "Eger"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Nguyen Truong",
+                    "lastName": "Son"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Charles M.",
+                    "lastName": "Francis"
+                }
+            ],
+            "abstractNote": "Hypsugo was regarded as a subgenus of Pipistrellus by many authors, but its generic distinctiveness is now widely accepted. According to recent taxonomic arrangements, nine species are known to occur in Southeast Asia. During the investigation of material recently collected from Lao PDR and Vietnam we identified an additional species and hence describe it here as Hypsugo dolichodon n. sp. It resembles H. pulveratus, but is larger with conspicuously long canines and differs considerably in the DNA barcode gene sequence.",
+            "publicationTitle": "Zootaxa",
+            "volume": "3887",
+            "issue": "2",
+            "pages": "239-250",
+            "date": "2014-11-24",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "en",
+            "DOI": "10.11646/zootaxa.3887.2.6",
+            "ISSN": "1175-5334",
+            "shortTitle": "<p><strong>Canines make the difference",
+            "url": "https://www.biotaxa.org/Zootaxa/article/view/zootaxa.3887.2.6",
+            "accessDate": "2024-03-05T20:01:06Z",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "www.biotaxa.org",
+            "callNumber": "",
+            "rights": "Copyright (c) 2016 Zootaxa",
+            "extra": "Number: 2",
+            "tags": [
+                {
+                    "tag": "taxonomy",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZY7YKBUF"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3EB72HY5",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3EB72HY5",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3EB72HY5",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "3EB72HY5",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "note",
+            "note": "<b>From Duplicate 2 (<i>Geomyces destructans sp. nov. associated with bat white-nose syndrome</i> - Gargas, Andrea; Trest, M T; Christensen, M; Volk, T J; Blehert, D S)<br/>\n</b><br/>\nNULL",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZV3Z39XZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "HI5JMH3U",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/HI5JMH3U",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/HI5JMH3U",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "HI5JMH3U",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "",
+            "accessDate": "",
+            "url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0093-4666&volume=108&issue=1&spage=147",
+            "note": "",
+            "contentType": "",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/E3JA9FW4"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QUIXPB8A",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QUIXPB8A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QUIXPB8A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QUIXPB8A",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PDF",
+            "accessDate": "",
+            "url": "http://botit.botany.wisc.edu/TOMS_FUNGI/147gargas9-73.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q85NDXEH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "X6B7BJJ7",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/X6B7BJJ7",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/X6B7BJJ7",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "X6B7BJJ7",
+            "version": 5,
+            "itemType": "attachment",
+            "linkMode": "imported_url",
+            "title": "3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "accessDate": "2021-04-27T01:15:21Z",
+            "url": "https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/12/07/3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "filename": "3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "md5": null,
+            "mtime": null,
+            "tags": [],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/XW48WPAE"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "5SXGVCZ2",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/5SXGVCZ2",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Gargas et al.",
+            "parsedDate": "2009-07-16",
+            "numChildren": 3
+        },
+        "data": {
+            "key": "5SXGVCZ2",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "<I>Geomyces destructans</I> sp. nov. associated with bat white-nose syndrome",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Andrea",
+                    "lastName": "Gargas"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "M.T.",
+                    "lastName": "Trest"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "M",
+                    "lastName": "Christensen"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "T.J.",
+                    "lastName": "Volk"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "D.S.",
+                    "lastName": "Blehert"
+                }
+            ],
+            "abstractNote": "We describe and illustrate the new species Geomyces destructans. Bats infected with this fungus present with powdery conidia and hyphae on their muzzles, wing membranes, and/or pinnae, leading to description of the accompanying disease as white-nose syndrome, a cause of widespread mortality among hibernating bats in the northeastern US. Based on rRNA gene sequence (ITS and SSU) characters the fungus is placed in the genus Geomyces, yet its distinctive asymmetrically curved conidia are unlike those of any described Geomyces species.",
+            "publicationTitle": "Mycotaxon",
+            "volume": "108",
+            "issue": "1",
+            "pages": "147-154",
+            "date": "2009-07-16",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "",
+            "DOI": "10.5248/108.147",
+            "ISSN": "00934666",
+            "shortTitle": "",
+            "url": "",
+            "accessDate": "",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "",
+            "callNumber": "",
+            "rights": "",
+            "extra": "PMID: 23241985\nISBN: 0093-4666",
+            "tags": [
+                {
+                    "tag": "ascomycota",
+                    "type": 1
+                },
+                {
+                    "tag": "helotiales",
+                    "type": 1
+                },
+                {
+                    "tag": "pseudogymnoascus",
+                    "type": 1
+                },
+                {
+                    "tag": "psychrophilic",
+                    "type": 1
+                },
+                {
+                    "tag": "systematics",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/D5XAQL7P"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    }
+]
