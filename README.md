@@ -6,7 +6,7 @@ The Bat Literature Project aims to facilitate discovery of scientific literature
 
 ## Contributing
 
-If you have any comments, suggestions, or questions, please open an issue via https://github.com/bat-literature/bat-literature.github.io/issues/new . 
+If you have any comments, suggestions, or questions, please open [an issue](https://github.com/bat-literature/bat-literature.github.io/issues/new]. 
 
 ## Version History
 
