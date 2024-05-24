@@ -273,6 +273,38 @@ preston head --algo md5\
 }
 ```
 
+### Literature Records by Type
+
+The tracked metadata was used to list the kinds of content included in the Bat Literature Corpus. 
+
+The follow bash script was used to generated the content type frequency table below.
+
+```bash
+cat\
+ <(echo count contentType)\
+ <(preston ls --anchor hash://md5/be692b93a8edde4c4269be9e7d4ec1d7 --algo md5 | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ | mlr --ipprint --omd cat 
+```
+
+Note that there's roughly two kinds of content: top level content like journal articles, books, reports and conference papers. These top level content may have one of more association with associated content like attachments, notes, and annotations. 
+
+| count | contentType |
+| --- | --- |
+| 6853 | attachment |
+| 3105 | journalArticle |
+| 749 | note |
+| 94 | annotation |
+| 71 | bookSection |
+| 47 | report |
+| 46 | book |
+| 15 | conferencePaper |
+| 9 | thesis |
+| 6 | webpage |
+| 5 | preprint |
+| 3 | newspaperArticle |
+| 3 | magazineArticle |
+
+
 ### Literature Record Index
 
 Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) again a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 10 records in the table below, as well as files in tsv/csv formats include 100 records and all records.
