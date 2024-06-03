@@ -55,6 +55,8 @@ To help keep BatLit current (e.g., add new references) and accurate (e.g., updat
 
 ```json
 ...
+"key": "YWNCWPYJ",
+...
 "relations": {
             "dc:replaces": "http://zotero.org/groups/5435545/items/2PWXAVQL"
         }
