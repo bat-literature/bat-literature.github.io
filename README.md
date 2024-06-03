@@ -1,4 +1,4 @@
-The Bat Literature Project facilitate discovery of scientific literature on bats (Chiroptera).
+ Bat Literature Project facilitate discovery of scientific literature on bats (Chiroptera).
 
 ⚠️ this is a work in progress⚠️
 
@@ -47,22 +47,29 @@ To help keep BatLit current (e.g., add new references) and accurate (e.g., updat
 3. open issues are reviewed by the editorial board under guidance of the curator
 4. if needed, existing records are updated to address the provided issue
 
-#### Deduplication workflow
+#### Deduplication Workflow
 
 1. Data curator merges duplicate entries entries using the Zotero merge tool
 2. Data archivist take a versioned snapshot of the Zotero group
 3. Preston (or some other robot) detects relations like:
 
 ```json
+...
 "relations": {
             "dc:replaces": "http://zotero.org/groups/5435545/items/2PWXAVQL"
         }
+...
 ```
 and translates this into an action to annotate any existing Zenodo record associated with http://zotero.org/groups/5435545/items/2PWXAVQL (or urn:lsid:zotero.org:groups:5435545:items:2PWXAVQL)
- as deprecated and being replaced by https://www.zotero.org/groups/5435545/items/YWNCWPYJ (or urn:lsid:zotero.org:groups:5435545:items:YWNCWPYJ) .
+ as deprecated and being replaced by https://www.zotero.org/groups/5435545/items/YWNCWPYJ (or urn:lsid:zotero.org:groups:5435545:items:YWNCWPYJ), or
 
-	For context see notes related to [```approach curating duplicate literature entries
-```](https://github.com/bat-literature/bat-literature.github.io/issues/6).
+```
+(urn:lsid:zotero.org:groups:5435545:items:2PWXAVQL) 
+  -[:replaced_by]-> 
+    (urn:lsid:zotero.org:groups:5435545:items:YWNCWPYJ)
+```
+
+For context see notes related to `[approach curating duplicate literature entries](https://github.com/bat-literature/bat-literature.github.io/issues/6)`.
 
 ### Tracking 
 
