@@ -69,7 +69,7 @@ and translates this into an action to annotate any existing Zenodo record associ
     (urn:lsid:zotero.org:groups:5435545:items:YWNCWPYJ)
 ```
 
-For context see notes related to `[approach curating duplicate literature entries](https://github.com/bat-literature/bat-literature.github.io/issues/6)`.
+For context see notes related to [`approach curating duplicate literature entries`](https://github.com/bat-literature/bat-literature.github.io/issues/6)`.
 
 ### Tracking 
 
