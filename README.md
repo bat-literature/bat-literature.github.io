@@ -58,13 +58,15 @@ To help keep BatLit current (e.g., add new references) and accurate (e.g., updat
 3. Preston (or some other robot) detects relations like:
 
 ```json
-...
+{ 
+ "...": "...",
 "key": "YWNCWPYJ",
-...
+ "...": "...",
 "relations": {
             "dc:replaces": "http://zotero.org/groups/5435545/items/2PWXAVQL"
         }
-...
+ "...": "...",
+}
 ```
 and translates this into an action to annotate any existing Zenodo record associated with http://zotero.org/groups/5435545/items/2PWXAVQL (or urn:lsid:zotero.org:groups:5435545:items:2PWXAVQL)
  as deprecated and being replaced by https://www.zotero.org/groups/5435545/items/YWNCWPYJ (or urn:lsid:zotero.org:groups:5435545:items:YWNCWPYJ), or
