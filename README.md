@@ -1,6 +1,8 @@
-Bat Literature Project facilitate discovery of scientific literature on bats (Chiroptera).
+The Bat Literature Project facilitates discovery of scientific literature on bats (Chiroptera).
 
-by Aja C. Sherman, Jorrit H. Poelen, Donat Agosti, Cullen K. Geiselman, [your name here]
+by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org), [your name here]
+
+with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
 ⚠️ this is a work in progress⚠️
 
