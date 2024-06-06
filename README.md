@@ -1,4 +1,16 @@
+---
+title: Bat Literature Project
+author: 
+  - Aja C. Sherman
+  - Jorrit H. Poelen
+  - Donat Agosti
+  - Cullen K. Geiselman
+  - [your name here]
+---
+
  Bat Literature Project facilitate discovery of scientific literature on bats (Chiroptera).
+
+by Aja C. Sherman, Jorrit H. Poelen, Donat Agosti, Cullen K. Geiselman, [your name here]
 
 ⚠️ this is a work in progress⚠️
 
