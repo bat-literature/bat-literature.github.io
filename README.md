@@ -84,7 +84,7 @@ For context see notes related to [`approach curating duplicate literature entrie
 To track the Zotero group and compile a version of the bat literature corpus, the following command is used (in bash/linux):
 
 ```bash
-ZOTERO_TOKEN=[SECRET] preston track https://www.zotero.org/groups/5435545/bat_literature_project
+ZOTERO_TOKEN=[SECRET] preston track --algo md5 https://www.zotero.org/groups/5435545/bat_literature_project
 ```
 
 Note that this group has access restrictions for copyright reasons. This is why you need to replace the "[SECRET]" with your personal access token.
