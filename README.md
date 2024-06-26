@@ -18,7 +18,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 2929 | 5055 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
  | Bat Literature Corpus | v0.2 | 2024-05-16/2024-05-17 | 11.6 GiB | 3310 | 5471 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
- | Bat Literature Corpus | v0.3 | 2024-06-26 | 13.6 GiB | 5501 | 7229 | [hash://md5/350...77d](https://linker.bio/hash://md5/350f87ae6b68b96bec135c1d6ebac77d) |  
+ | Bat Literature Corpus | v0.3 | 2024-06-25/2024-06-26 | 13.6 GiB | 5501 | 7229 | [hash://md5/350...77d](https://linker.bio/hash://md5/350f87ae6b68b96bec135c1d6ebac77d) |  
 
 ## Introduction
 
@@ -252,7 +252,7 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston ls --anchor hash://md5/be692b93a8edde4c4269be9e7d4ec1d7 --algo md5 | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat hash://md5/350f87ae6b68b96bec135c1d6ebac77d | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
@@ -260,20 +260,20 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 | count | contentType |
 | --- | --- |
-| 15428 | attachment |
-| 8272 | journalArticle |
-| 1492 | note |
-| 188 | annotation |
-| 174 | bookSection |
-| 156 | book |
-| 98 | report |
-| 32 | conferencePaper |
-| 24 | preprint |
-| 21 | thesis |
-| 12 | webpage |
-| 12 | magazineArticle |
-| 6 | newspaperArticle |
+| 8575 | attachment |
+| 5167 | journalArticle |
+| 743 | note |
+| 110 | book |
+| 103 | bookSection |
+| 94 | annotation |
+| 51 | report |
+| 19 | preprint |
+| 17 | conferencePaper |
+| 12 | thesis |
+| 9 | magazineArticle |
+| 6 | webpage |
 | 4 | dataset |
+| 3 | newspaperArticle |
 
 ### Literature Record Index
 
