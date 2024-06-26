@@ -18,6 +18,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | --- | --- | --- | --- | --- | --- | --- |
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 2929 | 5055 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
  | Bat Literature Corpus | v0.2 | 2024-05-16/2024-05-17 | 11.6 GiB | 3310 | 5471 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
+ | Bat Literature Corpus | v0.3 | 2024-06-26 | 13.6 GiB | 5501 | 7229 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
 
 ## Introduction
 
@@ -136,6 +137,19 @@ preston head --algo md5\
  | wc -l
 ```
 
+Estimating the total volume of data for the most recent (i.e. "head") version
+
+```
+preston head --algo md5\
+ | preston cat\
+ | grep hasVersion\
+ | grep -oE "hash://md5/[a-f0-9]{32}"\
+ | sort\
+ | uniq\
+ | preston cat\
+ | pv > /dev/null
+```
+
 ## Results
 
 ### Example of Tracked Zotero Record
@@ -157,8 +171,8 @@ preston head --algo md5\
 
 ```json 
 {
-  "key": "DP629R8S",
-  "version": 8066,
+  "key": "B8YKFARF",
+  "version": 15487,
   "library": {
     "type": "group",
     "id": 5435545,
@@ -172,33 +186,26 @@ preston head --algo md5\
   },
   "links": {
     "self": {
-      "href": "https://api.zotero.org/groups/5435545/items/DP629R8S",
+      "href": "https://api.zotero.org/groups/5435545/items/B8YKFARF",
       "type": "application/json"
     },
     "alternate": {
-      "href": "https://www.zotero.org/groups/bat_literature_project/items/DP629R8S",
+      "href": "https://www.zotero.org/groups/bat_literature_project/items/B8YKFARF",
       "type": "text/html"
     },
-    "attachment": {
-      "href": "https://api.zotero.org/groups/5435545/items/P4LGETPS",
-      "type": "application/json",
-      "attachmentType": "application/pdf",
-      "attachmentSize": 1117285
+    "up": {
+      "href": "https://api.zotero.org/groups/5435545/items/7CW5CSQN",
+      "type": "application/json"
+    },
+    "enclosure": {
+      "type": "application/pdf",
+      "href": "https://api.zotero.org/groups/5435545/items/B8YKFARF/file/view",
+      "title": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
+      "length": 183580
     }
   },
   "meta": {
     "createdByUser": {
-      "id": 6296343,
-      "username": "deeannreeder",
-      "name": "",
-      "links": {
-        "alternate": {
-          "href": "https://www.zotero.org/deeannreeder",
-          "type": "text/html"
-        }
-      }
-    },
-    "lastModifiedByUser": {
       "id": 13229919,
       "username": "acsherman",
       "name": "",
@@ -209,98 +216,29 @@ preston head --algo md5\
         }
       }
     },
-    "creatorSummary": "Lytras et al.",
-    "parsedDate": "2022",
-    "numChildren": 2
+    "numChildren": 0
   },
   "data": {
-    "key": "DP629R8S",
-    "version": 8066,
-    "itemType": "journalArticle",
-    "title": "Exploring the natural origins of SARS-CoV-2",
-    "creators": [
-      {
-        "creatorType": "author",
-        "firstName": "Spyros",
-        "lastName": "Lytras"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Joseph",
-        "lastName": "Hughes"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Darren",
-        "lastName": "Martin"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Phillip",
-        "lastName": "Swanepoel"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Arne",
-        "lastName": "de Klerk"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Rentia",
-        "lastName": "Lourens"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Sergei L.",
-        "lastName": "Kosakovsky Pond"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Wei",
-        "lastName": "Xia"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "Xiaowei",
-        "lastName": "Jiang"
-      },
-      {
-        "creatorType": "author",
-        "firstName": "David L.",
-        "lastName": "Robertson"
-      }
-    ],
-    "abstractNote": "Exploring the natural origins of SARS-CoV-2 Spyros Lytras1, Joseph Hughes1, Xiaowei Jiang2, David L Robertson1  1MRC-University of Glasgow Centre for Virus Research (CVR), Glasgow, UK.  2Department of Biological Sciences, Xi’an Jiaotong-Liverpool University (XJTLU), Suzhou, China.  The lack of an identifiable intermediate host species for the proximal animal ancestor of SARS-CoV-2 and the distance (~1500 km) from Wuhan to Yunnan province, where the closest evolutionary related coronaviruses circ...",
-    "publicationTitle": "Genome Biology and Evolution",
-    "volume": "14",
-    "issue": "2",
-    "pages": "1-14",
-    "date": "2022",
-    "series": "",
-    "seriesTitle": "",
-    "seriesText": "",
-    "journalAbbreviation": "",
-    "language": "en-US",
-    "DOI": "10.1093/gbe/evac018",
-    "ISSN": "",
-    "shortTitle": "",
-    "url": "https://virological.org/t/exploring-the-natural-origins-of-sars-cov-2/595",
-    "accessDate": "2021-01-17T18:26:08Z",
-    "archive": "",
-    "archiveLocation": "",
-    "libraryCatalog": "",
-    "callNumber": "",
-    "rights": "",
-    "extra": "Downloaded from https://academic.oup.com/gbe/article/14/2/evac018/6524630 by guest on 26 April 2024",
+    "key": "B8YKFARF",
+    "version": 15487,
+    "parentItem": "7CW5CSQN",
+    "itemType": "attachment",
+    "linkMode": "imported_file",
+    "title": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
+    "accessDate": "",
+    "url": "",
+    "note": "",
+    "contentType": "application/pdf",
+    "charset": "",
+    "filename": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
+    "md5": "f1f2be0ed545fb6d80b413405338d939",
+    "mtime": 1719333057120,
     "tags": [],
-    "collections": [
-      "DZKBQXJR"
-    ],
     "relations": {
-      "owl:sameAs": "http://zotero.org/groups/2446996/items/I75HHU4L"
+      "dc:replaces": "http://zotero.org/groups/5435545/items/6A6Z47D7"
     },
-    "dateAdded": "2024-03-06T17:24:38Z",
-    "dateModified": "2024-04-26T20:19:35Z"
+    "dateAdded": "2024-06-25T20:26:21Z",
+    "dateModified": "2024-06-25T23:42:47Z"
   }
 }
 ```
@@ -322,20 +260,20 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 | count | contentType |
 | --- | --- |
-| 6853 | attachment |
-| 3105 | journalArticle |
-| 749 | note |
-| 94 | annotation |
-| 71 | bookSection |
-| 47 | report |
-| 46 | book |
-| 15 | conferencePaper |
-| 9 | thesis |
-| 6 | webpage |
-| 5 | preprint |
-| 3 | newspaperArticle |
-| 3 | magazineArticle |
-
+| 15428 | attachment |
+| 8272 | journalArticle |
+| 1492 | note |
+| 188 | annotation |
+| 174 | bookSection |
+| 156 | book |
+| 98 | report |
+| 32 | conferencePaper |
+| 24 | preprint |
+| 21 | thesis |
+| 12 | webpage |
+| 12 | magazineArticle |
+| 6 | newspaperArticle |
+| 4 | dataset |
 
 ### Literature Record Index
 
@@ -350,8 +288,8 @@ First 3 records shown below as an example:
 
 | id | authors | date | title | journal | doi |
 | --- | --- | --- | --- | --- | --- |
-| https://www.zotero.org/groups/bat_literature_project/items/83IHB73V | Mônico \| Soto-Centeno | 02/2024 | Phylogenetic, morphological and niche differentiation unveil new species limits for the big brown bat ( <i>Eptesicus fuscus</i> ) | Royal Society Open Science | 10.1098/rsos.231384 |
-| https://www.zotero.org/groups/bat_literature_project/items/NR7KIA3E | Albuja V \| Gardner \| Graves | 06/2005 | A new species of Lonchophylla Thomas (Chiroptera: Phyllostomidae) from Ecuador | Proceedings of the Biological Society of Washington | 10.2988/0006-324X(2005)118[442:ANSOLT]2.0.CO;2 |
-| https://www.zotero.org/groups/bat_literature_project/items/TMKVBDSI | Alberico \| Velasco | 1991 | Description of a new broad-nosed bat from Colombia | Bonner zoologische Beiträge |  |
+| https://www.zotero.org/groups/bat_literature_project/items/7CW5CSQN | Smith \| Acevedo‐Whitehouse \| Pedersen | 02/2009 | The role of infectious diseases in biological conservation | Animal Conservation | 10.1111/j.1469-1795.2008.00228.x |
+| https://www.zotero.org/groups/bat_literature_project/items/MTXHK7WY | Whittaker \| Jones | 1994 | The Role of Frugivorous Bats and Birds in the Rebuilding of a Tropical Forest Ecosystem, Krakatau, Indonesia | Journal of Biogeography | 10.2307/2845528 |
+| https://www.zotero.org/groups/bat_literature_project/items/CHPT6L4L | Hoff \| Bigler | 1981 | The role of bats in the propagation and spread of histoplasmosis: a review. | Journal of wildlife diseases | 10.7589/0090-3558-17.2.191 |
 
 ## Discussion

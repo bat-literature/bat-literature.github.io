@@ -1,0 +1,1125 @@
+[
+    {
+        "key": "QLU5P94Y",
+        "version": 8,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QLU5P94Y",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QLU5P94Y",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/D92SQQPG",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QLU5P94Y",
+            "version": 8,
+            "parentItem": "D92SQQPG",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T19:58:29Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27676249",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/RWDUXGQR"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "DVYWYXGW",
+        "version": 7,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/DVYWYXGW",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/DVYWYXGW",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/QNJRRM6F",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "DVYWYXGW",
+            "version": 7,
+            "parentItem": "QNJRRM6F",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-02-13T16:43:57Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/30942884",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6348A7V8"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "C3H9NM5W",
+        "version": 6,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/C3H9NM5W",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/C3H9NM5W",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/Z3UEM58G",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "C3H9NM5W",
+            "version": 6,
+            "parentItem": "Z3UEM58G",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-25T00:36:00Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27822541",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/QQGDYINE"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "A8UBBDKH",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/A8UBBDKH",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/A8UBBDKH",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/LAQ379Q9",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "A8UBBDKH",
+            "version": 5,
+            "parentItem": "LAQ379Q9",
+            "itemType": "attachment",
+            "linkMode": "imported_url",
+            "title": "Snapshot",
+            "accessDate": "2020-01-12T13:36:17Z",
+            "url": "https://www.researchgate.net/publication/303742900_The_Evolutionary_History_of_the_African_Fruit_Bats_Chiroptera_Pteropodidae",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "utf-8",
+            "filename": "303742900_The_Evolutionary_History_of_the_African_Fruit_Bats_Chiroptera_Pteropodidae.html",
+            "md5": null,
+            "mtime": null,
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/K3IJTF84"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "LAQ379Q9",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/LAQ379Q9",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/LAQ379Q9",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 1
+        },
+        "data": {
+            "key": "LAQ379Q9",
+            "version": 5,
+            "itemType": "webpage",
+            "title": "(8) (PDF) The Evolutionary History of the African Fruit Bats (Chiroptera: Pteropodidae)",
+            "creators": [],
+            "abstractNote": "ResearchGate is a network dedicated to science and research. Connect, collaborate and discover scientific publications, jobs and conferences. All for free.",
+            "websiteTitle": "ResearchGate",
+            "websiteType": "",
+            "date": "",
+            "shortTitle": "(8) (PDF) The Evolutionary History of the African Fruit Bats (Chiroptera",
+            "url": "https://www.researchgate.net/publication/303742900_The_Evolutionary_History_of_the_African_Fruit_Bats_Chiroptera_Pteropodidae",
+            "accessDate": "2020-01-12T13:36:15Z",
+            "language": "en",
+            "rights": "",
+            "extra": "",
+            "tags": [],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/5HQQTEEL"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "SZ4JDSV9",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/SZ4JDSV9",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/SZ4JDSV9",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Herrero-Garcia et al.",
+            "parsedDate": "2011",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "SZ4JDSV9",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "8-Carbon oxylipins inhibit germination and growth, and stimulate aerial conidiation in <i>Aspergillus nidulans</i>",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Erika",
+                    "lastName": "Herrero-Garcia"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Aitor",
+                    "lastName": "Garzia"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Shandra",
+                    "lastName": "Cordob??s"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Eduardo A.",
+                    "lastName": "Espeso"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Unai",
+                    "lastName": "Ugalde"
+                }
+            ],
+            "abstractNote": "Germination of Aspergillus nidulans conidia in liquid cultures was progressively inhibited at inoculum loads above 1??10 5conidiamL -1. High conidial densities also inhibited growth of neighbouring mycelia. The eight-carbon oxylipin 1-octen-3-ol was identified as the main inhibitor in a fraction also containing 3-octanone and 3-octanol.These three oxylipins also increased the conidiation rate of dark-grown surface cultures, but had no effect on liquid cultures. 3-octanone was the most conidiogenic compound. The action of 3-octanone required functional forms of developmental activators fluG, flbB-D and brlA, and was not additive to the conidiogenic effect of stress stimuli such as osmotic stress or carbon starvation.Oxylipins were produced shortly after hyphae made contact with the atmosphere and were most effective on aerial mycelia, indicating that they perform their signalling function in the gas phase. ?? 2011 The British Mycological Society.",
+            "publicationTitle": "Fungal Biology",
+            "volume": "115",
+            "issue": "4-5",
+            "pages": "393-400",
+            "date": "2011",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "",
+            "DOI": "10.1016/j.funbio.2011.02.005",
+            "ISSN": "18786146",
+            "shortTitle": "",
+            "url": "",
+            "accessDate": "",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "",
+            "callNumber": "",
+            "rights": "",
+            "extra": "PMID: 21530921\nISBN: 1878-6146",
+            "tags": [
+                {
+                    "tag": "Bat immunology"
+                },
+                {
+                    "tag": "Fungi",
+                    "type": 1
+                },
+                {
+                    "tag": "Signalling",
+                    "type": 1
+                },
+                {
+                    "tag": "Sporulation",
+                    "type": 1
+                },
+                {
+                    "tag": "Volatile organic compounds",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/7IATABAV"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ZRJUZ7MU",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZRJUZ7MU",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ZRJUZ7MU",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Bouma et al.",
+            "parsedDate": "2013",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "ZRJUZ7MU",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "5'-AMP impacts lymphocyte recirculation through activation of A2B receptors.",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Hjalmar R",
+                    "lastName": "Bouma"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Judith N",
+                    "lastName": "Mandl"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Arjen M",
+                    "lastName": "Strijkstra"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Ate S",
+                    "lastName": "Boerema"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Jan-Willem",
+                    "lastName": "Kok"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Annie",
+                    "lastName": "van Dam"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Ad",
+                    "lastName": "Ijzerman"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Frans G M",
+                    "lastName": "Kroese"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Robert H",
+                    "lastName": "Henning"
+                }
+            ],
+            "abstractNote": "Natural hibernation consists of torpid phases with metabolic suppression alternating with euthermic periods. Induction of torpor holds substantial promise in various medical conditions, including trauma, major surgery, and transplantation. Torpor in mice can be induced pharmacologically by 5'-AMP. Previously, we showed that during natural torpor, the reduction in body temperature results in lymphopenia via a reduction in plasma S1P. Here, we show that during torpor induced by 5'-AMP, there is a similar reduction in the number of circulating lymphocytes that is a result of their retention in secondary lymphoid organs. This lymphopenia could be mimicked by engagement of A(2B)Rs by a selective A(2B)R agonist (LUF6210) in the absence of changes in temperature and prevented by A(2B)R antagonists during 5'-AMP-induced torpor. In addition, forced cooling of mice led to peripheral blood lymphopenia, independent of A(2B)R signaling. The induction of torpor using 5'-AMP impacted the migration of lymphocytes within and between secondary lymphoid organs. During torpor, the homing into LNs was impaired, and two-photon intravital microscopy revealed that cell motility was decreased significantly and rapidly upon 5'-AMP administration. Furthermore, the S1P plasma concentration was reduced by 5'-AMP but not by LUF6210. S1P plasma levels restored upon arousal. Likely, the reduced migration in LNs combined with the reduced S1P plasma level substantially reduces lymphocyte egress after injection of 5'-AMP. In conclusion, 5'-AMP induces a state of pharmacological torpor in mice, during which, lymphopenia is governed primarily by body temperature-independent suppression of lymphocyte egress from LNs.",
+            "publicationTitle": "Journal of leukocyte biology",
+            "volume": "94",
+            "issue": "1",
+            "pages": "89-98",
+            "date": "2013",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "",
+            "DOI": "10.1189/jlb.1212613",
+            "ISSN": "1938-3673",
+            "shortTitle": "",
+            "url": "http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3685012&tool=pmcentrez&rendertype=abstract",
+            "accessDate": "",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "",
+            "callNumber": "",
+            "rights": "",
+            "extra": "PMID: 23682128",
+            "tags": [
+                {
+                    "tag": "Adenosine A2B",
+                    "type": 1
+                },
+                {
+                    "tag": "Adenosine A2B: metabolism",
+                    "type": 1
+                },
+                {
+                    "tag": "Adenosine Monophosphate",
+                    "type": 1
+                },
+                {
+                    "tag": "Adenosine Monophosphate: pharmacology",
+                    "type": 1
+                },
+                {
+                    "tag": "Animals",
+                    "type": 1
+                },
+                {
+                    "tag": "Bat immunology"
+                },
+                {
+                    "tag": "Body Temperature Regulation",
+                    "type": 1
+                },
+                {
+                    "tag": "Body Temperature Regulation: drug effects",
+                    "type": 1
+                },
+                {
+                    "tag": "Calcium",
+                    "type": 1
+                },
+                {
+                    "tag": "Calcium: metabolism",
+                    "type": 1
+                },
+                {
+                    "tag": "Cell Movement",
+                    "type": 1
+                },
+                {
+                    "tag": "Cell Movement: drug effects",
+                    "type": 1
+                },
+                {
+                    "tag": "Flow Cytometry",
+                    "type": 1
+                },
+                {
+                    "tag": "Hibernation",
+                    "type": 1
+                },
+                {
+                    "tag": "Hibernation: drug effects",
+                    "type": 1
+                },
+                {
+                    "tag": "Hibernation: physiology",
+                    "type": 1
+                },
+                {
+                    "tag": "Inbred C57BL",
+                    "type": 1
+                },
+                {
+                    "tag": "Lymphocytes",
+                    "type": 1
+                },
+                {
+                    "tag": "Lymphocytes: drug effects",
+                    "type": 1
+                },
+                {
+                    "tag": "Lymphopenia",
+                    "type": 1
+                },
+                {
+                    "tag": "Lymphopenia: etiology",
+                    "type": 1
+                },
+                {
+                    "tag": "Lymphopenia: pathology",
+                    "type": 1
+                },
+                {
+                    "tag": "Mice",
+                    "type": 1
+                },
+                {
+                    "tag": "Receptor",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/2R2N63XI"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ILADMHUP",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ILADMHUP",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ILADMHUP",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Görföl et al.",
+            "parsedDate": "2014-11-24",
+            "numChildren": 0
+        },
+        "data": {
+            "key": "ILADMHUP",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "<p><strong>Canines make the difference: a new species of <em>Hypsugo </em>(Chiroptera: Vespertilionidae) from Laos and Vietnam</strong></p>",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Tamás",
+                    "lastName": "Görföl"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Gábor",
+                    "lastName": "Csorba"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Judith L.",
+                    "lastName": "Eger"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Nguyen Truong",
+                    "lastName": "Son"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Charles M.",
+                    "lastName": "Francis"
+                }
+            ],
+            "abstractNote": "Hypsugo was regarded as a subgenus of Pipistrellus by many authors, but its generic distinctiveness is now widely accepted. According to recent taxonomic arrangements, nine species are known to occur in Southeast Asia. During the investigation of material recently collected from Lao PDR and Vietnam we identified an additional species and hence describe it here as Hypsugo dolichodon n. sp. It resembles H. pulveratus, but is larger with conspicuously long canines and differs considerably in the DNA barcode gene sequence.",
+            "publicationTitle": "Zootaxa",
+            "volume": "3887",
+            "issue": "2",
+            "pages": "239-250",
+            "date": "2014-11-24",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "en",
+            "DOI": "10.11646/zootaxa.3887.2.6",
+            "ISSN": "1175-5334",
+            "shortTitle": "<p><strong>Canines make the difference",
+            "url": "https://www.biotaxa.org/Zootaxa/article/view/zootaxa.3887.2.6",
+            "accessDate": "2024-03-05T20:01:06Z",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "www.biotaxa.org",
+            "callNumber": "",
+            "rights": "Copyright (c) 2016 Zootaxa",
+            "extra": "Number: 2",
+            "tags": [
+                {
+                    "tag": "taxonomy",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZY7YKBUF"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3EB72HY5",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3EB72HY5",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3EB72HY5",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "3EB72HY5",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "note",
+            "note": "<b>From Duplicate 2 (<i>Geomyces destructans sp. nov. associated with bat white-nose syndrome</i> - Gargas, Andrea; Trest, M T; Christensen, M; Volk, T J; Blehert, D S)<br/>\n</b><br/>\nNULL",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZV3Z39XZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "HI5JMH3U",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/HI5JMH3U",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/HI5JMH3U",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "HI5JMH3U",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "",
+            "accessDate": "",
+            "url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0093-4666&volume=108&issue=1&spage=147",
+            "note": "",
+            "contentType": "",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/E3JA9FW4"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QUIXPB8A",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QUIXPB8A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QUIXPB8A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QUIXPB8A",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PDF",
+            "accessDate": "",
+            "url": "http://botit.botany.wisc.edu/TOMS_FUNGI/147gargas9-73.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q85NDXEH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "X6B7BJJ7",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/X6B7BJJ7",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/X6B7BJJ7",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "X6B7BJJ7",
+            "version": 5,
+            "itemType": "attachment",
+            "linkMode": "imported_url",
+            "title": "3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "accessDate": "2021-04-27T01:15:21Z",
+            "url": "https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2020/12/07/3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "filename": "3y67zbyeuj_One_Health_in_Action_final.pdf",
+            "md5": null,
+            "mtime": null,
+            "tags": [],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/XW48WPAE"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "5SXGVCZ2",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/5SXGVCZ2",
+                "type": "text/html"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Gargas et al.",
+            "parsedDate": "2009-07-16",
+            "numChildren": 3
+        },
+        "data": {
+            "key": "5SXGVCZ2",
+            "version": 5,
+            "itemType": "journalArticle",
+            "title": "<I>Geomyces destructans</I> sp. nov. associated with bat white-nose syndrome",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Andrea",
+                    "lastName": "Gargas"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "M.T.",
+                    "lastName": "Trest"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "M",
+                    "lastName": "Christensen"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "T.J.",
+                    "lastName": "Volk"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "D.S.",
+                    "lastName": "Blehert"
+                }
+            ],
+            "abstractNote": "We describe and illustrate the new species Geomyces destructans. Bats infected with this fungus present with powdery conidia and hyphae on their muzzles, wing membranes, and/or pinnae, leading to description of the accompanying disease as white-nose syndrome, a cause of widespread mortality among hibernating bats in the northeastern US. Based on rRNA gene sequence (ITS and SSU) characters the fungus is placed in the genus Geomyces, yet its distinctive asymmetrically curved conidia are unlike those of any described Geomyces species.",
+            "publicationTitle": "Mycotaxon",
+            "volume": "108",
+            "issue": "1",
+            "pages": "147-154",
+            "date": "2009-07-16",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "",
+            "DOI": "10.5248/108.147",
+            "ISSN": "00934666",
+            "shortTitle": "",
+            "url": "",
+            "accessDate": "",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "",
+            "callNumber": "",
+            "rights": "",
+            "extra": "PMID: 23241985\nISBN: 0093-4666",
+            "tags": [
+                {
+                    "tag": "ascomycota",
+                    "type": 1
+                },
+                {
+                    "tag": "helotiales",
+                    "type": 1
+                },
+                {
+                    "tag": "pseudogymnoascus",
+                    "type": 1
+                },
+                {
+                    "tag": "psychrophilic",
+                    "type": 1
+                },
+                {
+                    "tag": "systematics",
+                    "type": 1
+                }
+            ],
+            "collections": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/D5XAQL7P"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    }
+]
