@@ -19,7 +19,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.1 | 2024-04-26 | 7.9 GiB | 2929 | 5055 | [hash://sha256/6ba...189](https://linker.bio/hash://sha256/6ba3d79cf1fd6349012cb4e527b6727b3e41e140489fa9c02f132e2cdd88d189) |  
  | Bat Literature Corpus | v0.2 | 2024-05-16/2024-05-17 | 11.6 GiB | 3310 | 5471 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
  | Bat Literature Corpus | v0.3 | 2024-06-25/2024-06-26 | 13.6 GiB | 5501 | 7229 | [hash://md5/350...77d](https://linker.bio/hash://md5/350f87ae6b68b96bec135c1d6ebac77d) |  
- | Bat Literature Corpus | v0.4 | 2024-08-01/2024-08-02 | TBA GiB | 20146 | 29860 | [hash://md5/b39...72a](https://linker.bio/hash://md5/b394bdb081f55916b1226b5bc8ba972a) |  
+ | Bat Literature Corpus | v0.4 | 2024-08-01/2024-08-02 | 50.9 GiB | 20146 | 29860 | [hash://md5/b39...72a](https://linker.bio/hash://md5/b394bdb081f55916b1226b5bc8ba972a) |  
 
 ## Introduction
 
@@ -174,8 +174,8 @@ preston head --algo md5\
 
 ```json 
 {
-  "key": "B8YKFARF",
-  "version": 15487,
+  "key": "JRGAZ8Z6",
+  "version": 46249,
   "library": {
     "type": "group",
     "id": 5435545,
@@ -189,22 +189,18 @@ preston head --algo md5\
   },
   "links": {
     "self": {
-      "href": "https://api.zotero.org/groups/5435545/items/B8YKFARF",
+      "href": "https://api.zotero.org/groups/5435545/items/JRGAZ8Z6",
       "type": "application/json"
     },
     "alternate": {
-      "href": "https://www.zotero.org/groups/bat_literature_project/items/B8YKFARF",
+      "href": "https://www.zotero.org/groups/bat_literature_project/items/JRGAZ8Z6",
       "type": "text/html"
     },
-    "up": {
-      "href": "https://api.zotero.org/groups/5435545/items/7CW5CSQN",
-      "type": "application/json"
-    },
-    "enclosure": {
-      "type": "application/pdf",
-      "href": "https://api.zotero.org/groups/5435545/items/B8YKFARF/file/view",
-      "title": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
-      "length": 183580
+    "attachment": {
+      "href": "https://api.zotero.org/groups/5435545/items/ZXCN9DHZ",
+      "type": "application/json",
+      "attachmentType": "application/pdf",
+      "attachmentSize": 62205
     }
   },
   "meta": {
@@ -219,29 +215,56 @@ preston head --algo md5\
         }
       }
     },
-    "numChildren": 0
+    "creatorSummary": "Singaravelan and Marimuthu",
+    "parsedDate": "2003",
+    "numChildren": 1
   },
   "data": {
-    "key": "B8YKFARF",
-    "version": 15487,
-    "parentItem": "7CW5CSQN",
-    "itemType": "attachment",
-    "linkMode": "imported_file",
-    "title": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
-    "accessDate": "",
+    "key": "JRGAZ8Z6",
+    "version": 46249,
+    "itemType": "journalArticle",
+    "title": "Mist net captures of the rarest fruit bat Latidens salimalii",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "N.",
+        "lastName": "Singaravelan"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "G.",
+        "lastName": "Marimuthu"
+      }
+    ],
+    "abstractNote": "",
+    "publicationTitle": "CURRENT SCIENCE",
+    "volume": "84",
+    "issue": "1",
+    "pages": "",
+    "date": "2003",
+    "series": "",
+    "seriesTitle": "",
+    "seriesText": "",
+    "journalAbbreviation": "",
+    "language": "en",
+    "DOI": "",
+    "ISSN": "",
+    "shortTitle": "",
     "url": "",
-    "note": "",
-    "contentType": "application/pdf",
-    "charset": "",
-    "filename": "Smith et al. - 2009 - The role of infectious diseases in biological cons.pdf",
-    "md5": "f1f2be0ed545fb6d80b413405338d939",
-    "mtime": 1719333057120,
+    "accessDate": "",
+    "archive": "",
+    "archiveLocation": "",
+    "libraryCatalog": "Zotero",
+    "callNumber": "",
+    "rights": "",
+    "extra": "",
     "tags": [],
-    "relations": {
-      "dc:replaces": "http://zotero.org/groups/5435545/items/6A6Z47D7"
-    },
-    "dateAdded": "2024-06-25T20:26:21Z",
-    "dateModified": "2024-06-25T23:42:47Z"
+    "collections": [
+      "UAWY6DNP"
+    ],
+    "relations": {},
+    "dateAdded": "2024-07-12T14:27:08Z",
+    "dateModified": "2024-08-01T20:51:43Z"
   }
 }
 ```
@@ -255,7 +278,7 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston cat hash://md5/350f87ae6b68b96bec135c1d6ebac77d | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat hash://md5/b394bdb081f55916b1226b5bc8ba972a | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
@@ -263,20 +286,22 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 | count | contentType |
 | --- | --- |
-| 8575 | attachment |
-| 5167 | journalArticle |
-| 743 | note |
-| 110 | book |
-| 103 | bookSection |
-| 94 | annotation |
-| 51 | report |
-| 19 | preprint |
-| 17 | conferencePaper |
-| 12 | thesis |
+| 31162 | attachment |
+| 19302 | journalArticle |
+| 758 | note |
+| 358 | book |
+| 253 | bookSection |
+| 96 | annotation |
+| 95 | report |
+| 52 | thesis |
+| 32 | conferencePaper |
+| 21 | preprint |
+| 15 | dataset |
 | 9 | magazineArticle |
-| 6 | webpage |
-| 4 | dataset |
+| 4 | webpage |
 | 3 | newspaperArticle |
+| 2 | presentation |
+
 
 ### Literature Record Index
 
@@ -291,8 +316,8 @@ First 3 records shown below as an example:
 
 | id | authors | date | title | journal | doi |
 | --- | --- | --- | --- | --- | --- |
-| https://www.zotero.org/groups/bat_literature_project/items/7CW5CSQN | Smith \| Acevedo‐Whitehouse \| Pedersen | 02/2009 | The role of infectious diseases in biological conservation | Animal Conservation | 10.1111/j.1469-1795.2008.00228.x |
-| https://www.zotero.org/groups/bat_literature_project/items/MTXHK7WY | Whittaker \| Jones | 1994 | The Role of Frugivorous Bats and Birds in the Rebuilding of a Tropical Forest Ecosystem, Krakatau, Indonesia | Journal of Biogeography | 10.2307/2845528 |
-| https://www.zotero.org/groups/bat_literature_project/items/CHPT6L4L | Hoff \| Bigler | 1981 | The role of bats in the propagation and spread of histoplasmosis: a review. | Journal of wildlife diseases | 10.7589/0090-3558-17.2.191 |
+| https://www.zotero.org/groups/bat_literature_project/items/JRGAZ8Z6 | Singaravelan \| Marimuthu | 2003 | Mist net captures of the rarest fruit bat Latidens salimalii | CURRENT SCIENCE |  |
+| https://www.zotero.org/groups/bat_literature_project/items/DG763DW6 | Yee | 2000-5-12 | Peropteryx macrotis | Mammalian Species | 10.1644/0.643.1 |
+| https://www.zotero.org/groups/bat_literature_project/items/HU5Y4GWU | Wilson \| Graham | 1994 | Pacific island flying foxes: proceedings of an international conservation conference | Biological Conservation | 10.1016/0006-3207(94)90207-0 |
 
 ## Discussion
