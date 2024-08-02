@@ -1,0 +1,3722 @@
+[
+    {
+        "key": "2FYBBNCQ",
+        "version": 3874,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/2FYBBNCQ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/2FYBBNCQ",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/PZSX3MAJ",
+                "type": "application/json"
+            },
+            "enclosure": {
+                "type": "application/pdf",
+                "href": "https://api.zotero.org/groups/5435545/items/2FYBBNCQ/file/view",
+                "title": "Mylne et al. - 2014 - A comprehensive database of the geographic spread .pdf",
+                "length": 1046509
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "2FYBBNCQ",
+            "version": 3874,
+            "parentItem": "PZSX3MAJ",
+            "itemType": "attachment",
+            "linkMode": "imported_url",
+            "title": "Full Text PDF",
+            "accessDate": "2021-03-24T17:04:13Z",
+            "url": "https://www.nature.com/articles/sdata201442.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "filename": "Mylne et al. - 2014 - A comprehensive database of the geographic spread .pdf",
+            "md5": "e6db55386beab2e419efd260129466e4",
+            "mtime": 1709745792000,
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZC9LY9LC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ECB2NJFS",
+        "version": 30,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ECB2NJFS",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ECB2NJFS",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/HVXWQUIP",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "ECB2NJFS",
+            "version": 30,
+            "parentItem": "HVXWQUIP",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-24T22:28:50Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/31679534",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/PTP5LQDQ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "FR78YN93",
+        "version": 29,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/FR78YN93",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/FR78YN93",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/33KIM3YA",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "FR78YN93",
+            "version": 29,
+            "parentItem": "33KIM3YA",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2022-09-13T22:08:19Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/35945197",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZUS27I2N"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "EV94AC6U",
+        "version": 29,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/EV94AC6U",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/EV94AC6U",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/95YHQ3II",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "EV94AC6U",
+            "version": 29,
+            "parentItem": "95YHQ3II",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationAuthorName": "deeannreeder",
+            "annotationText": "In the Old World tropics, some pteropodid species are thought to be reservoirs of zoonotic viruses, since evidence of infection from filoviruses (e.g., ebola), henipaviruses (e.g., hendra), and coronaviruses (e.g., SARS) has been detected in healthy animals (Leroy et al., 2005; Towner et al., 2007; Hayman et al., 2010; Halpin et al., 2011; Olival et al., 2013)",
+            "annotationComment": "",
+            "annotationColor": "#2ea8e5",
+            "annotationPageLabel": "2",
+            "annotationSortIndex": "00001|001629|00402",
+            "annotationPosition": "{\"pageIndex\":1,\"rects\":[[406.296,302.77,454.685,317.609],[40.5,288.77,454.469,303.609],[40.5,274.77,454.5,289.609],[40.5,260.77,454.438,275.609],[40.5,246.77,302.012,261.609]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "RBSYGUDM",
+        "version": 29,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/RBSYGUDM",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/RBSYGUDM",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/9CGJNJ4R",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "RBSYGUDM",
+            "version": 29,
+            "parentItem": "9CGJNJ4R",
+            "itemType": "note",
+            "note": "<p><a href=\"https://digitallibrary.amnh.org/handle/2246/7112\">https://digitallibrary.amnh.org/handle/2246/7112</a> online content</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/EA4YEBG7"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "EIZT76AF",
+        "version": 27,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/EIZT76AF",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/EIZT76AF",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/SNT4826F",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "EIZT76AF",
+            "version": 27,
+            "parentItem": "SNT4826F",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-03-25T15:08:42Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/25722199",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/8IWJ4IX2"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "G8PTGXBX",
+        "version": 27,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/G8PTGXBX",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/G8PTGXBX",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/YLR4FGK9",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "G8PTGXBX",
+            "version": 27,
+            "parentItem": "YLR4FGK9",
+            "itemType": "note",
+            "note": "<p>LR: 20071114; GR: R01 AI 44596/AI/NIAID NIH HHS/United States; JID: 0413675; 0 (Antibodies, Viral); 0 (Immunoglobulin G); CIN: J Infect Dis. 2004 Dec 1;190(11):1893-4. PMID: 15529250; 2004/02/19 [received]; 2004/06/01 [accepted]; 2004/11/03 [aheadofprint]; ppublish</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/XYXC98MY"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ALBCM525",
+        "version": 27,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ALBCM525",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ALBCM525",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/YLR4FGK9",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "ALBCM525",
+            "version": 27,
+            "parentItem": "YLR4FGK9",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-03-20T13:46:03Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/15529251",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/H5N3U54P"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "KIKCHQ38",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/KIKCHQ38",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/KIKCHQ38",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/EL8UGAYI",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "KIKCHQ38",
+            "version": 26,
+            "parentItem": "EL8UGAYI",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T19:40:59Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/26552008",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/S27EMW6F"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ENHW77KF",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ENHW77KF",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ENHW77KF",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "ENHW77KF",
+            "version": 26,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "n this study, we attempt to resolve the systematic relationships among the pipistrelle-like bats of sub-Saharan Africa and Madagascar and provide a more stable framework for future systematic efforts.",
+            "annotationComment": "",
+            "annotationColor": "#ffd400",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|001695|00434",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[149.2,336.834,540.88,347.769],[61,325.836,477.48,336.771]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "BMR6MQ6H",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/BMR6MQ6H",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/BMR6MQ6H",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "BMR6MQ6H",
+            "version": 26,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Pipistrellus, Scotoecus and Vansonia",
+            "annotationComment": "",
+            "annotationColor": "#5fb236",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002171|00478",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[491.166,292.842,540.927,303.777],[61,281.844,157.588,292.779]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "4GK3C8S5",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/4GK3C8S5",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/4GK3C8S5",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/CJVL6DW3",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "4GK3C8S5",
+            "version": 26,
+            "parentItem": "CJVL6DW3",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-24T18:27:15Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/33536429",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ELVKWIKS"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "4RZIUSHG",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/4RZIUSHG",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/4RZIUSHG",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "4RZIUSHG",
+            "version": 26,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Pipistrellini",
+            "annotationComment": "",
+            "annotationColor": "#ffd400",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002157|00478",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[435.969,292.842,485.577,303.777]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "RH3DH6V7",
+        "version": 26,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/RH3DH6V7",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/RH3DH6V7",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "RH3DH6V7",
+            "version": 26,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "assigning the species of Neoromicia to four genera.",
+            "annotationComment": "",
+            "annotationColor": "#ffd400",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002384|00511",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[61,259.848,272.243,270.783]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "WZMHN92F",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/WZMHN92F",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/WZMHN92F",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "WZMHN92F",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Laephotis",
+            "annotationComment": "",
+            "annotationColor": "#5fb236",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002547|00522",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[370.981,248.85,411.148,259.785]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "KU56Y53G",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/KU56Y53G",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/KU56Y53G",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "KU56Y53G",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "are genetically distinct, have distinctive bacular morphologies and can be grouped by cranial morphometrics",
+            "annotationComment": "",
+            "annotationColor": "#e56eee",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002809|00555",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[196.495,215.856,540.97,226.791],[61,204.858,153.565,215.793]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "UH252NRJ",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/UH252NRJ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/UH252NRJ",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "UH252NRJ",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Such surveys are greatly needed across tropical Africa to uncover further bat diversity",
+            "annotationComment": "",
+            "annotationColor": "#f19837",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|003283|00610",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[61,160.866,411.766,171.801]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "UK5WQPY4",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/UK5WQPY4",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/UK5WQPY4",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "UK5WQPY4",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "East Africa appears to be a hub of cryptic diversity in other bat families and genera",
+            "annotationComment": "",
+            "annotationColor": "#e56eee",
+            "annotationPageLabel": "1115",
+            "annotationSortIndex": "00001|002120|00606",
+            "annotationPosition": "{\"pageIndex\":1,\"rects\":[[116.667,165.031,285.209,176.27],[54.276,153.533,226.826,164.772]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ZSZ5K5FY",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZSZ5K5FY",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ZSZ5K5FY",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "ZSZ5K5FY",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Neoromicia",
+            "annotationComment": "",
+            "annotationColor": "#5fb236",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002428|00511",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[274.489,259.848,321.883,270.783]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QAN5WCV7",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QAN5WCV7",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QAN5WCV7",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QAN5WCV7",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "two new genera",
+            "annotationComment": "",
+            "annotationColor": "#f19837",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002618|00533",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[236.43,237.852,300.528,248.787]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "SHZY9FS8",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/SHZY9FS8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/SHZY9FS8",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "SHZY9FS8",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "many of which have white wings",
+            "annotationComment": "",
+            "annotationColor": "#a28ae5",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002683|00544",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[63.907,226.854,196.423,237.789]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3QRBH74M",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3QRBH74M",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3QRBH74M",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "3QRBH74M",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "other for the genetically and morphologically unique banana bat",
+            "annotationComment": "",
+            "annotationColor": "#2ea8e5",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002715|00544",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[235.006,226.854,496.204,237.789]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "J5N9K4JN",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/J5N9K4JN",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/J5N9K4JN",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "J5N9K4JN",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Nycticeinops",
+            "annotationComment": "",
+            "annotationColor": "#5fb236",
+            "annotationPageLabel": "1114",
+            "annotationSortIndex": "00000|002933|00566",
+            "annotationPosition": "{\"pageIndex\":0,\"rects\":[[307.385,204.858,358.451,215.793]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "HZKQ8NTV",
+        "version": 25,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/HZKQ8NTV",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/HZKQ8NTV",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "HZKQ8NTV",
+            "version": 25,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "the pipistrelle-like bats of East Africa have received almost no attention, and many basic taxonomic and systematic questions",
+            "annotationComment": "",
+            "annotationColor": "#2ea8e5",
+            "annotationPageLabel": "1115",
+            "annotationSortIndex": "00001|001972|00571",
+            "annotationPosition": "{\"pageIndex\":1,\"rects\":[[54.276,199.524,285.404,210.763],[54.276,188.026,285.298,199.265],[54.276,176.529,141.827,187.767]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "ZEWRW28N",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZEWRW28N",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/ZEWRW28N",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "ZEWRW28N",
+            "version": 24,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Neo. nana has a distinctive character set: the first upper premolar is present, the braincase is obviously and highly inflated, there is a distinct thumbpad present at the base of the thumb, and the lower third molar is ‘nyctalodont",
+            "annotationComment": "",
+            "annotationColor": "#e56eee",
+            "annotationPageLabel": "1115",
+            "annotationSortIndex": "00001|002998|00197",
+            "annotationPosition": "{\"pageIndex\":1,\"rects\":[[303.305,573.622,534.694,584.861],[303.305,562.124,534.505,573.363],[303.305,550.626,534.793,561.865],[303.305,539.129,534.155,550.367],[303.305,527.631,400.049,538.87]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "IRQBG6TV",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/IRQBG6TV",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/IRQBG6TV",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "IRQBG6TV",
+            "version": 24,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "We examined type specimens",
+            "annotationComment": "",
+            "annotationColor": "#2ea8e5",
+            "annotationPageLabel": "1118",
+            "annotationSortIndex": "00004|000291|00128",
+            "annotationPosition": "{\"pageIndex\":4,\"rects\":[[70.25,642.494,198.264,653.732]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "2H8X67ZD",
+        "version": 24,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/2H8X67ZD",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/2H8X67ZD",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3V8YQEUK",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "2H8X67ZD",
+            "version": 24,
+            "parentItem": "3V8YQEUK",
+            "itemType": "annotation",
+            "annotationType": "highlight",
+            "annotationText": "Eight cranial and four dental measurements were taken with callipers to the closest 0.01 mm, following",
+            "annotationComment": "",
+            "annotationColor": "#ffd400",
+            "annotationPageLabel": "1117",
+            "annotationSortIndex": "00003|003222|00361",
+            "annotationPosition": "{\"pageIndex\":3,\"rects\":[[303.276,409.286,534.563,420.525],[303.276,397.788,534.314,409.027]]}",
+            "tags": [],
+            "relations": {},
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "8A5FFVIM",
+        "version": 23,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/8A5FFVIM",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/8A5FFVIM",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/2QDV9JUS",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "8A5FFVIM",
+            "version": 23,
+            "parentItem": "2QDV9JUS",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-24T21:39:43Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/23587372",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/FWZ3LGMD"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "WI7HNIPQ",
+        "version": 23,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/WI7HNIPQ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/WI7HNIPQ",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/S3YF8QBT",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "WI7HNIPQ",
+            "version": 23,
+            "parentItem": "S3YF8QBT",
+            "itemType": "note",
+            "note": "<p>JID: 1277355; 2008/04/02 [received]; 2008/08/14 [accepted]; 2008/08/30 [aheadofprint]; ppublish</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/AGDDWW2K"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3WMZKK92",
+        "version": 22,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3WMZKK92",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3WMZKK92",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/XXKBV4L2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "3WMZKK92",
+            "version": 22,
+            "parentItem": "XXKBV4L2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2022-01-30T22:43:15Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/32611400",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Y6TQMPF9"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "NVIC8X2A",
+        "version": 22,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/NVIC8X2A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/NVIC8X2A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/NU48TGUA",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "NVIC8X2A",
+            "version": 22,
+            "parentItem": "NU48TGUA",
+            "itemType": "note",
+            "note": "<p>JID: 0401107; ppublish</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/FCKKUNXC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "RVC362U4",
+        "version": 21,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/RVC362U4",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/RVC362U4",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5ISHCDS9",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "RVC362U4",
+            "version": 21,
+            "parentItem": "5ISHCDS9",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-04-08T15:55:56Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/31464031",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/HJRLFLGT"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "39CKPUGU",
+        "version": 21,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/39CKPUGU",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/39CKPUGU",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/48D25HEM",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "39CKPUGU",
+            "version": 21,
+            "parentItem": "48D25HEM",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-03-20T14:34:54Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/7908445",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/BRMYB2CI"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "6BL7TRTD",
+        "version": 21,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/6BL7TRTD",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/6BL7TRTD",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/U5X9CR8V",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "6BL7TRTD",
+            "version": 21,
+            "parentItem": "U5X9CR8V",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2022-09-06T19:59:23Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/31226847",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/PGQQ9N5E"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "XKTXD7P9",
+        "version": 21,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/XKTXD7P9",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/XKTXD7P9",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/48D25HEM",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "XKTXD7P9",
+            "version": 21,
+            "parentItem": "48D25HEM",
+            "itemType": "note",
+            "note": "<p>LR: 20130922; GENBANK/Z29673; JID: 7505876; 0 (Deltaretrovirus Antibodies); GS: env; GS: rex; GS: tax; OID: NLM: PMC43468; ppublish</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Y6ZWUSA6"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "JQUL3JAR",
+        "version": 20,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/JQUL3JAR",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/JQUL3JAR",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/FM8HPFS5",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "JQUL3JAR",
+            "version": 20,
+            "parentItem": "FM8HPFS5",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T17:23:48Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/32015507",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/B73AG2C3"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "V48MW6JV",
+        "version": 19,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/V48MW6JV",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/V48MW6JV",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/GSG5A44S",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "V48MW6JV",
+            "version": 19,
+            "parentItem": "GSG5A44S",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T22:25:27Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/28840816",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/MZDFS6TM"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "92SDESIG",
+        "version": 19,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/92SDESIG",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/92SDESIG",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/JES9E66D",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "92SDESIG",
+            "version": 19,
+            "parentItem": "JES9E66D",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed Central Link",
+            "accessDate": "2023-08-24T14:19:05Z",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9224600/",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/CKQJCVCH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "SAA3GW4Y",
+        "version": 18,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/SAA3GW4Y",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/SAA3GW4Y",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZDKKSD33",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "SAA3GW4Y",
+            "version": 18,
+            "parentItem": "ZDKKSD33",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-10-03T04:58:09Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/16339320",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6FWDN44L"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "C96PESW3",
+        "version": 18,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/C96PESW3",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/C96PESW3",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZAMP96AY",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "C96PESW3",
+            "version": 18,
+            "parentItem": "ZAMP96AY",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-01-15T21:35:47Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/12435139",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/GZYTSWWC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "NDI2GZ93",
+        "version": 18,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/NDI2GZ93",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/NDI2GZ93",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/C6TNBTHZ",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "NDI2GZ93",
+            "version": 18,
+            "parentItem": "C6TNBTHZ",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2023-08-29T17:01:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34641882",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/I27F3WTZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "NN96AWRJ",
+        "version": 17,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/NN96AWRJ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/NN96AWRJ",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/TESZSSBT",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "NN96AWRJ",
+            "version": 17,
+            "parentItem": "TESZSSBT",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T19:21:49Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/29579103",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/LPHN8HAT"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "AR8S2P9X",
+        "version": 15,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/AR8S2P9X",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/AR8S2P9X",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZSNCBZRH",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "AR8S2P9X",
+            "version": 15,
+            "parentItem": "ZSNCBZRH",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T20:01:37Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/22966143",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/GUR7VLT5"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "AWFSIIHU",
+        "version": 15,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/AWFSIIHU",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/AWFSIIHU",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/L3PMUDNN",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "AWFSIIHU",
+            "version": 15,
+            "parentItem": "L3PMUDNN",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2022-04-25T14:44:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34627297",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/2FTKX6JK"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "PXPX4EM8",
+        "version": 14,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/PXPX4EM8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/PXPX4EM8",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/UJJQ8KLJ",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "PXPX4EM8",
+            "version": 14,
+            "parentItem": "UJJQ8KLJ",
+            "itemType": "note",
+            "note": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6EQ2QDV9"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "BGTTCLDP",
+        "version": 13,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/BGTTCLDP",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/BGTTCLDP",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/L9K7FXL5",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "BGTTCLDP",
+            "version": 13,
+            "parentItem": "L9K7FXL5",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-23T21:07:03Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/19287830",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/UZ2ZM5FR"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "K4XMS279",
+        "version": 12,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/K4XMS279",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/K4XMS279",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3VDS26ZW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "K4XMS279",
+            "version": 12,
+            "parentItem": "3VDS26ZW",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2019-01-23T04:20:26Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/23378666",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/4A6R2RFW"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "7DPSAFYC",
+        "version": 11,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/7DPSAFYC",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/7DPSAFYC",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/TIZ89MQU",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "7DPSAFYC",
+            "version": 11,
+            "parentItem": "TIZ89MQU",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-20T13:43:54Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27543045",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/CAK6FRDC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "JZIY3R2T",
+        "version": 10,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/JZIY3R2T",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/JZIY3R2T",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/GCKFQ5V4",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "JZIY3R2T",
+            "version": 10,
+            "parentItem": "GCKFQ5V4",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-06-07T19:35:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/31947873",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/TR9V93AU"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "7A8XSPSZ",
+        "version": 10,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/7A8XSPSZ",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/7A8XSPSZ",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/JQHSHTFW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "7A8XSPSZ",
+            "version": 10,
+            "parentItem": "JQHSHTFW",
+            "itemType": "note",
+            "note": "<p>VLP that was bivalent for EBOV and SUDV... might be a useful construct!</p>",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/2Q5ZWDND"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "X27MHENT",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/X27MHENT",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/X27MHENT",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/JQHSHTFW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "X27MHENT",
+            "version": 9,
+            "parentItem": "JQHSHTFW",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-06-07T19:22:48Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/32075939",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/53KHRCTC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "VNABE4M6",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/VNABE4M6",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/VNABE4M6",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/24KUPPMH",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "VNABE4M6",
+            "version": 9,
+            "parentItem": "24KUPPMH",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-10-16T21:20:14Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/11517455",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/PD2CZA4M"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "4Z3LEH3M",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/4Z3LEH3M",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/4Z3LEH3M",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/XQQ6PBCE",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "4Z3LEH3M",
+            "version": 9,
+            "parentItem": "XQQ6PBCE",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-06-17T23:05:37Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34119013",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/TQ6HQ5RG"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "RTHVTQFC",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/RTHVTQFC",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/RTHVTQFC",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/JQHSHTFW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "RTHVTQFC",
+            "version": 9,
+            "parentItem": "JQHSHTFW",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-06-06T17:13:09Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/32075939",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q46LI6VA"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "E2JM7CAK",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/E2JM7CAK",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/E2JM7CAK",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/JQHSHTFW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "E2JM7CAK",
+            "version": 9,
+            "parentItem": "JQHSHTFW",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-06-07T19:25:22Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/32075939",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q48K5CND"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QLU5P94Y",
+        "version": 8,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QLU5P94Y",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QLU5P94Y",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/D92SQQPG",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QLU5P94Y",
+            "version": 8,
+            "parentItem": "D92SQQPG",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T19:58:29Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27676249",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/RWDUXGQR"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "DVYWYXGW",
+        "version": 7,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/DVYWYXGW",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/DVYWYXGW",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/QNJRRM6F",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "DVYWYXGW",
+            "version": 7,
+            "parentItem": "QNJRRM6F",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-02-13T16:43:57Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/30942884",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6348A7V8"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "C3H9NM5W",
+        "version": 6,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/C3H9NM5W",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/C3H9NM5W",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/Z3UEM58G",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "C3H9NM5W",
+            "version": 6,
+            "parentItem": "Z3UEM58G",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-25T00:36:00Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27822541",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/QQGDYINE"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "A8UBBDKH",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/A8UBBDKH",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/A8UBBDKH",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/LAQ379Q9",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "A8UBBDKH",
+            "version": 5,
+            "parentItem": "LAQ379Q9",
+            "itemType": "attachment",
+            "linkMode": "imported_url",
+            "title": "Snapshot",
+            "accessDate": "2020-01-12T13:36:17Z",
+            "url": "https://www.researchgate.net/publication/303742900_The_Evolutionary_History_of_the_African_Fruit_Bats_Chiroptera_Pteropodidae",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "utf-8",
+            "filename": "303742900_The_Evolutionary_History_of_the_African_Fruit_Bats_Chiroptera_Pteropodidae.html",
+            "md5": null,
+            "mtime": null,
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/K3IJTF84"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3EB72HY5",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3EB72HY5",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3EB72HY5",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "3EB72HY5",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "note",
+            "note": "<b>From Duplicate 2 (<i>Geomyces destructans sp. nov. associated with bat white-nose syndrome</i> - Gargas, Andrea; Trest, M T; Christensen, M; Volk, T J; Blehert, D S)<br/>\n</b><br/>\nNULL",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZV3Z39XZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "HI5JMH3U",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/HI5JMH3U",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/HI5JMH3U",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "HI5JMH3U",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "",
+            "accessDate": "",
+            "url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0093-4666&volume=108&issue=1&spage=147",
+            "note": "",
+            "contentType": "",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/E3JA9FW4"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QUIXPB8A",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QUIXPB8A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QUIXPB8A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QUIXPB8A",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PDF",
+            "accessDate": "",
+            "url": "http://botit.botany.wisc.edu/TOMS_FUNGI/147gargas9-73.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q85NDXEH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    }
+]
