@@ -3,7 +3,9 @@
 # 
 #
 
-cat ../refs.tsv\
+SCRIPT_DIR=$(dirname $0)
+
+cat ${SCRIPT_DIR}/../refs.tsv\
  | cut -f6\
  | grep -Eo "10[.][0-9]+/.*"\
  | sed 's+^+https://doi.org/+g'\
