@@ -4,9 +4,13 @@
 #
 #
 
+set -x
+
+SCRIPT_DIR=$(dirname $0)
+HEAD=$(cat "${SCRIPT_DIR}/../HEAD")
+
 cat <(echo "id,authors,date,title,journal,doi")\
- <(preston head --algo md5\
- | preston cat --algo md5\
+ <(preston cat ${HEAD}\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --algo md5\

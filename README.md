@@ -20,6 +20,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.2 | 2024-05-16/2024-05-17 | 11.6 GiB | 3310 | 5471 | [hash://md5/be6...1d7](https://linker.bio/hash://md5/be692b93a8edde4c4269be9e7d4ec1d7) |  
  | Bat Literature Corpus | v0.3 | 2024-06-25/2024-06-26 | 13.6 GiB | 5501 | 7229 | [hash://md5/350...77d](https://linker.bio/hash://md5/350f87ae6b68b96bec135c1d6ebac77d) |  
  | Bat Literature Corpus | v0.4 | 2024-08-01/2024-08-02 | 50.9 GiB | 20146 | 29860 | [hash://md5/b39...72a](https://linker.bio/hash://md5/b394bdb081f55916b1226b5bc8ba972a) |  
+ | Bat Literature Corpus | v0.5 | 2024-08-01/2024-08-02 | TBD | 20145 | 29850 | [hash://md5/26f...b20](https://linker.bio/hash://md5/26f7ce5dd404e33c6570edd4ba250d20) |  
 
 ## Introduction
 
@@ -119,8 +120,7 @@ preston ls --algo md5\
 Estimating number of references in a corpus version - 
 
 ```
-preston head --algo md5\
- | preston cat\
+preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat\
@@ -132,8 +132,7 @@ preston head --algo md5\
 Estimating number of associated corpus pdfs - 
 
 ```
-preston head --algo md5\
- | preston cat\
+preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "file/view"\
  | grep hasVersion\
  | grep hash\
@@ -143,8 +142,7 @@ preston head --algo md5\
 Estimating the total volume of data for the most recent (i.e. "head") version
 
 ```
-preston head --algo md5\
- | preston cat\
+preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep hasVersion\
  | grep -oE "hash://md5/[a-f0-9]{32}"\
  | sort\
@@ -159,8 +157,7 @@ preston head --algo md5\
 An example of a tracked Zotero record generated using
 
 ```bash
-preston head --algo md5\
- | preston cat\
+preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat\
@@ -174,8 +171,8 @@ preston head --algo md5\
 
 ```json 
 {
-  "key": "JRGAZ8Z6",
-  "version": 46249,
+  "key": "NYT92CCF",
+  "version": 48777,
   "library": {
     "type": "group",
     "id": 5435545,
@@ -189,18 +186,18 @@ preston head --algo md5\
   },
   "links": {
     "self": {
-      "href": "https://api.zotero.org/groups/5435545/items/JRGAZ8Z6",
+      "href": "https://api.zotero.org/groups/5435545/items/NYT92CCF",
       "type": "application/json"
     },
     "alternate": {
-      "href": "https://www.zotero.org/groups/bat_literature_project/items/JRGAZ8Z6",
+      "href": "https://www.zotero.org/groups/bat_literature_project/items/NYT92CCF",
       "type": "text/html"
     },
     "attachment": {
-      "href": "https://api.zotero.org/groups/5435545/items/ZXCN9DHZ",
+      "href": "https://api.zotero.org/groups/5435545/items/3MVRRMR8",
       "type": "application/json",
       "attachmentType": "application/pdf",
-      "attachmentSize": 62205
+      "attachmentSize": 388576
     }
   },
   "meta": {
@@ -215,46 +212,81 @@ preston head --algo md5\
         }
       }
     },
-    "creatorSummary": "Singaravelan and Marimuthu",
-    "parsedDate": "2003",
+    "creatorSummary": "Thong et al.",
+    "parsedDate": "2010-10-14",
     "numChildren": 1
   },
   "data": {
-    "key": "JRGAZ8Z6",
-    "version": 46249,
+    "key": "NYT92CCF",
+    "version": 48777,
     "itemType": "journalArticle",
-    "title": "Mist net captures of the rarest fruit bat Latidens salimalii",
+    "title": "Further records of Murina tiensa from Vietnam with first information on its echolocation calls.",
     "creators": [
       {
         "creatorType": "author",
-        "firstName": "N.",
-        "lastName": "Singaravelan"
+        "firstName": "Vu Dinh",
+        "lastName": "Thong"
       },
       {
         "creatorType": "author",
-        "firstName": "G.",
-        "lastName": "Marimuthu"
+        "firstName": "Christian",
+        "lastName": "Dietz"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Annette",
+        "lastName": "Denzinger"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Paul J. J.",
+        "lastName": "Bates"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Neil M.",
+        "lastName": "Furey"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Gabor",
+        "lastName": "Csorba"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Glenn",
+        "lastName": "Hoye"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Le Dinh",
+        "lastName": "Thuy"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "Hans-Ulrich",
+        "lastName": "Schnitzler"
       }
     ],
-    "abstractNote": "",
-    "publicationTitle": "CURRENT SCIENCE",
-    "volume": "84",
+    "abstractNote": "The fairy tube-nosed bat, Murina tiensa, is considered to be endemic to Vietnam. It is known only from the original description, when it was found at two localities in limestone karst areas. In 2008, we conducted a series of intensive field surveys throughout the country and obtained additional records of this species from various habitats, including degraded to nearly pristine forests and an offshore island. Our results indicate that M. tiensa is a sexually dimorphic species, females being considerably larger than males in all external and craniodental measurements. The species emits broadband, downward frequency-modulated echolocation calls with a dominant first harmonic. When handheld or when flying in a flight tent, signals had a similar structure and were emitted in groups of 2–4 signals. On average, signals swept from 150 to 49 kHz in 2.2 ms for handheld bats, and, from 145 to 50 kHz in 1.9 ms for flying bats. M. tiensa often occurred in sympatry with M. cyclotis and several rhinolophids.",
+    "publicationTitle": "Hystrix, the Italian Journal of Mammalogy",
+    "volume": "22",
     "issue": "1",
     "pages": "",
-    "date": "2003",
+    "date": "October 14, 2010",
     "series": "",
     "seriesTitle": "",
     "seriesText": "",
     "journalAbbreviation": "",
     "language": "en",
-    "DOI": "",
-    "ISSN": "",
+    "DOI": "10.4404/hystrix-22.1-4533",
+    "ISSN": "18255272, 03941914",
     "shortTitle": "",
-    "url": "",
-    "accessDate": "",
+    "url": "https://doi.org/10.4404/hystrix-22.1-4533",
+    "accessDate": "2024-06-28T00:31:16Z",
     "archive": "",
     "archiveLocation": "",
-    "libraryCatalog": "Zotero",
+    "libraryCatalog": "DOI.org (CSL JSON)",
     "callNumber": "",
     "rights": "",
     "extra": "",
@@ -262,9 +294,11 @@ preston head --algo md5\
     "collections": [
       "UAWY6DNP"
     ],
-    "relations": {},
-    "dateAdded": "2024-07-12T14:27:08Z",
-    "dateModified": "2024-08-01T20:51:43Z"
+    "relations": {
+      "dc:replaces": "http://zotero.org/groups/5435545/items/NF6R8YCX"
+    },
+    "dateAdded": "2024-07-08T02:34:45Z",
+    "dateModified": "2024-08-16T13:50:15Z"
   }
 }
 ```
@@ -278,7 +312,7 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston cat hash://md5/b394bdb081f55916b1226b5bc8ba972a | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20 | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
@@ -287,10 +321,10 @@ Note that there's roughly two kinds of content: top level content like journal a
 | count | contentType |
 | --- | --- |
 | 31162 | attachment |
-| 19302 | journalArticle |
-| 758 | note |
+| 19300 | journalArticle |
+| 759 | note |
 | 358 | book |
-| 253 | bookSection |
+| 254 | bookSection |
 | 96 | annotation |
 | 95 | report |
 | 52 | thesis |
@@ -301,7 +335,6 @@ Note that there's roughly two kinds of content: top level content like journal a
 | 4 | webpage |
 | 3 | newspaperArticle |
 | 2 | presentation |
-
 
 ### Literature Record Index
 
@@ -316,8 +349,8 @@ First 3 records shown below as an example:
 
 | id | authors | date | title | journal | doi |
 | --- | --- | --- | --- | --- | --- |
-| https://www.zotero.org/groups/bat_literature_project/items/JRGAZ8Z6 | Singaravelan \| Marimuthu | 2003 | Mist net captures of the rarest fruit bat Latidens salimalii | CURRENT SCIENCE |  |
-| https://www.zotero.org/groups/bat_literature_project/items/DG763DW6 | Yee | 2000-5-12 | Peropteryx macrotis | Mammalian Species | 10.1644/0.643.1 |
-| https://www.zotero.org/groups/bat_literature_project/items/HU5Y4GWU | Wilson \| Graham | 1994 | Pacific island flying foxes: proceedings of an international conservation conference | Biological Conservation | 10.1016/0006-3207(94)90207-0 |
+| https://www.zotero.org/groups/bat_literature_project/items/NYT92CCF | Thong \| Dietz \| Denzinger \| Bates \| Furey \| Csorba \| Hoye \| Thuy \| Schnitzler | October 14, 2010 | Further records of Murina tiensa from Vietnam with first information on its echolocation calls. | Hystrix, the Italian Journal of Mammalogy | 10.4404/hystrix-22.1-4533 |
+| https://www.zotero.org/groups/bat_literature_project/items/H7NRHKNW | Kruszynski \| Bailey \| Bach \| Bach \| Fritze \| Lindecke \| Teige \| Voigt | 03/2022 | High vulnerability of juvenile Nathusius’ pipistrelle bats (Pipistrellus nathusii) at wind turbines | Ecological Applications | 10.1002/eap.2513 |
+| https://www.zotero.org/groups/bat_literature_project/items/STHPDEVX | Swinhoe | 01/1862 | ON THE MAMMALS OF THE ISLAND OF FORMOSA (CHINA). By R. SwINHOE, EsQ., F.R.S., H.M. VICE-CONSUL AT FORMOSA. | Proceedings of the Zoological Society of London | 10.1111/j.1469-7998.1862.tb06539.x |
 
 ## Discussion
