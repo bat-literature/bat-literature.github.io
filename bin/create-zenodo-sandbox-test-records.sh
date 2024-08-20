@@ -18,27 +18,64 @@ stream_matching_items() {
   | preston zotero-stream --algo md5 --communities $ZENODO_COMMUNITY
 }
 
-random_articles() {
+random_closed_articles() {
   preston cat $HEAD\
   | grep cut:\
   | grep hasVersion\
   | preston cat\
   | jq --raw-output -c\
-  'select(.data.itemType == "journalArticle") | .key'\
+  'select(.data.itemType == "journalArticle") | select(.data.date | test("2[0-9]{3}")) | .key'\
   | shuf\
   | head
 }
 
-random_non_articles() {
+random_closed_articles() {
   preston cat $HEAD\
   | grep cut:\
   | grep hasVersion\
   | preston cat\
   | jq --raw-output -c\
-  'select(.data.itemType != "journalArticle") | .key'\
+  'select(.data.itemType == "journalArticle") | select(.data.date | test("2[0-9]{3}")) | .key'\
   | shuf\
   | head
 }
 
-stream_matching_items <(random_non_articles)
-stream_matching_items <(random_articles)
+random_closed_non_articles() {
+  preston cat $HEAD\
+  | grep cut:\
+  | grep hasVersion\
+  | preston cat\
+  | jq --raw-output -c\
+  'select(.data.itemType != "journalArticle") | select(.data.date | test("2[0-9]{3}")) | .key'\
+  | shuf\
+  | head
+}
+
+random_open_non_articles() {
+  preston cat $HEAD\
+  | grep cut:\
+  | grep hasVersion\
+  | preston cat\
+  | jq --raw-output -c\
+  'select(.data.itemType != "journalArticle") | select(.data.date | test("2[0-9]{3}") | not) | .key'\
+  | shuf\
+  | head
+}
+
+random_open_articles() {
+  preston cat $HEAD\
+  | grep cut:\
+  | grep hasVersion\
+  | preston cat\
+  | jq --raw-output -c\
+  'select(.data.itemType == "journalArticle") | select(.data.date | test("2[0-9]{3}") | not) | .key'\
+  | shuf\
+  | head
+}
+
+
+
+stream_matching_items <(random_open_articles)
+stream_matching_items <(random_closed_articles)
+stream_matching_items <(random_open_non_articles)
+stream_matching_items <(random_closed_non_articles)
