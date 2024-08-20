@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"> 
+    <head> 
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Zotero, research, tool, firefox, extension"/>
+        <meta name="description" content="Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research."/>
+
+        <meta name="robots" content="nofollow" />
+        <title>Zotero | Groups > Bat Literature Project</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="/static/css/style.1698016953.css" 
+            type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="/static/css/zotero_icons_sprite.1473223288.css" 
+            type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="/static/css/jquery-ui-1.8.12.custom.1473223288.css" 
+            type="text/css" media="screen" charset="utf-8"/>
+        <link charset="utf-8" href="/static/css/web-components.min.1698016953.css" rel="stylesheet" type="text/css" />        <!-- auto discovery links -->
+                    <script type="text/javascript" charset="utf-8" src="/static/library/jquery/jquery-all.js"></script>
+            <script type="text/javascript" charset="utf-8" src="/static/library/bootstrap/js/bootstrap.js"></script>
+            <script type="text/javascript" nonce="kqtgarrqkh">
+                var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+                $.fn.bootstrapBtn = bootstrapButton
+            </script>
+                
+        <!-- set jsConfig on window.zoteroConfig -->
+                <script type="text/javascript" charset="utf-8" nonce="kqtgarrqkh">
+            window.zoteroConfig = {"librarySettings":{"allowEdit":1,"allowUpload":1},"baseApiUrl":"https:\/\/api.zotero.org","baseWebsiteUrl":"https:\/\/www.zotero.org","baseFeedUrl":"https:\/\/api.zotero.org","baseZoteroWebsiteUrl":"https:\/\/www.zotero.org","baseDownloadUrl":"","debugLogEndpoint":"https:\/\/www.zotero.org\/user\/submitdebug","directDownloads":false,"proxyDownloads":false,"staticPath":"\/static","proxyPath":"","ignoreLoggedInStatus":true,"storePrefsRemote":false,"proxy":false,"sessionAuth":true,"sessionCookieName":"zotero_www_session_v2","breadcrumbsBase":[{"label":"username","path":"\/"}],"apiKey":"","ajax":1,"apiVersion":3,"eventful":true,"useIndexedDB":true,"preferUrlItem":false,"CORSallowed":true,"locale":"en-US","cacheStoreType":"localStorage","preloadCachedLibrary":true,"rte":"ckeditor","sortOrdering":{"dateAdded":"desc","dateModified":"desc","date":"desc","year":"desc","accessDate":"desc","title":"asc","creator":"asc"},"defaultSortColumn":"title","defaultSortOrder":"asc","largeFields":{"title":1,"abstractNote":1,"extra":1},"richTextFields":{"note":1},"maxFieldSummaryLength":{"title":60},"exportFormats":["bibtex","bookmarks","mods","refer","rdf_bibliontology","rdf_dc","rdf_zotero","ris","wikipedia"],"exportFormatsMap":{"bibtex":"BibTeX","bookmarks":"Bookmarks","mods":"MODS","refer":"Refer\/BibIX","rdf_bibliontology":"Bibliontology RDF","rdf_dc":"Unqualified Dublin Core RDF","rdf_zotero":"Zotero RDF","ris":"RIS","wikipedia":"Wikipedia Citation Templates"},"defaultApiArgs":{"order":"title","sort":"asc","limit":50,"start":0,"content":"json","format":"atom"},"defaultPrefs":{"server_javascript_enabled":true,"debug_level":3},"recaptchaSitekey":"6LdDriYUAAAAAKxat_UYZ22IxvcUcLLBVAQTNGJe","useS3":"1","s3bucketName":"zotero.org","imagePath":"\/static\/images","profileImagePath":"images\/settings\/profile","groupImagePath":"images\/settings\/group","installData":[]};
+
+            if(typeof window.zoteroData == 'undefined'){
+                window.zoteroData = {};
+            }
+                                    var baseURL = "https://www.zotero.org";
+            var baseDomain = "https://www.zotero.org";
+            var staticPath = "/static";
+        </script>
+        <!-- headscript -->
+        <script type="text/javascript" src="/static/js/web-components.min.1713501258.js"></script>
+<script type="text/javascript" src="/static/library/tinymce/tinymce.min.js"></script>    </head>
+    <body class="">
+        <!-- Header -->
+        <header role="banner" class="container">
+            <div class="center container">
+                                                
+                <h1 id="logohead">
+                    <a href="/">
+                        <img src="/static/images/theme/zotero-logo.1707326704.svg" alt="Zotero">
+                    </a>
+                </h1>
+            
+            <div id="login-links">
+                                    <a href="https://www.zotero.org/user/login" title="Log In">Log In</a>
+                    <a href="https://www.zotero.org/user/register" title="Register">Register</a>
+                            </div>
+            
+                            <a href="/storage" class="button" id="purchase-storage-link"><img src="/static/images/theme/archive.png" /> Upgrade Storage</a>
+                        
+            <div id="navbar" class="container">
+                <nav id="sitenav">
+                    <ul>
+                                        <li ><a href="/">Home</a></li>
+                                        <li class='selected'><a href="/groups/">Groups</a></li>
+                                        <li ><a href="https://www.zotero.org/support/">Documentation</a></li>
+                    <li ><a href="https://forums.zotero.org">Forums</a></li>
+                    <li ><a href="https://www.zotero.org/getinvolved/">Get Involved</a></li>
+                    </ul>
+                </nav>
+                                <form action="https://www.zotero.org/search/" class="zform zsearch" id="simple-search">
+                    <div>
+                        <input type="text" name="q" size="20" id="header-search-query"/>
+                        <button class="button clear-field-button" type="reset"><span class="ui-icon ui-icon-circle-close">&nbsp;</span></button>
+                        <input class="button" type="submit" value="Search">
+                    </div>
+                </form>
+                            </div>
+        </div>
+        </header>
+        <div id="content">
+            <div class="center container">
+            <!-- Output the breadcrumb if it's set -->
+                            <div id="breadcrumbs">
+                    <a href='/'>Home</a> > <a href='/groups'>Groups</a> > Bat Literature Project                </div>
+                        
+            <!-- Output any stored messages -->
+                                                                                                            
+            <!-- hidden area for possible JS messages -->
+            <div id="js-message">
+                <ul id="js-message-list">
+                </ul>
+            </div>
+
+            <!-- Output content -->
+            <div id="group-show" class="major-col">
+    <h1>Bat Literature Project</h1>
+    <span id="libraryGroupID" title="5435545"></span>
+    <nav class="action-links">
+        <ul>
+        <!-- group library link -->
+                
+        <!-- settings link -->
+                </ul>
+    </nav>
+    <!-- Recent Items List -->
+    <div id="new-group-items">
+	    <h2>Recently Added Items</h2>
+        <div id='react-recentItems'><noscript>
+	<div class='noscript-warning'>
+		<p>It appears that something is blocking scripts from running on this page. Some functionality may be missing or not work properly.</p>
+	</div>
+</noscript></div>
+    </div>
+    
+    <!-- Recent Messages List -->
+        
+</div>
+<div class="minor-col last-col">
+    
+    <div id='react-joinGroup'></div>
+    
+    <div id='react-groupInfo'></div>
+
+    <!-- Member list -->
+    <h2><a href="/groups/5435545/bat_literature_project/members">Members (6)</a></h2>
+        </div>
+</div>
+
+<script type="text/javascript" charset="utf-8" nonce="kqtgarrqkh">
+    var zoterojsClass = "group_view";
+    var zoterojsSearchContext = "group";
+
+    ZoteroWebComponents.pageReady(function() {
+        if(document.getElementById('react-groupInfo')) {
+            window.groupInfoComponent = ReactDOM.render(
+                React.createElement(ZoteroWebComponents.GroupInfo, {"group":{"id":5435545,"version":11,"links":{"self":{"href":"https:\/\/api.zotero.org\/groups\/5435545","type":"application\/json"},"alternate":{"href":"https:\/\/www.zotero.org\/groups\/bat_literature_project","type":"text\/html"}},"meta":{"created":"2024-03-06T16:55:37Z","lastModified":"2024-04-23T15:19:51Z","numItems":65708},"data":{"id":5435545,"version":11,"name":"Bat Literature Project","owner":13229919,"type":"PublicClosed","description":"","url":"","libraryEditing":"members","libraryReading":"members","fileEditing":"members","admins":[6296343,13264774],"members":[1759978,4163804,7623835]}},"pending":false,"ownershipInvitation":false,"displayNames":{"displayName":{"13229919":"acsherman"},"slug":{"13229919":"acsherman"}},"groupImage":false}),
+                document.getElementById('react-groupInfo')
+            );
+        }
+        if(document.getElementById('react-recentItems')) {
+            window.recentItemsComponent = ReactDOM.render(
+                React.createElement(ZoteroWebComponents.RecentItems, {"group":{"id":5435545,"version":11,"links":{"self":{"href":"https:\/\/api.zotero.org\/groups\/5435545","type":"application\/json"},"alternate":{"href":"https:\/\/www.zotero.org\/groups\/bat_literature_project","type":"text\/html"}},"meta":{"created":"2024-03-06T16:55:37Z","lastModified":"2024-04-23T15:19:51Z","numItems":65708},"data":{"id":5435545,"version":11,"name":"Bat Literature Project","owner":13229919,"type":"PublicClosed","description":"","url":"","libraryEditing":"members","libraryReading":"members","fileEditing":"members","admins":[6296343,13264774],"members":[1759978,4163804,7623835]}}}),
+                document.getElementById('react-recentItems')
+            );
+        }
+        if(document.getElementById('react-newDiscussions')) {
+			window.recentItemsComponent = ReactDOM.render(
+				React.createElement(ZoteroWebComponents.NewGroupDiscussions, {"group":{"id":5435545,"version":11,"links":{"self":{"href":"https:\/\/api.zotero.org\/groups\/5435545","type":"application\/json"},"alternate":{"href":"https:\/\/www.zotero.org\/groups\/bat_literature_project","type":"text\/html"}},"meta":{"created":"2024-03-06T16:55:37Z","lastModified":"2024-04-23T15:19:51Z","numItems":65708},"data":{"id":5435545,"version":11,"name":"Bat Literature Project","owner":13229919,"type":"PublicClosed","description":"","url":"","libraryEditing":"members","libraryReading":"members","fileEditing":"members","admins":[6296343,13264774],"members":[1759978,4163804,7623835]}},"showFields":{"title":true,"starter":true,"lastActive":true,"lastPoster":true,"group":false}}),
+				document.getElementById('react-newDiscussions')
+			);
+		}
+    });
+</script>            </div>
+        </div>
+        <footer>
+            <div class="center container">
+                <nav role="secondary">
+                    <ul>
+                        <!-- <li><a href="#">Give Us Feedback</a></li> -->
+                        <li><a href="https://www.zotero.org/blog/">Blog</a></li>
+                        <li><a href="https://forums.zotero.org">Forums</a></li>
+                        <li><a href="https://www.zotero.org/support/dev/start">Developers</a></li>
+                        <li><a href="https://www.zotero.org/support/">Documentation</a></li>
+                        <li><a href="https://www.zotero.org/support/privacy">Privacy</a></li>
+                        <li><a href="https://www.zotero.org/getinvolved/">Get Involved</a></li>
+                        <li><a href="https://www.zotero.org/jobs">Jobs</a></li>
+                        <li><a href="https://www.zotero.org/about/">About</a></li>
+                        <li class="last"><a href="?fullsite=0">Mobile Site</a></li>
+                    </ul>
+                </nav>
+                <p class="about">Zotero is a project of the <a href="http://digitalscholar.org/">Corporation for Digital Scholarship</a>, a nonprofit organization dedicated to the development of software and services for researchers and cultural heritage institutions, and is developed by a <a href="/support/credits_and_acknowledgments">global community</a>.</p>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" charset="utf-8" src="/static/library/globalize/globalize.js"></script>
+                                    
+        <script type="text/javascript" charset="utf-8" src="/static/js/_zoterowwwAll.bugly.1698016953.js"></script>
+
+        <!-- End zoteroLibrary modules. -->
+                    <script type="text/javascript" charset="utf-8" nonce="kqtgarrqkh">
+                            </script>
+            </body>
+</html>
