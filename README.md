@@ -124,7 +124,7 @@ preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat\
- | jq -c .[]\
+ | jq -c '.[]'\
  | jq --raw-output -c '.data | select(has("creators"))'\
  | wc -l
 ```
@@ -161,7 +161,7 @@ preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat\
- | jq -c .[]\
+ | jq -c '.[]'\
  | head -n1\
  | jq .
 ```
