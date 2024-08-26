@@ -120,10 +120,10 @@ preston ls --algo md5\
 Estimating number of references in a corpus version - 
 
 ```
-preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
+preston cat --remote https://linker.bio hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
- | preston cat\
+ | preston cat --remote https://linker.bio\
  | jq -c '.[]'\
  | jq --raw-output -c '.data | select(has("creators"))'\
  | wc -l
@@ -132,7 +132,7 @@ preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
 Estimating number of associated corpus pdfs - 
 
 ```
-preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
+preston cat --remote https://linker.bio hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "file/view"\
  | grep hasVersion\
  | grep hash\
@@ -142,7 +142,7 @@ preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
 Estimating the total volume of data for the most recent (i.e. "head") version
 
 ```
-preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
+preston cat --remote https://linker.bio hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep hasVersion\
  | grep -oE "hash://md5/[a-f0-9]{32}"\
  | sort\
@@ -157,10 +157,10 @@ preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
 An example of a tracked Zotero record generated using
 
 ```bash
-preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
+preston cat --remote https://linker.bio hash://md5/26f7ce5dd404e33c6570edd4ba250d20\
  | grep "items[?]"\
  | grep hasVersion\
- | preston cat\
+ | preston cat --remote https://linker.bio\
  | jq -c '.[]'\
  | head -n1\
  | jq .
@@ -312,7 +312,7 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston cat hash://md5/26f7ce5dd404e33c6570edd4ba250d20 | grep items? | grep hasVersion | preston cat | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat --remote https://linker.bio hash://md5/26f7ce5dd404e33c6570edd4ba250d20 | grep items? | grep hasVersion | preston cat --remote https://linker.bio | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
