@@ -22,7 +22,7 @@ For instance, let's say that Carla would like to search for literature that ment
 
 ### Example: Web Search For Specific Zotero Record
 
-BatLit is managed in Zotero. Each Zotero records has a group id and an item id. These ids are unique identifiers for a record. The ids are used to create a life science identifier for each literature record with the following syntax:
+BatLit is managed in Zotero. Each Zotero record has a group id and an item id. These ids are unique identifiers for a record. The ids are used to create a life science identifier for each literature record with the following syntax:
 
 ```
 urn:lsid:zotero.org:groups:[group id]:items:[item id]
@@ -34,7 +34,7 @@ For example, the Zotero record with group id `5435545` (the batlit group) and it
 urn:lsid:zotero.org:groups:5435545:items:C4GD9Y6Q
 ```
 
-Now, you can search Zenodo for deposits (publications) related to this particular Zotero record by putting the lsid (in double quotes) in the search box. After hitting "enter", you are directed to the following search results page: [https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22) .  
+Now, you can search Zenodo for deposits (publications) related to this particular Zotero record by putting the lsid (in double quotes) in the search box. After hitting "enter", you are directed to the following [search results page](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22) .  
 
 [![search by id](assets/zenodo-search-by-id.png)](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22)
 
