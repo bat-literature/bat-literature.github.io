@@ -8,22 +8,21 @@ with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
 [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
 
-## In A Hurry?
+If you'd like to explore BatLit, please review the examples below. Alternatively, if you'd like to learn more about why BatLit exists, and how it was built, please skip to the [`Introduction`](#introduction).
 
-
-### Text Search 
+### Example: Text Search 
 
 BatLit can be searched and discovered through Zenodo at https://zenodo.org/communities/batlit. Zenodo offers powerful search features through a point-and-click web interface. 
 
 Example: 
 
-Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
+Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: [https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
 
 [![search dropdown](assets/zenodo-search.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
 
 [![results](assets/zenodo-results.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
 
-### Web Search For Zotero Record
+### Example: Web Search For Specific Zotero Record
 
 BatLit is managed in Zotero. Each Zotero records has a group id and an item id. These ids are unique identifiers for a record. The ids are used to create a life science identifier for each literature record with the following syntax:
 
@@ -37,13 +36,15 @@ For example, the Zotero record with group id `5435545` (the batlit group) and it
 urn:lsid:zotero.org:groups:5435545:items:C4GD9Y6Q
 ```
 
-Now, you can search Zenodo for deposits (publications) related to this particular Zotero record by putting the lsid (in double quotes) in the search box. After hitting "enter", you are directed to the following search results page: https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22 .  
+Now, you can search Zenodo for deposits (publications) related to this particular Zotero record by putting the lsid (in double quotes) in the search box. After hitting "enter", you are directed to the following search results page: [https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22) .  
 
 [![search by id](assets/zenodo-search-by-id.png)](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22)
 
+The example above shows that BatLit records in Zotero are linked to their derived records in Zenodo by their record identifiers.
+
 ### More Advanced Queries
 
-You can use the powerful features of the Zenodo Web Search and Zenodo Web API to discover BatLit. See https://developers.zenodo.org for more information.  
+Because BatLit is integrated with Zenodo, you can benefit from the powerful features of the Zenodo Web Search and Zenodo Web API for discovery. See [https://developers.zenodo.org](https://developers.zenodo.org) for more information.  
 
 ## Contributing
 
