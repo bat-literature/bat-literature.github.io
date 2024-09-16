@@ -1,4 +1,4 @@
-The Bat Literature Project facilitates discovery of scientific literature on bats (Chiroptera).
+The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).
 
 by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org), [your name here]
 
@@ -7,6 +7,43 @@ with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 ⚠️ this is a work in progress⚠️
 
 [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
+
+## In A Hurry?
+
+
+### Text Search 
+
+BatLit can be searched and discovered through Zenodo at https://zenodo.org/communities/batlit. Zenodo offers powerful search features through a point-and-click web interface. 
+
+Example: 
+
+Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
+
+[![search dropdown](assets/zenodo-query.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
+
+[![results](assets/zenodo-result.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
+
+### Web Search For Zotero Record
+
+BatLit is managed in Zotero. Each Zotero records has a group id and an item id. These ids are unique identifiers for a record. The ids are used to create a life science identifier for each literature record with the following syntax:
+
+```
+urn:lsid:zotero.org:groups:[group id]:items:[item id]
+```
+
+For example, the Zotero record with group id `5435545` (the batlit group) and item id `C4GD9Y6Q` has a lsid:
+
+```
+urn:lsid:zotero.org:groups:5435545:items:C4GD9Y6Q
+```
+
+Now, you can search Zenodo for deposits (publications) related to this particular Zotero record by putting the lsid (in double quotes) in the search box. After hitting "enter", you are directed to the following search results page: https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22 .  
+
+[![search by id](assets/zenodo-query-by-id.png)](https://zenodo.org/communities/batlit/records?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3AC4GD9Y6Q%22)
+
+### More Advanced Queries
+
+You can use the powerful features of the Zenodo Web Search and Zenodo Web API to discover BatLit. See https://developers.zenodo.org for more information.  
 
 ## Contributing
 
