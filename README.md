@@ -12,11 +12,9 @@ If you'd like to explore BatLit, please review the examples below. Alternatively
 
 ### Example: Text Search 
 
-BatLit can be searched and discovered through Zenodo at https://zenodo.org/communities/batlit. Zenodo offers powerful search features through a point-and-click web interface. 
+BatLit can be searched and discovered through Zenodo at https://zenodo.org/communities/batlit. Zenodo offers powerful search features through a point-and-click web interface.  
 
-Example: 
-
-Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: [https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
+For instance, let's say that Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: [https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus) . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
 
 [![search dropdown](assets/zenodo-search.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
 
