@@ -8,9 +8,11 @@ with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
 [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
 
+## Getting Started
+
 If you'd like to explore BatLit, please review the examples below. Alternatively, if you'd like to learn more about why BatLit exists, and how it was built, please skip to the [`Introduction`](#introduction).
 
-### Example: Text Search 
+### Searching for Literature by Keywords 
 
 BatLit can be searched and discovered through Zenodo at https://zenodo.org/communities/batlit. Zenodo offers powerful search features through a point-and-click web interface.  
 
@@ -20,9 +22,9 @@ For instance, let's say that Carla would like to search for literature that ment
 
 [![results](assets/zenodo-results.png)](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus)
 
-### Example: Web Search For Specific Zotero Record
+### Searching by Zotero Record Identifiers
 
-BatLit is managed in Zotero. Each Zotero record has a group id and an item id. These ids are unique identifiers for a record. The ids are used to create a life science identifier for each literature record with the following syntax:
+BatLit is managed in Zotero. Each Zotero record has a group id and an item id. These ids uniquely identify a record. These ids are combined to create a life science identifier for each Zotero literature record with the following syntax:
 
 ```
 urn:lsid:zotero.org:groups:[group id]:items:[item id]
