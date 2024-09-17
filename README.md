@@ -2,6 +2,10 @@ The Bat Literature Project (BatLit) facilitates discovery of scientific literatu
 
 by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org), [your name here]
 
+## Cite as
+
+> Sherman, A.C., ..., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.5 hash://md5/26f7ce5dd404e33c6570edd4ba250d20 .
+
 with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
 ⚠️ this is a work in progress⚠️
