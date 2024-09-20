@@ -1,0 +1,63 @@
+[
+    {
+        "key": "QUIXPB8A",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QUIXPB8A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QUIXPB8A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QUIXPB8A",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PDF",
+            "accessDate": "",
+            "url": "http://botit.botany.wisc.edu/TOMS_FUNGI/147gargas9-73.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q85NDXEH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    }
+]
