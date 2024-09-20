@@ -4,7 +4,7 @@ by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist)
 
 Cite as:
 
-> Sherman, A.C., ..., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.6 hash://md5/db73e659e8cf16ef50e82bb5e72ae97b .
+> Sherman, A.C., ..., Simmons, N.B., Zijlstra, J.S., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.6 hash://md5/db73e659e8cf16ef50e82bb5e72ae97b .
 
 with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
