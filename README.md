@@ -1,4 +1,4 @@
-[edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share suggestions/comments](https://github.com/bat-literature/bat-literature.github.io/issues/new)
+[edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new)
 
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..."/>
