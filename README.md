@@ -1,8 +1,9 @@
+[edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share suggestions/comments](https://github.com/bat-literature/bat-literature.github.io/issues/new)
+
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..."/>
   <button type="submit">Search</button>
-  <a href="https://zenodo.org/help/search" title="learn more about >?</a> 
-</form>
+</form><a href="https://zenodo.org/help/search">Search guide</a>
 
 <div/>
 
