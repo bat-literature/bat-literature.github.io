@@ -1,6 +1,7 @@
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..."/>
-  <button type="submit">Search</button> 
+  <button type="submit">Search</button>
+  <a href="https://zenodo.org/help/search" title="learn more about >?</a> 
 </form>
 
 <div/>
