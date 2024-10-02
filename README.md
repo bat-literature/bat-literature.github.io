@@ -7,13 +7,17 @@
 
 <div/>
 
+## Introduction
+
+Bat researchers rely on access to a vast corpus of bat literature to help advance our understanding of bats and the ecosystems they live in. Many researchers build and organize their personal literature collections using mainstream digital tools like Zotero and EndNote, whereas others use homegrown digital methods or even manage their collections manually. However, all researchers routinely encounter roadblocks to literature access including paywalls and older literature resources that have not yet been digitized.  To help provide access to bat research literature for all, Plazi (https://plazi.org) and the GBatNet Bat Eco-Interactions Working Group are compiling the Bat Literature Corpus (BatLit). BatLit is an actively managed, digital, versioned, and citable collection of bat research literature and associated metadata compiled from existing literature contributed by bat researchers. BatLit is designed to be used in manual (e.g., point-and-click) as well as automated workflows (e.g., text mining, language model training), and can be accessed in many ways, including, but not limited to, external storage media, Zenodo and GitHub. As BatLit continues to improve and grow, we aim to continue to democratize access to bat literature, accelerate research, and help reduce the barrier to knowledge for bat researchers around the world. We invite you to contribute your reference library, especially the PDFs, to BatLit and help increase information access for all.
+
 The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).
 
-by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org). 
+by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Nathan Upham (reviewer, mammaldiversity.org), Cullen K. Geiselman (reviewer, batbase.org). 
 
 Cite as:
 
-> Sherman, A.C., ..., Simmons, N.B., Zijlstra, J.S., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.6 hash://md5/db73e659e8cf16ef50e82bb5e72ae97b .
+> Sherman, A.C., ...[add more names here], Simmons, N.B., Zijlstra, J.S., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.6 hash://md5/db73e659e8cf16ef50e82bb5e72ae97b .
 
 with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
@@ -73,10 +77,6 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.4 | 2024-08-01/2024-08-02 | 50.9 GiB | 20146 | 29860 | [hash://md5/b39...72a](https://linker.bio/hash://md5/b394bdb081f55916b1226b5bc8ba972a) |  
  | Bat Literature Corpus | v0.5 | 2024-08-16/2024-08-17 | 50.9 GiB | 20145 | 29850 | [hash://md5/26f...b20](https://linker.bio/hash://md5/26f7ce5dd404e33c6570edd4ba250d20) |  
  | Bat Literature Corpus | v0.6 | 2024-09-19/2024-09-20 | 44.7GiB | 19038 | 22590 | [hash://md5/db7...97b](https://linker.bio/hash://md5/db73e659e8cf16ef50e82bb5e72ae97b) |  
-
-## Introduction
-
-Bat researchers rely on access to a vast corpus of bat literature to help advance our understanding of bats and the ecosystems they live in. Many researchers build and organize their personal literature collections using mainstream digital tools like Zotero and EndNote, whereas others use homegrown digital methods or even manage their collections manually. However, all researchers routinely encounter roadblocks to literature access including paywalls and older literature resources that have not yet been digitized.  To help provide access to bat research literature for all, Plazi (https://plazi.org) and the GBatNet Bat Eco-Interactions Working Group are compiling the Bat Literature Corpus (BatLit). BatLit is an actively managed, digital, versioned, and citable collection of bat research literature and associated metadata compiled from existing literature contributed by bat researchers. BatLit is designed to be used in manual (e.g., point-and-click) as well as automated workflows (e.g., text mining, language model training), and can be accessed in many ways, including, but not limited to, external storage media, Zenodo and GitHub. As BatLit continues to improve and grow, we aim to continue to democratize access to bat literature, accelerate research, and help reduce the barrier to knowledge for bat researchers around the world. We invite you to contribute your reference library, especially the PDFs, to BatLit and help increase information access for all.
 
 ## Methods
 
