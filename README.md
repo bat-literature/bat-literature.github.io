@@ -2,10 +2,10 @@ The Bat Literature Project (BatLit) facilitates discovery of scientific literatu
 
 by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org). 
 
-<div>
-<input type="search" id="name" name="q" placeholder="Search BatLit..."/>
-<button>Search</button> 
-</div>
+<form class="searchbox" action="https://zenodo.org/communities/batlit">
+  <input type="search" id="name" name="q" placeholder="Search BatLit..."/>
+  <button type="submit">Search</button> 
+</form>
 
 Cite as:
 
