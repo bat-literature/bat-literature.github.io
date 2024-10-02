@@ -1,11 +1,12 @@
-The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).
-
-by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org). 
-
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..."/>
   <button type="submit">Search</button> 
 </form>
+
+
+The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).
+
+by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist), Donat Agosti (reviewer, Plazi), Cullen K. Geiselman (reviewer, batbase.org). 
 
 Cite as:
 
