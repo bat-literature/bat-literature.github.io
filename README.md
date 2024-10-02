@@ -3,6 +3,7 @@
   <button type="submit">Search</button> 
 </form>
 
+<div/>
 
 The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).
 
