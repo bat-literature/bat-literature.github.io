@@ -4,7 +4,9 @@
 #
 #
 
-preston cat "$1"\
+REMOTES=${2:-https://example.org/data}
+
+preston cat --no-progress --remote ${REMOTES} --no-cache "$1"\
  | identify -\
  | wc -l
 
