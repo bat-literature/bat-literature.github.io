@@ -6,9 +6,13 @@
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
   <button type="submit">Search</button>
 </form><a href="https://zenodo.org/help/search">Search guide</a>
-Example searches:
 
-Published in 1994 mentioning "Koopman": <form class="searchbox" action="https://zenodo.org/communities/batlit">
+
+### Example Searches
+
+Works published in 1994 mentioning "Koopman": 
+
+<form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="metadata.publication_date:1994 Koopman"/>
   <button type="submit">Search</button>
 </form>
