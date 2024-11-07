@@ -4,7 +4,7 @@
 
  [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
 
-\addcontentsline{toc}{subsection}{search}
+## Search the database 
 
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
