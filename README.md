@@ -1,12 +1,16 @@
 ---
+BatLit: The Bat Literature Project
 ---
 [edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
+
+ [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
+
+\addcontentsline{toc}{subsection}{search}
 
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
   <button type="submit">Search</button>
 </form><a href="https://zenodo.org/help/search">Search guide</a>
-
 
 ### Example Searches
 
@@ -36,8 +40,6 @@ Cite as:
 with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
 ⚠️ this is a work in progress⚠️
-
-[Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
 
 ## Getting Started
 
