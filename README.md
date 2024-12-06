@@ -393,10 +393,10 @@ Literature records can be extracted from this corpus in various ways. As an exam
 
 First 3 records shown below as an example:
 
-| authors | date | title | journal | doi |
-| --- | --- | --- | --- | --- |
-| Vriesendorp \| Schulenberg \| Alverson \| Moskovits \| Moscoso | 2006 | Rapid biological inventories: Sierra del Divisor |  |  |
-| Carus | 1896 | Wissenschaftliche Mittheilungen. | Zoologischer Anzeiger |  |
-| Handley, Jr. | 1996 | New species of mammals from northern South America: bats of the genera Histiotus Gervais and Lasiurus Gray (Chiroptera: Vespertilionidae). | PROCEEDINGS OF THE BIOLOGICAL SOCIETY OF WASHINGTON |  |
+| id | authors | date | title | journal | doi |
+| --- | --- | --- | --- | --- | --- |
+| https://www.zotero.org/groups/bat_literature_project/items/376ZATI8 | Guillen-Servent \| Francis \| Ricklefs, Robert E. | 2003 | Phylogeography and biogeography of the horseshoe bats (Chiroptera: Rhinolophidae) |  |  |
+| https://www.zotero.org/groups/bat_literature_project/items/7ZL7QFIL | Kruskop | 06/2015 | Dark and Pale: Taxonomic Status of the Barbastelle ( <i>Barbastella</i> : Vespertilionidae, Chiroptera) from Central Asia | Acta Chiropterologica | 10.3161/15081109ACC2015.17.1.004 |
+| https://www.zotero.org/groups/bat_literature_project/items/SDNDBREX | Kruskop | 06/2015 | Dark and Pale: Taxonomic Status of the Barbastelle ( <i>Barbastella</i> : Vespertilionidae, Chiroptera) from Central Asia | Acta Chiropterologica | 10.3161/15081109ACC2015.17.1.004 |
 
 ## Discussion
