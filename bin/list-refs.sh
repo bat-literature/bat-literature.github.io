@@ -15,5 +15,6 @@ cat <(echo "id,authors,date,title,journal,doi")\
  | grep hasVersion\
  | preston cat --algo md5\
  | jq -c .[]\
- | jq --raw-output -c 'select(.data.creators != null) | [.links.alternate.href, (.data.creators | map(.lastName) | join(" | ")), ( .data.date, .data.title, .data.publicationTitle, .data.DOI)] | @csv')
+ | jq --raw-output -c 'select(.data.creators != null) | [.links.alternate.href, (.data.creators | map(.lastName) | join(" | ")), ( .data.date, .data.title, .data.publicationTitle, .data.DOI)] | @csv')\
+ | tr '\t' ' '
 

@@ -34,7 +34,7 @@ by Aja C. Sherman (curator, batbase.org), Jorrit H. Poelen (reviewer, archivist)
 
 Cite as:
 
-> Sherman, A.C., ...[add more names here], Simmons, N.B., Zijlstra, J.S., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.6 hash://md5/db73e659e8cf16ef50e82bb5e72ae97b .
+> Sherman, A.C., ...[add more names here], Simmons, N.B., Zijlstra, J.S., Geiselman C.K. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.7 hash://md5/ce1e7618f237ff56e74d51f496e811a3 .
 
 with contributions from DeeAnn Reeder, Nancy Simmons, Kendra Phelps, ...
 
@@ -91,8 +91,8 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.3 | 2024-06-25/2024-06-26 | 13.6 GiB | | 5501 | 7229 | [hash://md5/350...77d](https://linker.bio/hash://md5/350f87ae6b68b96bec135c1d6ebac77d) |  
  | Bat Literature Corpus | v0.4 | 2024-08-01/2024-08-02 | 50.9 GiB | | 20146 | 29860 | [hash://md5/b39...72a](https://linker.bio/hash://md5/b394bdb081f55916b1226b5bc8ba972a) |  
  | Bat Literature Corpus | v0.5 | 2024-08-16/2024-08-17 | 50.9 GiB | | 20145 | 29850 | [hash://md5/26f...b20](https://linker.bio/hash://md5/26f7ce5dd404e33c6570edd4ba250d20) |  
- | Bat Literature Corpus | v0.6 | 2024-09-19/2024-09-20 | 44.7GiB | 427105 | 19038 | 22590 | [hash://md5/db7...97b](https://linker.bio/hash://md5/db73e659e8cf16ef50e82bb5e72ae97b) |  
- | Bat Literature Corpus | v0.7 | 2024-12-05/2024-12-06 | TBD | TBD | TBD | TBD | [hash://md5/ce1...1a3](https://linker.bio/hash://md5/ce1e7618f237ff56e74d51f496e811a3) |  
+ | Bat Literature Corpus | v0.6 | 2024-09-19/2024-09-20 | 44.7GiB | 427105 | 19038 | 22590 | [hash://md5/db7...97b](https://linker.bio/hash://md5/hash://md5/db73e659e8cf16ef50e82bb5e72ae97b) |  
+ | Bat Literature Corpus | v0.7 | 2024-12-05/2024-12-06 | 45.2GiB | TBD | 19268 | 22930 | [hash://md5/ce1...1a3](https://linker.bio/hash://md5/ce1e7618f237ff56e74d51f496e811a3) |  
 
 ## Methods
 
@@ -198,7 +198,7 @@ preston ls --algo md5\
 Estimating number of references in a corpus version - 
 
 ```
-preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae97b\
+preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --remote https://linker.bio\
@@ -210,7 +210,7 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
 Estimating number of associated corpus pdfs - 
 
 ```
-preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae97b\
+preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
  | grep "file/view"\
  | grep hasVersion\
  | grep hash\
@@ -220,7 +220,7 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
 Estimating the total volume of data for the most recent (i.e. "head") version
 
 ```
-preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae97b\
+preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
  | grep hasVersion\
  | grep -oE "hash://md5/[a-f0-9]{32}"\
  | sort\
@@ -235,7 +235,7 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
 An example of a tracked Zotero record generated using
 
 ```bash
-preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae97b\
+preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --remote https://linker.bio\
@@ -249,8 +249,8 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
 
 ```json 
 {
-  "key": "6TEYS6CT",
-  "version": 60055,
+  "key": "376ZATI8",
+  "version": 62023,
   "library": {
     "type": "group",
     "id": 5435545,
@@ -264,22 +264,18 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
   },
   "links": {
     "self": {
-      "href": "https://api.zotero.org/groups/5435545/items/6TEYS6CT",
+      "href": "https://api.zotero.org/groups/5435545/items/376ZATI8",
       "type": "application/json"
     },
     "alternate": {
-      "href": "https://www.zotero.org/groups/bat_literature_project/items/6TEYS6CT",
+      "href": "https://www.zotero.org/groups/bat_literature_project/items/376ZATI8",
       "type": "text/html"
     },
-    "up": {
-      "href": "https://api.zotero.org/groups/5435545/items/ARXB2UDJ",
-      "type": "application/json"
-    },
-    "enclosure": {
-      "type": "application/pdf",
-      "href": "https://api.zotero.org/groups/5435545/items/6TEYS6CT/file/view",
-      "title": "1-s2.0-S2589004222010513-main.pdf",
-      "length": 2286303
+    "attachment": {
+      "href": "https://api.zotero.org/groups/5435545/items/5PUDTPS6",
+      "type": "application/json",
+      "attachmentType": "application/pdf",
+      "attachmentSize": 1407714
     }
   },
   "meta": {
@@ -294,27 +290,61 @@ preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae
         }
       }
     },
-    "numChildren": 0
+    "creatorSummary": "Guillen-Servent et al.",
+    "parsedDate": "2003",
+    "numChildren": 1
   },
   "data": {
-    "key": "6TEYS6CT",
-    "version": 60055,
-    "parentItem": "ARXB2UDJ",
-    "itemType": "attachment",
-    "linkMode": "imported_file",
-    "title": "1-s2.0-S2589004222010513-main",
-    "accessDate": "",
+    "key": "376ZATI8",
+    "version": 62023,
+    "itemType": "bookSection",
+    "title": "Phylogeography and biogeography of the horseshoe bats (Chiroptera: Rhinolophidae)",
+    "creators": [
+      {
+        "creatorType": "author",
+        "firstName": "A.",
+        "lastName": "Guillen-Servent"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "C. M.",
+        "lastName": "Francis"
+      },
+      {
+        "creatorType": "author",
+        "firstName": "",
+        "lastName": "Ricklefs, Robert E."
+      }
+    ],
+    "abstractNote": "",
+    "bookTitle": "Horseshoe bats of the World (Chiroptera: Rhinolophidae) Shropshire",
+    "series": "",
+    "seriesNumber": "",
+    "volume": "",
+    "numberOfVolumes": "",
+    "edition": "",
+    "place": "Shropshire",
+    "publisher": "Alana Books",
+    "date": "2003",
+    "pages": "",
+    "language": "",
+    "ISBN": "",
+    "shortTitle": "",
     "url": "",
-    "note": "",
-    "contentType": "application/pdf",
-    "charset": "",
-    "filename": "1-s2.0-S2589004222010513-main.pdf",
-    "md5": "7d24ebd866e9b3b0a74ce9a6577d8677",
-    "mtime": 1726696006321,
+    "accessDate": "",
+    "archive": "",
+    "archiveLocation": "",
+    "libraryCatalog": "",
+    "callNumber": "",
+    "rights": "",
+    "extra": "",
     "tags": [],
+    "collections": [
+      "UAWY6DNP"
+    ],
     "relations": {},
-    "dateAdded": "2024-09-18T21:46:56Z",
-    "dateModified": "2024-09-18T21:46:56Z"
+    "dateAdded": "2024-12-05T16:49:47Z",
+    "dateModified": "2024-12-05T16:52:11Z"
   }
 }
 ```
@@ -328,7 +358,7 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston cat --remote https://linker.bio hash://md5/db73e659e8cf16ef50e82bb5e72ae97b | grep items? | grep hasVersion | preston cat --remote https://linker.bio | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3 | grep items? | grep hasVersion | preston cat --remote https://linker.bio | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
@@ -336,18 +366,18 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 | count | contentType |
 | --- | --- |
-| 23831 | attachment |
-| 18176 | journalArticle |
+| 24175 | attachment |
+| 18373 | journalArticle |
 | 637 | note |
-| 358 | book |
-| 269 | bookSection |
+| 360 | book |
+| 282 | bookSection |
+| 99 | report |
 | 95 | annotation |
-| 93 | report |
-| 53 | thesis |
-| 33 | conferencePaper |
-| 21 | preprint |
+| 54 | thesis |
+| 34 | conferencePaper |
+| 28 | preprint |
 | 15 | dataset |
-| 11 | magazineArticle |
+| 14 | magazineArticle |
 | 6 | webpage |
 | 2 | newspaperArticle |
 | 1 | presentation |
