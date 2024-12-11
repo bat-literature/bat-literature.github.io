@@ -120,8 +120,8 @@ To help keep BatLit current (e.g., add new references) and accurate (e.g., updat
 #### Feedback Workflow
 
 1. BatLit Community Solicits feedback on published BatLit versions
-2. on receiving feedback, the batlit curator documents the request in a github issue
-3. open issues are reviewed by the editorial board under guidance of the curator
+2. on receiving feedback, the batlit curator documents the request in [a github issue](https://github.com/bat-literature/bat-literature.github.io/issues) at https://github.com/bat-literature/bat-literature.github.io/issues .
+3. [open issues](https://github.com/bat-literature/bat-literature.github.io/issues) are reviewed by the editorial board under guidance of the curator
 4. if needed, existing records are updated to address the provided issue
 
 #### Deduplication Workflow
