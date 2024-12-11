@@ -13,7 +13,8 @@ Download as: [refs.csv](refs.csv) or [refs.tsv](refs.tsv).
 {% for ref in refs %} 
  {% assign authors = ref.authors | remove: ' ' | split: '|' | compact -%}
  {% if authors.size > 0 -%}
- {{ authors | join: ', ' }} ({{ ref.date }}) **[{{ ref.title | replace: '|', '\|' }}]({{ ref.title | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }})** _[{{ ref.journal }}]( {{ ref.journal | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }} )_ 
+ {{ authors | join: ', ' }} ({{ ref.date }}) **[{{ ref.title | replace: '|', '\|' }}]({{ ref.title | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }})** _[{{ ref.journal }}]( {{ ref.journal | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }} )_
+ [{{ ref.attachmentId }}]({{ ref.attachmentId | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }}) 
  {% if ref.doi.size > 0 -%}
    [doi: {{ ref.doi }}]({{ ref.doi | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }}) 
  {% endif -%}

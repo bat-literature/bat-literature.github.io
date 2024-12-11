@@ -391,12 +391,39 @@ Literature records can be extracted from this corpus in various ways. As an exam
 | [refs-100.tsv](refs-100.tsv) / [refs-100.csv](refs-100.csv) | author/date/title/journal of first 100 records
 | [refs.tsv](refs.tsv) / [refs.csv](refs.csv) | author/date/title/journal of all records
 
-First 3 records shown below as an example:
+First 3 records shown below as an example. This data is also used to create the [BatLit References Page](refs). This page adds links to the references to facilitate searches on Zenodo.
 
-| id | authors | date | title | journal | doi |
-| --- | --- | --- | --- | --- | --- |
-| https://www.zotero.org/groups/bat_literature_project/items/376ZATI8 | Guillen-Servent \| Francis \| Ricklefs, Robert E. | 2003 | Phylogeography and biogeography of the horseshoe bats (Chiroptera: Rhinolophidae) |  |  |
-| https://www.zotero.org/groups/bat_literature_project/items/7ZL7QFIL | Kruskop | 06/2015 | Dark and Pale: Taxonomic Status of the Barbastelle ( <i>Barbastella</i> : Vespertilionidae, Chiroptera) from Central Asia | Acta Chiropterologica | 10.3161/15081109ACC2015.17.1.004 |
-| https://www.zotero.org/groups/bat_literature_project/items/SDNDBREX | Kruskop | 06/2015 | Dark and Pale: Taxonomic Status of the Barbastelle ( <i>Barbastella</i> : Vespertilionidae, Chiroptera) from Central Asia | Acta Chiropterologica | 10.3161/15081109ACC2015.17.1.004 |
+Note that ```id``` points to the records as seen on Zotero, ```attachment``` points to the attachment records as seen on Zotero, ```attachmentId``` is the signature/hash of the associated pdf, ```corpusId``` is the signature/hash of the applicable [BatLit version](#version-history). 
 
+```
+authors      Douglas
+date         1967
+title        Article: The Natural History of the Ghost Bat, Macroderma Gigas (Microchiroptera Megadermatidae), in Western Australia
+journal      Western Australia. The Western Australian Naturalist
+doi          
+id           https://www.zotero.org/groups/bat_literature_project/items/M5MZ6NSB
+attachment   https://api.zotero.org/groups/5435545/items/223GU789
+attachmentId hash://md5/5e3f7fac483550be7983c6096e9e9800
+corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+
+authors      Vora | Hannah | Lieberman | Vale | Plowright | Bernstein
+date         2022-05
+title        Want to prevent pandemics? Stop spillovers
+journal      Nature
+doi          10.1038/d41586-022-01312-y
+id           https://www.zotero.org/groups/bat_literature_project/items/A5RNP5YH
+attachment   https://api.zotero.org/groups/5435545/items/223P42N5
+attachmentId hash://md5/85c89cedcc23b072f98f3c22ad731029
+corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+
+authors      Otto | Rall | Brose
+date         12/2007
+title        Allometric degree distributions facilitate food-web stability
+journal      Nature
+doi          10.1038/nature06359
+id           https://www.zotero.org/groups/bat_literature_project/items/6RAB386Y
+attachment   https://api.zotero.org/groups/5435545/items/225DJR2Q
+attachmentId hash://md5/6bdc818006c01cac3dd90eec4b337289
+corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+```
 ## Discussion
