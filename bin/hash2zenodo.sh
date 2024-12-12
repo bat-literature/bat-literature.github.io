@@ -1,14 +1,27 @@
 #!/bin/bash
 # 
-# associate zenodo deposit ids to provided md5 hashes
+# associate zenodo deposit ids of known zenodo response corpus to known batlit content hashes
 #
 
-SCRIPT_DIR=$(dirname $0)
+set -x
 
-cat <(echo "attachmentId,alternativeDoi") <(preston track --data-dir "${SCRIPT_DIR}/../zenodo"\
- --algo md5\
- -f <(bash "${SCRIPT_DIR}/list-refs.sh" | mlr --csv cut -f attachmentId | tail -n+2 | xargs -I{} echo "https://zenodo.org/api/communities/batlit/records?q=%22{}%22&l=list&limit=1")\
+SCRIPT_DIR=$(dirname $0)
+DATA_DIR="${SCRIPT_DIR}/../zenodo"
+
+ZENODO_VERSION=$(preston head --algo md5 --data-dir "${DATA_DIR}")
+
+
+logDepositId() {
+ preston cat --data-dir "${DATA_DIR}"\
+ | jq\
+ --arg version "${ZENODO_VERSION}"\
+ --raw-output\
+ 'select(.hits.hits | length > 0) | .hits.hits[0] | [(.metadata.alternate_identifiers[] | select(.identifier | test("hash://md5/[0-9a-f]{32}"?)) | .identifier), .doi, $version] | @csv' 
+}
+
+cat <(echo "attachmentId,alternativeDoi,zenodoResponseCorpusId")\
+ <(preston cat --data-dir "${DATA_DIR}" "${ZENODO_VERSION}"\
  | grep hasVersion\
- | grep "<hash://md5"\
- | preston cat --data-dir "${SCRIPT_DIR}/../zenodo/"\
- | jq --raw-output 'select(.hits.hits | length > 0) | .hits.hits[0] | [(.metadata.alternate_identifiers[] | select(.identifier | test("hash://md5/[0-9a-f]{32}"?)) | .identifier), .doi] | @csv')
+ | grep -Eo "<hash://md5/[0-9a-f]{32}"\
+ | tr -d '<'\
+ | logDepositId)
