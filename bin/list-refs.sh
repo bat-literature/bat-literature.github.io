@@ -11,13 +11,13 @@ HEAD=$(cat "${SCRIPT_DIR}/../HEAD")
 
 mlr --csv join -j attachment\
  -f\
- <(cat <(echo "attachment,id,authors,date,title,journal,doi")\
+ <(cat <(echo "attachment,id,authors,date,title,type,volume,pages,journal,doi")\
  <(preston cat ${HEAD}\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --algo md5\
  | jq -c .[]\
- | jq --raw-output -c 'select(.data.creators != null) | select(.links.attachment.href != null) | [.links.attachment.href, .links.alternate.href, (.data.creators | map(.lastName) | join(" | ")), ( .data.date, .data.title, .data.publicationTitle, .data.DOI)] | @csv'\
+ | jq --raw-output -c 'select(.data.creators != null) | select(.links.attachment.href != null) | [.links.attachment.href, .links.alternate.href, (.data.creators | map(.lastName) | join(" | ")), ( .data.date, .data.title, .data.publicationTitle, .data.itemType, .data.volume, .data.pages, .data.DOI)] | @csv'\
  | sort)\
  | tr '\t' ' ')\
  <(cat <(echo "attachment,corpusId,attachmentId")\
