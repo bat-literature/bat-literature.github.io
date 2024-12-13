@@ -16,10 +16,10 @@ logDepositId() {
  | jq\
  --arg version "${ZENODO_VERSION}"\
  --raw-output\
- 'select(.hits.hits | length > 0) | .hits.hits[0] | [(.metadata.alternate_identifiers[] | select(.identifier | test("hash://md5/[0-9a-f]{32}"?)) | .identifier), .doi, $version] | @csv' 
+ 'select(.hits.hits | length > 0) | .hits.hits[0] | [(.metadata.alternate_identifiers[] | select(.identifier | test("hash://md5/[0-9a-f]{32}"?)) | .identifier), .doi, .doi_url, $version] | @csv' 
 }
 
-cat <(echo "attachmentId,alternativeDoi,zenodoResponseCorpusId")\
+cat <(echo "attachmentId,alternativeDoi,alternativeDoiUrl,zenodoResponseCorpusId")\
  <(preston cat --data-dir "${DATA_DIR}" "${ZENODO_VERSION}"\
  | grep hasVersion\
  | grep -Eo "<hash://md5/[0-9a-f]{32}"\
