@@ -11,7 +11,7 @@ HEAD=$(cat "${SCRIPT_DIR}/../HEAD")
 
 mlr --csv join -j attachment\
  -f\
- <(cat <(echo "attachment,id,authors,date,title,type,volume,pages,journal,doi")\
+ <(cat <(echo "attachment,id,authors,date,title,journal,type,volume,pages,doi")\
  <(preston cat ${HEAD}\
  | grep "items[?]"\
  | grep hasVersion\
