@@ -384,7 +384,7 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 ### Literature Record Index
 
-Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) again a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 3 records in the table below, as well as files in tsv/csv formats include 100 records and all records.
+Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) against a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 3 records in the table below, as well as files in tsv/csv formats include 100 records and all records.
 
 | filenames | description |
 | --- | --- |
