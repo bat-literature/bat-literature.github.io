@@ -112,7 +112,7 @@ To help keep BatLit current (e.g., add new references) and accurate (e.g., updat
 
 1. BatLit community solicits bat literature references and their associated digital copies 
 2. provided literature references and digital copies (e.g., pdfs) are reviewed
-3. on passing review, literature references are added to BatLit
+3. on passing review, literature references are added to BatLit Zotero community by the BatLit curator
 
 #### Feedback Workflow
 
@@ -397,6 +397,10 @@ authors      Douglas
 date         1967
 title        Article: The Natural History of the Ghost Bat, Macroderma Gigas (Microchiroptera Megadermatidae), in Western Australia
 journal      Western Australia. The Western Australian Naturalist
+type         journalArticle
+volume       10
+issue        
+pages        125-138
 doi          
 id           https://www.zotero.org/groups/bat_literature_project/items/M5MZ6NSB
 attachment   https://api.zotero.org/groups/5435545/items/223GU789
@@ -407,6 +411,10 @@ authors      Vora | Hannah | Lieberman | Vale | Plowright | Bernstein
 date         2022-05
 title        Want to prevent pandemics? Stop spillovers
 journal      Nature
+type         journalArticle
+volume       605
+issue        7910
+pages        419-422
 doi          10.1038/d41586-022-01312-y
 id           https://www.zotero.org/groups/bat_literature_project/items/A5RNP5YH
 attachment   https://api.zotero.org/groups/5435545/items/223P42N5
@@ -417,10 +425,15 @@ authors      Otto | Rall | Brose
 date         12/2007
 title        Allometric degree distributions facilitate food-web stability
 journal      Nature
+type         journalArticle
+volume       450
+issue        7173
+pages        1226-1229
 doi          10.1038/nature06359
 id           https://www.zotero.org/groups/bat_literature_project/items/6RAB386Y
 attachment   https://api.zotero.org/groups/5435545/items/225DJR2Q
 attachmentId hash://md5/6bdc818006c01cac3dd90eec4b337289
 corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
 ```
+
 ## Discussion
