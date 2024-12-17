@@ -159,7 +159,7 @@ Also, please make sure to install [preston](https://github.com/bio-guoda/preston
 
 The tools used in the example workflows are designed to handle lots of data quickly using so-called ["Standard Streams"](https://en.wikipedia.org/wiki/Standard_streams). In addition, they have the ability to run offline after an initial caching (or cloning) of remote resources. If you are unfamiliar with these tools or processing methods and would like to learn more, you may benefit from a Carpentries Lesson like https://librarycarpentry.org/lc-shell/ or many of the other educational materials. Note that some of these tools have been around since the 1970s, are well documented and are likely to stick around a little while longer.  
 
-### Tracking 
+### Tracking Zotero 
 
 To track the Zotero group and compile a version of the bat literature corpus, the following command is used (in bash/linux):
 
@@ -189,6 +189,38 @@ preston ls --algo md5\
  | preston cat --algo md5 --remote file://[source dir]/data\
  > /dev/null
 ```
+
+### Depositing To Zenodo
+
+BatLit content and metadata is made available through Zenodo to facilitate access to their content. 
+
+The following workflow can be used to deposit versioned BatLit records into Zenodo.  
+
+First, we convert the captures Zotero metadata into the Zenodo metadata using [preston zotero-stream]: 
+
+```bash
+preston cat $(preston head --algo md5)\
+ | preston zotero-stream --communities batlit,biosyslit\
+ > zenodo.json
+```
+
+where ```zenodo.json``` contains a Zenodo metadata record on each line using the https://jsonlines.org/ format. 
+
+Now, track the ```zenodo.json``` and deposit the records into the desired Zenodo community. 
+
+```bash
+cat zenodo.json\
+ | preston track --algo md5\
+ | ZENODO_TOKEN=[SECRET] preston zenodo --communities batlit,biosyslit\
+ 1> transfer.nq\
+ 2> transfer.err
+```
+
+where ```transfer.nq``` captures the responses from Zenodo following the submission of the records, and ```transfer.err``` contains the error logs related to the submission of the record.
+
+Please refer to --help pages for [preston zenodo] for more information on ways to update metadata, force new versions etc. 
+
+:warning: please use the https://sandbox.zenodo.org to test record submission workflows before using the production endpoint at https://zenodo.org . :warning: 
 
 ### Statistics
 
