@@ -196,7 +196,7 @@ BatLit content and metadata is made available through Zenodo to facilitate acces
 
 The following workflow can be used to deposit versioned BatLit records into Zenodo.  
 
-First, we convert the captures Zotero metadata into the Zenodo metadata using [preston zotero-stream]: 
+First, we convert the tracked Zotero metadata into the Zenodo metadata using [preston zotero-stream]: 
 
 ```bash
 preston cat $(preston head --algo md5)\
