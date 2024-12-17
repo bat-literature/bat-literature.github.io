@@ -200,7 +200,10 @@ First, we convert the tracked Zotero metadata into the Zenodo metadata using [pr
 
 ```bash
 preston cat $(preston head --algo md5)\
- | preston zotero-stream --communities batlit,biosyslit\
+ | preston zotero-stream\
+ --anchor $(preston head --algo md5)\
+ --algo md5\
+ --communities batlit,biosyslit\
  > zenodo.json
 ```
 
@@ -211,7 +214,7 @@ Now, track the ```zenodo.json``` and deposit the records into the desired Zenodo
 ```bash
 cat zenodo.json\
  | preston track --algo md5\
- | ZENODO_TOKEN=[SECRET] preston zenodo --communities batlit,biosyslit\
+ | ZENODO_TOKEN=[SECRET] preston zenodo --algo md5 --communities batlit,biosyslit\
  1> transfer.nq\
  2> transfer.err
 ```
