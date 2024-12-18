@@ -95,7 +95,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
 
 We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through various channels such as local storage media (e.g., external harddisk), GitHub pages and Zenodo.
 
-![batlit-components.png](batlit-components.png)
+![batlit-components.png](./assets/batlit-components.png)
 
 The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized using [a website](https://batlit.org), the [Zenodo BatLit community](https://zenodo.org/communities/batlit), and on offline storage media.
 
