@@ -205,7 +205,115 @@ preston cat $(preston head --algo md5)\
 
 where ```zenodo.json``` contains a Zenodo metadata record on each line using the https://jsonlines.org/ format. 
 
-Now, track the ```zenodo.json``` and deposit the records into the desired Zenodo community. 
+An example a single line from such metadata generated from a versioned BatLit corpus, in this case ```BatLit v0.5 hash://md5/26f7ce5dd404e33c6570edd4ba250d20```,  is shown below. 
+
+```json
+{
+  "metadata": {
+    "filename": "Campbell et al. - 2010 - Divergent Microclimates in Artificial and Natural .pdf",
+    "related_identifiers": [
+      {
+        "relation": "isAlternateIdentifier",
+        "identifier": "hash://md5/0ed912a0ce156ab17810d732e2b4d13d"
+      },
+      {
+        "relation": "isAlternateIdentifier",
+        "identifier": "urn:lsid:zotero.org:groups:5435545:items:IJI9WGI5"
+      },
+      {
+        "relation": "hasVersion",
+        "identifier": "hash://md5/0ed912a0ce156ab17810d732e2b4d13d"
+      },
+      {
+        "relation": "hasVersion",
+        "identifier": "hash://sha256/6b55ec617db5023a663d31dbd016f609398bf5a45991b544f240d6fb84d93779"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "zotero://select/groups/5435545/items/IJI9WGI5"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "https://zotero.org/groups/5435545/items/IJI9WGI5"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "https://linker.bio/cut:hash://md5/2717614e0b13ca488fb57c2ee6c64f2e!/b147656-150219"
+      },
+      {
+        "relation": "isPartOf",
+        "identifier": "hash://md5/26f7ce5dd404e33c6570edd4ba250d20"
+      },
+      {
+        "relation": "isAlternateIdentifier",
+        "identifier": "10.3161/150811010X504671"
+      },
+      {
+        "relation": "isCompiledBy",
+        "identifier": "10.5281/zenodo.1410543",
+        "resource_type": "software"
+      }
+    ],
+    "communities": [
+      {
+        "identifier": "batlit"
+      },
+      {
+        "identifier": "biosyslit"
+      }
+    ],
+    "http://www.w3.org/ns/prov#wasDerivedFrom": "https://linker.bio/cut:hash://md5/2717614e0b13ca488fb57c2ee6c64f2e!/b147656-150219",
+    "upload_type": "publication",
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "application/json",
+    "referenceId": "https://api.zotero.org/groups/5435545/items/IJI9WGI5",
+    "creators": [
+      {
+        "name": "Campbell, Susan"
+      },
+      {
+        "name": "Coulson, Graeme"
+      },
+      {
+        "name": "Lumsden, Linda F."
+      }
+    ],
+    "publication_type": "article",
+    "access_right": "restricted",
+    "publication_date": "2010",
+    "title": "Divergent microclimates in artificial and natural roosts of the large-footed myotis (Myotis macropus)",
+    "journal_title": "Acta Chiropterologica",
+    "journal_volume": "12",
+    "journal_issue": "1",
+    "journal_pages": "173-185",
+    "keywords": [
+      "Biodiversity",
+      "Mammalia",
+      "Chiroptera",
+      "Chordata",
+      "Animalia",
+      "bats",
+      "bat"
+    ],
+    "custom": {
+      "dwc:kingdom": [
+        "Animalia"
+      ],
+      "dwc:phylum": [
+        "Chordata"
+      ],
+      "dwc:class": [
+        "Mammalia"
+      ],
+      "dwc:order": [
+        "Chiroptera"
+      ]
+    },
+    "description": "(Uploaded by Plazi for the Bat Literature Project) The thermal environment of day roosts is considered one of the most influential factors affecting the survival, growth and reproduction of microbats. The use of torpor is a common energy saving strategy employed by microbats in temperate regions. The efficiency of entry into, and arousal from, torpor is governed by roost microclimate, primarily roost temperature. The large-footed myotis Myotis macropus roosts in both tree cavities and a man-made tunnel at Yan Yean reservoir in Victoria, Australia. We investigated the thermal properties of both roost types in comparison to available tree cavities and ambient temperature over four time periods from October 2003 to May 2005. Tree cavities and tunnel roosts remained significantly warmer at night, cooler during the day, and were more stable than ambient temperatures. In addition, roost tree cavities were significantly cooler between 10:00–13:00 h compared to available tree cavities, and there was a trend for roost tree cavities to be slightly warmer at night and slower to reach maximum temperature relative to available tree cavities during the breeding season (October–January). In contrast, there was little difference in roost and available tree cavity temperatures outside of the breeding season (April–May). Temperatures inside tunnel roosts were more stable and were significantly cooler during the afternoon compared to roost tree cavities during both the breeding and non-breeding seasons. Myotis macropus may actively trade-off the enhanced thermoregulatory benefits of warm roosts for reduced predation risk associated with the tunnel roosting environment."
+  }
+}
+```
+
+Now, deposit the records into the desired Zenodo community after tracking their version:
 
 ```bash
 cat zenodo.json\
@@ -220,6 +328,11 @@ where ```transfer.nq``` captures the responses from Zenodo following the submiss
 Please refer to --help pages for [preston zenodo] for more information on ways to update metadata, force new versions etc. 
 
 :warning: please use the https://sandbox.zenodo.org to test record submission workflows before using the production endpoint at https://zenodo.org . :warning: 
+
+#### Note on BatLit content in Zenodo
+
+Note that after submission of Zenodo-compatible (at least at time of writing) metadata generated from a specific batlit version, Zenodo software or community editors, may choose to reformat, or otherwise change, the metadata associated with a submitted record at some point in the future. Due to Zenodo's design, record metadata is *not* version controlled and may change in the future and deviate from their original, immutable, BatLit version. In other words, BatLit associated content on Zenodo should be considered as a possibly incomplete or changed copy of the content associated with an original BatLit version. This is why it is recommended to use (or at least cite) the original batlit corpus when using the corpus for research purposes or automated workflows. The copies deposited on Zenodo are simply a trick to index BatLit without having to re-built search indexes and publicly available content repositories. 
+
 
 ### Statistics
 
