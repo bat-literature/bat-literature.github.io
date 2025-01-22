@@ -362,7 +362,7 @@ Note that
 
 specifies the fingerprint of the version you'd like to verify. In this case the fingerprint refers to BatLit Corpus v0.6 . 
 
-In other words, a method exists to help periodically verify that BatLit related content is accessible. The workflow shown above is the equivalent of clicking on ~20k This workflow is the equivalent of clicking on all the ~20k download button in the Zenodo html pages in addition to checking each and every entry in BatLit Corpus for a corresponding content.
+In other words, a method exists to help periodically verify that BatLit related content is accessible. The workflow shown above is the equivalent of clicking on all the ~20k download buttons in the BatLit associated Zenodo html pages in addition to checking each and every entry in BatLit Corpus for a corresponding content.
 
 #### Note on BatLit content in Zenodo
 
