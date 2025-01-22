@@ -329,6 +329,41 @@ Please refer to --help pages for [preston zenodo] for more information on ways t
 
 :warning: please use the https://sandbox.zenodo.org to test record submission workflows before using the production endpoint at https://zenodo.org . :warning: 
 
+### Verifying Access to BatLit Content
+
+The internet is a dynamic place, and content gets destroyed, damaged, lost, or misplaced, even in large, trusted infrastructures. 
+
+In order to verify whether BatLit content is available on Zenodo (or elsewhere), the following procedure can be used to check whether BatLit associated content can be found, accessed, integrated, and reused:
+
+```
+export ZENODO_TOKEN=[SECRET]
+# ^^^^
+# needed only to access restricted content
+
+preston verify\
+ --algo md5\
+ --remote https://batlit.org/data,https://zenodo.org\
+ --anchor hash://md5/db73e659e8cf16ef50e82bb5e72ae97b
+```
+
+where
+
+```
+preston verify
+```
+
+is the command that goes through the inventory of BatLit Corpus, and attempts to retrieve content from https://batlit.org first (metadata), then from Zenodo (pdfs) unless the content is already available locally.
+
+Note that
+
+```
+--anchor hash://md5/db73e659e8cf16ef50e82bb5e72ae97b
+```
+
+specifies the fingerprint of the version you'd like to verify. In this case the fingerprint refers to BatLit Corpus v0.6 . 
+
+In other words, a method exists to help periodically verify that BatLit related content is accessible. The workflow shown above is the equivalent of clicking on ~20k This workflow is the equivalent of clicking on all the ~20k download button in the Zenodo html pages in addition to checking each and every entry in BatLit Corpus for a corresponding content.
+
 #### Note on BatLit content in Zenodo
 
 Note that after submission of Zenodo-compatible (at least at time of writing) metadata generated from a specific batlit version, Zenodo software or community editors, may choose to reformat, or otherwise change, the metadata associated with a submitted record at some point in the future. Due to Zenodo's design, record metadata is *not* version controlled and may change in the future and deviate from their original, immutable, BatLit version. In other words, BatLit associated content on Zenodo should be considered as a possibly incomplete or changed copy of the content associated with an original BatLit version. This is why it is recommended to use (or at least cite) the original batlit corpus when using the corpus for research purposes or automated workflows. The copies deposited on Zenodo are simply a trick to index BatLit through already existing search indexes (e.g., Zenodo metadata search engine), to keep extra copies around on a publicly available content repository, and to leverage Zenodo access control methods to make restricted content available to authorized batlit members. 
