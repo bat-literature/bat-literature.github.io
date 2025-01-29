@@ -2,9 +2,7 @@
 
 [edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
 
- [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion)
-
-[**BatLit Reference List**](refs)
+ [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
 
 ## <a name="search"></a>BatLit Search
 
