@@ -25,7 +25,7 @@ Works published in 1994 mentioning "Koopman":
 <p></p>
 <div/>
 
-[Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/), which is a more sophisticated example using the same Zenodo API and technologies (e.g., html/javascript), can be found below: 
+[Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/), which uses the same Zenodo API and technologies (e.g., html/javascript) in a more sophisticated way, can be found below: 
 <embed src="https://stage.plazi.org/litsearch/" style="width:600px; height: 400px;">
 
 <div/>
