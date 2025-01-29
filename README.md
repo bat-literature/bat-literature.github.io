@@ -22,6 +22,7 @@ Works published in 1994 mentioning "Koopman":
   <button type="submit">Search</button>
 </form>
 
+<p></p>
 <div/>
 
  A more sophisticated example, using the same Zenodo API and technologies (e.g., html/javascript), can be found at [Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/) and below:
