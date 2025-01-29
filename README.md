@@ -6,7 +6,7 @@
 
 ## <a name="search"></a>BatLit Search
 
-There's many ways to search in BatLit. One way is to go to the [**BatLit References**](refs) page and use ctlr-f to find a citation. Another way is to use a more advanced search made available through the Zenodo API, with some  simple examples shown below. A more sophisticated example, using the same Zenodo API and technologies (e.g., html/javascript), can be found at [Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/).
+There's many ways to search in BatLit. One way is to go to the [**BatLit References**](refs) page and use ctlr-f to find a citation. Another way is to use a more advanced search made available through the Zenodo API, with some  simple examples shown below. 
 
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
@@ -24,6 +24,15 @@ Works published in 1994 mentioning "Koopman":
 
 <div/>
 
+ A more sophisticated example, using the same Zenodo API and technologies (e.g., html/javascript), can be found at [Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/) and below:
+
+<embed src="https://stage.plazi.org/litsearch/" style="width:500px; height: 300px;">
+
+<iframe src="[/othersiteurl](https://stage.plazi.org/litsearch/)" width="100%" height="300">
+ <p>Your browser does not support iframes.</p>
+</iframe>
+
+<div/>
 
 ## Introduction
 
