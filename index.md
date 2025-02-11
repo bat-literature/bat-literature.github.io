@@ -99,7 +99,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
 
 ## Methods
 
-We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through Zenodo.
+We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through [Zenodo](https://zenodo.org).
 
 ![batlit-components.png](./assets/batlit-components.png)
 
