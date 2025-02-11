@@ -99,11 +99,11 @@ If you have any comments, suggestions, or questions, please open [an issue](http
 
 ## Methods
 
-We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through various channels such as local storage media (e.g., external harddisk), GitHub pages and Zenodo.
+We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through Zenodo.
 
 ![batlit-components.png](./assets/batlit-components.png)
 
-The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized using [a website](https://batlit.org), the [Zenodo BatLit community](https://zenodo.org/communities/batlit), and on offline storage media.
+The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized using the [Zenodo BatLit community](https://zenodo.org/communities/batlit).
 
 
 ### Curation Workflow
@@ -372,7 +372,7 @@ In other words, a method exists to help periodically verify that BatLit related 
 
 #### Note on BatLit content in Zenodo
 
-Note that after submission of Zenodo-compatible (at least at time of writing) metadata generated from a specific batlit version, Zenodo software or community editors, may choose to reformat, or otherwise change, the metadata associated with a submitted record at some point in the future. Due to Zenodo's design, record metadata is *not* version controlled and may change in the future and deviate from their original, immutable, BatLit version. In other words, BatLit associated content on Zenodo should be considered as a possibly incomplete or changed copy of the content associated with an original BatLit version. This is why it is recommended to use (or at least cite) the original batlit corpus when using the corpus for research purposes or automated workflows. The copies deposited on Zenodo are simply a trick to index BatLit through already existing search indexes (e.g., Zenodo metadata search engine), to keep extra copies around on a publicly available content repository, and to leverage Zenodo access control methods to make restricted content available to authorized batlit members. 
+Note that after submission of Zenodo-compatible (at least at time of writing) metadata generated from a specific batlit version, Zenodo software or community editors, may choose to reformat, or otherwise change, the metadata associated with a submitted record at some point in the future. Due to Zenodo's design, record metadata is *not* version controlled and may change in the future and deviate from their original, immutable, BatLit version. In other words, BatLit associated content on Zenodo should be considered as a possibly incomplete or changed copy of the content associated with an original BatLit version. This is why it is recommended to use (or at least cite) the original batlit corpus when using the corpus for research purposes or automated workflows. 
 
 
 ### Statistics
