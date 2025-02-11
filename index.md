@@ -103,7 +103,7 @@ We use [Zotero](https://zotero.org) for managing our literature corpus, and [Pre
 
 ![batlit-components.png](./assets/batlit-components.png)
 
-The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized using [a website](https://batlit.org), the [Zenodo BatLit community](https://zenodo.org/communities/batlit), and on offline storage media.
+The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized through the [Zenodo BatLit community](https://zenodo.org/communities/batlit).
 
 
 ### Curation Workflow
