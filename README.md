@@ -59,7 +59,7 @@ For instance, let's say that Carla would like to search for literature that ment
 
 ### Searching by Zotero Record Identifiers
 
-BatLit is managed in Zotero. Each Zotero record has a group id and an item id. These ids uniquely identify a record. These ids are combined to create a life science identifier for each Zotero literature record with the following syntax:
+BatLit is managed as a [Group Library in Zotero](https://www.zotero.org/groups/5435545/bat_literature_project/). Each Zotero record has a group id and an item id. These ids uniquely identify a record. These ids are combined to create a life science identifier for each Zotero literature record with the following syntax:
 
 ```
 urn:lsid:zotero.org:groups:[group id]:items:[item id]
@@ -99,7 +99,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
 
 ## Methods
 
-We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through Zenodo.
+We use [Zotero]([https://zotero.org](https://www.zotero.org/groups/5435545/bat_literature_project/)) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through Zenodo.
 
 ![batlit-components.png](./assets/batlit-components.png)
 
