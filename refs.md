@@ -16,7 +16,10 @@ Download as: [refs.csv](refs.csv) or [refs.tsv](refs.tsv).
  {{ authors | join: ', ' }} ({{ ref.date }}) **[{{ ref.title | replace: '|', '\|' }}]({{ ref.title | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }})** _{{ ref.journal }}_
  [{{ ref.attachmentId }}]({{ ref.attachmentId | url_encode | prepend: "https://zenodo.org/communities/batlit/records?q=%22" | append: "%22" }}) 
  {% if ref.alternativeDoi.size > 0 -%}
-   [doi:{{ ref.alternativeDoi }}]({{ ref.alternativeDoiUrl }}) 
+   . Zenodo [doi:{{ ref.alternativeDoi }}]({{ ref.alternativeDoiUrl }}) 
+ {% endif -%}
+ {% if ref.doi.size > 0 -%}
+   . Publisher version: [doi:{{ ref.doi }}](https://doi.org/{{ ref.doi }}) 
  {% endif -%}
   {% endif -%}
 
