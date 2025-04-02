@@ -8,7 +8,7 @@
 
 ## <a name="search"></a>BatLit Search
 
-There's many ways to search in BatLit. One way is to go to the [**BatLit References**](refs) page and use ctlr-f to find a citation. Another way is to use a more advanced search made available through the Zenodo API, with some  simple examples shown below. 
+Users can search BatLit through a variety of methods. One way is to go to the [**BatLit References**](refs) page and use ctlr-f to find a citation. Another way is to search the [BatLit community hosted on Zenodo](https://zenodo.org/communities/batlit/), with some simple examples shown below. Alternatively, users can access the Zenodo-published version of BatLit through the Zenodo API from the command line. 
 
 <form class="searchbox" action="https://zenodo.org/communities/batlit">
   <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
