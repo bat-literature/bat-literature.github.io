@@ -4,7 +4,7 @@
 
 [suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/index.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
 
- [Search the database](#search)/ [Data Paper (draft)](#introduction) / [Reference List](refs)
+ [Search](#search)/ [Data Paper (draft)](#introduction) / [Reference List](refs) / [Cite](#cite)
 
 ## <a name="search"></a>BatLit Search
 
