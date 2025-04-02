@@ -1,13 +1,13 @@
 # BatLit: The Bat Literature Project
 
-This repository contains the sources that produce https://batlit.org. The website is currently hosted by GitHub Pages and uses Jekyll, GitHub's default static site generator. Please note that this site also contains metadata, and batlit references lists.
+This repository contains the sources that produce https://batlit.org. The website is currently hosted by GitHub Pages and uses Jekyll, GitHub's default static site generator. Please note that this site also contains BatLit Corpus metadata, Zenodo integration data, as well as automatically generated batlit references lists.
 
 ## Files
 
-There's many files in the repository. Some are listed below to get situated. 
+There's many files in the repository. Some are listed below to get situated.  
 
-[```index.md```](index.md) - contains the https://batlit.org landing page
-[```datapaper.md (draft)```](datapaper.md) - technical background on BatLit and the associated BatLit Corpus versions
+ * [```index.md```](index.md) - contains the https://batlit.org landing page
+ * [```datapaper.md (draft)```](datapaper.md) - technical background on BatLit and the associated BatLit Corpus versions
 
 ## Contributing 
 
