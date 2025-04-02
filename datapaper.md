@@ -1,5 +1,7 @@
 # BatLit: The Bat Literature Project
 
+⚠️ this is a work in progress⚠️
+
 [suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/datapaper.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
 
 [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
@@ -13,9 +15,9 @@ Bat researchers rely on access to a vast corpus of bat literature to help advanc
 For more information contact Aja Sherman ([aja.sherman22@gmail.com](mailto:aja.sherman22@gmail.com)), Cullen Geiselman ([cullen@werinterests.com](mailto:cullen@werinterests.com)), or Jorrit Poelen ([jhpoelen@jhpoelen.nl](mailto:jhpoelen+batlit@jhpoelen.nl)).
 
 Cite as:
-A.C. Sherman, J.H. Poelen, D. Agosti, N. Upham, N.B. Simmons, J.S. Zijlstra, and C.K. Geiselman. 2024. Bat Literature Project (BatLit, https://batlit.org) v0.7 hash://md5/ce1e7618f237ff56e74d51f496e811a3 https://doi.org/10.5281/zenodo.14662695 .
 
-⚠️ this is a work in progress⚠️
+{% include citation.html %}
+
 
 ## Getting Started
 
