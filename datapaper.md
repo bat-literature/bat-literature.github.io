@@ -1,34 +1,8 @@
 # BatLit: The Bat Literature Project
 
-[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/index.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
+[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/datapaper.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
 
- [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
-
-## <a name="search"></a>BatLit Search
-
-There's many ways to search in BatLit. One way is to go to the [**BatLit References**](refs) page and use ctlr-f to find a citation. Another way is to use a more advanced search made available through the Zenodo API, with some  simple examples shown below. 
-
-<form class="searchbox" action="https://zenodo.org/communities/batlit">
-  <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
-  <button type="submit">Search</button>
-</form><a href="https://zenodo.org/help/search">Search guide</a>
-
-### Example Searches
-
-Works published in 1994 mentioning "Koopman": 
-
-<form class="searchbox" action="https://zenodo.org/communities/batlit">
-  <input type="search" id="name" name="q" placeholder="Search BatLit..." value="metadata.publication_date:1994 Koopman"/>
-  <button type="submit">Search</button>
-</form>
-
-<p></p>
-<div/>
-
-[Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/), which uses the same Zenodo API and technologies (e.g., html/javascript) in a more sophisticated way, can be found below: 
-<embed src="https://stage.plazi.org/litsearch/" style="width:600px; height: 400px;">
-
-<div/>
+[Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
 
 ## Introduction
 
