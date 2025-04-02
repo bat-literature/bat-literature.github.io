@@ -1,6 +1,6 @@
 # BatLit: The Bat Literature Project
 
-[edit page](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
+[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/README.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
 
  [Search the database](#search)/ [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
 
@@ -32,7 +32,7 @@ Works published in 1994 mentioning "Koopman":
 
 ## Introduction
 
-Bat researchers rely on access to a vast corpus of bat literature to help advance our understanding of bats and the ecosystems they live in. Many researchers build and organize their personal literature collections using mainstream digital tools like Zotero and EndNote, whereas others use homegrown digital methods or even manage their collections manually. However, all researchers routinely encounter roadblocks to literature access including paywalls and older literature resources that have not yet been digitized.  To help provide access to bat research literature for all, [Plazi](https://plazi.org) and the [GBatNet Bat Eco-Interactions Working Group](https://docs.google.com/document/d/1yvOZVzv4hnr4E0p_0cNuISyF6c5Gd2Dvps_He9cwOBg/edit#heading=h.7i02bj7q2tld) are compiling the Bat Literature Corpus (BatLit). BatLit is an actively managed, digital, versioned, and citable collection of bat research literature and associated metadata compiled from existing literature contributed by bat researchers. BatLit is designed to be used in manual (e.g., point-and-click) as well as automated workflows (e.g., text mining, language model training), and can be accessed through Zenodo. As BatLit continues to improve and grow, we aim to continue to democratize access to bat literature, accelerate research, and help reduce the barrier to knowledge for bat researchers around the world. We invite you to contribute your reference library, especially the PDFs, to BatLit and thereby help increase information access for all.
+Bat researchers rely on access to a vast corpus of bat literature to help advance our understanding of bats and the ecosystems they live in. Many researchers build and organize their personal literature collections using mainstream digital tools like Zotero and EndNote, whereas others use homegrown digital methods or even manage their collections manually. However, all researchers routinely encounter roadblocks to literature access including paywalls and older literature resources that have not yet been digitized.  To help provide access to bat research literature for all, [Plazi](https://plazi.org) and the [GBatNet Bat Eco-Interactions Working Group](https://docs.google.com/document/d/1yvOZVzv4hnr4E0p_0cNuISyF6c5Gd2Dvps_He9cwOBg/edit#heading=h.7i02bj7q2tld) are compiling the Bat Literature Corpus (BatLit). BatLit is an actively managed, digital, versioned, and citable collection of bat research literature and associated metadata compiled from existing literature contributed by bat researchers. BatLit is designed to be used in manual (e.g., point-and-click) as well as automated workflows (e.g., text mining, language model training), and can be accessed in many ways, including, but not limited to, external storage media, Zenodo, and GitHub. As BatLit continues to improve and grow, we aim to continue to democratize access to bat literature, accelerate research, and help reduce the barrier to knowledge for bat researchers around the world. We invite you to contribute your reference library, especially the PDFs, to BatLit and thereby help increase information access for all.
 
 <b>The Bat Literature Project (BatLit) facilitates discovery of scientific literature on bats (Chiroptera).</b> 
 
@@ -49,7 +49,7 @@ If you'd like to explore BatLit, please review the examples below. Alternatively
 
 ### Searching for Literature by Keywords 
 
-BatLit can be searched and discovered through Zenodo at [https://zenodo.org/communities/batlit](https://zenodo.org/communities/batlit). Zenodo offers search features through a point-and-click web interface, as well as a Web Application Programming Interface (Web API, [https://developers.zenodo.org](https://developers.zenodo.org)).   
+One way BatLit can be searched and discovered is through Zenodo at [https://zenodo.org/communities/batlit](https://zenodo.org/communities/batlit). Zenodo offers search features through a point-and-click web interface, as well as a Web Application Programming Interface (Web API, [https://developers.zenodo.org](https://developers.zenodo.org)).   
 
 For instance, let's say that Carla would like to search for literature that mention "Rhinolophus sinicus" in their associated metadata (e.g., title, abstract). She uses Zenodo and enters "Rhinolophus sinicus" in the search box of the BatLit community producing the following query: [https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus](https://zenodo.org/communities/batlit/records?q=rhinolophus%20sinicus) . On inspecting the initial results, she limits to see only publications that are openly available by selecting `Access Status > Open` in the Zenodo web search results. 
 
@@ -59,7 +59,7 @@ For instance, let's say that Carla would like to search for literature that ment
 
 ### Searching by Zotero Record Identifiers
 
-BatLit is managed in Zotero. Each Zotero record has a group id and an item id. These ids uniquely identify a record. These ids are combined to create a life science identifier for each Zotero literature record with the following syntax:
+BatLit is managed as a [Group Library in Zotero](https://www.zotero.org/groups/5435545/bat_literature_project/). Each Zotero record has a group id and an item id. These ids uniquely identify a record. These ids are combined to create a life science identifier for each Zotero literature record with the following syntax:
 
 ```
 urn:lsid:zotero.org:groups:[group id]:items:[item id]
@@ -99,11 +99,11 @@ If you have any comments, suggestions, or questions, please open [an issue](http
 
 ## Methods
 
-We use [Zotero](https://zotero.org) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through [Zenodo](https://zenodo.org).
+We use [Zotero]([https://zotero.org](https://www.zotero.org/groups/5435545/bat_literature_project/)) for managing our literature corpus, and [Preston](https://github.com/bio-guoda/preston) for tracking their associated content in a versioned corpus. This versioned corpus is designed to be published through Zenodo.
 
 ![batlit-components.png](./assets/batlit-components.png)
 
-The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized through the [Zenodo BatLit community](https://zenodo.org/communities/batlit).
+The above figure shows how Zotero is used for managing a collection of literature references (pdfs and metadata). Versioned snapshots of this collection are securely packaged as a BatLit version. This version is then mobilized using the [Zenodo BatLit community](https://zenodo.org/communities/batlit).
 
 
 ### Curation Workflow
@@ -373,6 +373,7 @@ In other words, a method exists to help periodically verify that BatLit related 
 #### Note on BatLit content in Zenodo
 
 Note that after submission of Zenodo-compatible (at least at time of writing) metadata generated from a specific batlit version, Zenodo software or community editors, may choose to reformat, or otherwise change, the metadata associated with a submitted record at some point in the future. Due to Zenodo's design, record metadata is *not* version controlled and may change in the future and deviate from their original, immutable, BatLit version. In other words, BatLit associated content on Zenodo should be considered as a possibly incomplete or changed copy of the content associated with an original BatLit version. This is why it is recommended to use (or at least cite) the original batlit corpus when using the corpus for research purposes or automated workflows. 
+
 
 ### Statistics
 
