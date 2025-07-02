@@ -1,0 +1,83 @@
+<form id="search-form">
+  <input type="search" placeholder="search"/>
+  <div class="query-error"></div>
+  <div class="controls">
+    <button type="submit">Search</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
+
+Example queries: 
+
+ * ```Koopman 1994``` find references mentioning Koopman OR 1994
+ * ```+Koopman +1994``` find references mentioning Koopman AND 1994
+ * ```+roosting koopman sherman``` find references mentioning roosting and koopman OR sherman
+
+For more examples, see [https://lunrjs.com/guides/searching.html](https://lunrjs.com/guides/searching.html) 
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+  var documents = {{ site.data.refs | jsonify }}
+
+  var idx = lunr(function () {
+    this.ref('id')
+    this.field('authors')
+    this.field('title')
+    this.field('date')
+
+    documents.forEach(function (doc) {
+      this.add(doc)
+    }, this)
+  })
+
+  var resetResults = function(displayMode) {
+    var unselected = document.querySelectorAll('.ref'); 
+    unselected.forEach(function(elem) { elem.style.display = displayMode; }); 
+    
+    document.querySelector('#results').textContent = '';
+  }
+
+  var searchForm = document.querySelector('#search-form'),
+	    searchField = searchForm.querySelector('input');
+
+  
+  searchForm.addEventListener('reset', function (event) {
+      resetResults('none');
+    }
+  )
+  
+  var executeQuery = function(query) {
+          
+	  try {
+	    var hits = idx.search(query);
+
+            resetResults('none');          
+ 
+            var hitsSelector = hits.map(function(hit) { return '#' + CSS.escape(hit.ref); }).join(',');
+            var selected = document.querySelectorAll(hitsSelector);
+            selected.forEach(function(elem) { 
+              elem.style.display = '';
+            });
+            document.querySelector('#results').textContent = hits.length + ' hit(s) found for query [' + query + ']';
+	  } catch(e) {
+	    if (e instanceof lunr.QueryParseError) {
+	      displayQueryError(query, e)
+	      return
+	    } else {
+	      throw e
+	    }
+	  }
+  };
+  searchForm.addEventListener('submit', function (event) {
+	  event.preventDefault()
+
+	  var query = searchField.value;
+          if (query.trim().length > 0) {
+            executeQuery(query);
+          } else {
+            resultResults('none');
+          }
+	});
+
+</script>
+
