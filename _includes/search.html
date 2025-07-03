@@ -53,7 +53,8 @@ For more examples, see [https://lunrjs.com/guides/searching.html](https://lunrjs
 
             resetResults('none');          
             
-            document.querySelector('#results').textContent = hits.length + ' hit(s) found for query [' + query + ']';
+            var hitUnit = (hits.length > 1 || hits.length == 0) ? "hits" : "hit"; 
+            document.querySelector('#results').textContent = hits.length + ' ' + hitUnit + ' found for query [' + query + ']';
 
             if (hits.length > 0) { 
               var hitsSelector = hits.map(function(hit) { return '#' + CSS.escape(hit.ref); }).join(',');
