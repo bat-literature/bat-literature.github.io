@@ -52,13 +52,16 @@ For more examples, see [https://lunrjs.com/guides/searching.html](https://lunrjs
 	    var hits = idx.search(query);
 
             resetResults('none');          
- 
-            var hitsSelector = hits.map(function(hit) { return '#' + CSS.escape(hit.ref); }).join(',');
-            var selected = document.querySelectorAll(hitsSelector);
-            selected.forEach(function(elem) { 
-              elem.style.display = '';
-            });
+            
             document.querySelector('#results').textContent = hits.length + ' hit(s) found for query [' + query + ']';
+
+            if (hits.length > 0) { 
+              var hitsSelector = hits.map(function(hit) { return '#' + CSS.escape(hit.ref); }).join(',');
+              var selected = document.querySelectorAll(hitsSelector);
+              selected.forEach(function(elem) { 
+                elem.style.display = '';
+              });
+            }
 	  } catch(e) {
 	    if (e instanceof lunr.QueryParseError) {
 	      displayQueryError(query, e)
