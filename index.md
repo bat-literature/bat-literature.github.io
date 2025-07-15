@@ -1,39 +1,20 @@
-# BatLit: The Bat Literature Project
+---
+title: BatLit
+---
 
-⚠️ this is a work in progress⚠️
+## The Bat Literature Project
+### An open-access literature archive supporting bat taxonomy, ecology, and conservation. 
 
-[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/index.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
+[About](about) / [Search BatLit](search) / [Zenodo Collection](https://zenodo.org/communities/batlit) / [Data Paper](datapaper) / [Contact Us](about) / [Upload Literature](join)
 
- [Search](#search)/ [Data Paper (draft)](datapaper) / [Reference List](refs) / [Cite](#cite)
+## The Project
 
-## <a name="search"></a>BatLit Search
+Bat researchers worldwide contribute to and rely on a vast corpus of literature to build our collective scientific knowledge. Yet in practice, researchers’ engagement with literature is a solo endeavor, creating personal archives of paper copies or PDFs. Rather than the scientific literature being widely and publicly available, researchers employ tedious and expensive methods to find new sources such as scanning bibliographies or using subscription-based search tools. 
+To address this, Plazi and the GBatNet Bat Eco-Interactions Working Group launched the **Bat Literature Project (BatLit)**—a freely available, versioned, multilingual, and citable digital archive of bat research and bibliographic metadata. BatLit is hosted on **Zenodo**, providing stable, open access to over 20,000 publications contributed by the global bat research community.
+i
+We invite you to join the Community, contribute your literature, and help build and promote the world’s largest shared bat science archive.
 
-Users can search BatLit through a variety of methods. One way is to go to the [**BatLit References**](refs) page and use the search box find a citation. Another way is to search the [BatLit community hosted on Zenodo](https://zenodo.org/communities/batlit/), with some simple examples shown below. Alternatively, users can access the Zenodo-published version of BatLit through the Zenodo API from the command line. 
-
-<form class="searchbox" action="https://zenodo.org/communities/batlit">
-  <input type="search" id="name" name="q" placeholder="Search BatLit..." value="&quot;Rhinolophus sinicus&quot;"/>
-  <button type="submit">Search</button>
-</form><a href="https://zenodo.org/help/search">Search guide</a>
-
-### Example Searches
-
-Works published in 1994 mentioning "Koopman": 
-
-<form class="searchbox" action="https://zenodo.org/communities/batlit">
-  <input type="search" id="name" name="q" placeholder="Search BatLit..." value="metadata.publication_date:1994 Koopman"/>
-  <button type="submit">Search</button>
-</form>
-
-<p></p>
-<div/>
-
-[Plazi's Literature Search Prototype](https://stage.plazi.org/litsearch/), which uses the same Zenodo API and technologies (e.g., html/javascript) in a more sophisticated way, can be found below: 
-<embed src="https://stage.plazi.org/litsearch/" style="width:600px; height: 400px;">
-
-<div/>
-
-
-## Cite 
+## Cite As 
 
 {% include citation.html %}
 

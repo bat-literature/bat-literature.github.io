@@ -1,3 +1,7 @@
+---
+title: Data Paper
+---
+
 # BatLit: The Bat Literature Project
 
 ⚠️ this is a work in progress⚠️
