@@ -20,7 +20,7 @@ Configure your local environment to help test changes locally first.
 Steps:
 
 1. Install ruby v3.2.3 via ```sudo apt install ruby-full``` or equivalent. This also installs bundle .
-2. Update ```~/.bashrc``` to include:
+2. To install gems (Ruby libraries/modules) into a user writable place, update ```~/.bashrc``` to include:
 ```
 export GEM_HOME="/home/some-username/.gem/ruby/3.2.3"
 export PATH=$PATH:$GEM_HOME/bin
