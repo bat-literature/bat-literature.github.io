@@ -12,4 +12,21 @@ There's many files in the repository. Some are listed below to get situated.
 ## Contributing 
 
 Improvements to BatLit are encouraged! If you feel comfortable, please submit pull requests when proposing changes to batlit. Otherwise, please [open an issue](../../issues/new) or send an email to [batlit@batbase.org](mailto:batlit@batbase.org).
- 
+
+## Local Enviroment Setup
+
+Configure your local environment to help test changes locally first.
+
+Steps:
+
+1. Install ruby v3.2.3 via ```sudo apt install ruby-full``` or equivalent. This also installs bundle . 
+2. Run ```bundle install``` assuming that a [Gemfile](./GemFile) exists with content:
+```
+source 'https://rubygems.org'
+
+# see https://pages.github.com/versions/ 
+# for versions use by github infrastructure
+gem 'github-pages', group: :jekyll_plugins
+```
+3. Render local website by running ```bundle exec jekyll serve```
+4. Open a browser and visit http://localhost:4000 . 
