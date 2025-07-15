@@ -19,8 +19,14 @@ Configure your local environment to help test changes locally first.
 
 Steps:
 
-1. Install ruby v3.2.3 via ```sudo apt install ruby-full``` or equivalent. This also installs bundle . 
-2. Run ```bundle install``` assuming that a [Gemfile](./GemFile) exists with content:
+1. Install ruby v3.2.3 via ```sudo apt install ruby-full``` or equivalent. This also installs bundle .
+2. Update ```~/.bashrc``` to include:
+```
+export GEM_HOME="/home/some-username/.gem/ruby/3.2.3"
+export PATH=$PATH:$GEM_HOME/bin
+``` 
+3. Start a new shell/terminal, or run ```source ~/.bashrc``` 
+4. Run ```bundle install``` assuming that a [Gemfile](./GemFile) exists with content:
 ```
 source 'https://rubygems.org'
 
@@ -28,5 +34,5 @@ source 'https://rubygems.org'
 # for versions use by github infrastructure
 gem 'github-pages', group: :jekyll_plugins
 ```
-3. Render local website by running ```bundle exec jekyll serve```
-4. Open a browser and visit http://localhost:4000 . 
+5. Render local website by running ```bundle exec jekyll serve```
+6. Open a browser and visit http://localhost:4000 . 
