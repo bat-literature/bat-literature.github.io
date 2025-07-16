@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.banner > img {
+  object-fit: cover;
+  vertical-align: center;
+  width: 100%;
+  height: 15em;
+  filter: brightness(50%);
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  font-size: 4em;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text-smaller {
+  font-size: 2em;
+}
+
+.site-logo {
+  display: inline-block;
+  height: 2em;
+}
+
+.img-inline {
+  float: left;
+  width: 8em;
+  padding: 0.5em;
+}
+
+.img-inline-larger {
+  float: left;
+  width: 16em;
+  padding: 0.5em;
+}
+
+.nav-button { 
+  border-style: solid;
+  border-width: 0.1em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border-color: lightblue;
+}
+
+.nav-button:hover {
+  background-color: lightblue;
+  text-decoration: none;
+}
+
+.citation {
+  background-color: lightblue;
+}
+
+.nobr {
+  white-space: nowrap;
+}

@@ -1,10 +1,15 @@
 ---
 layout: default
+banner: assets/Chrotopterus_auritus_852_0942.jpeg
+banner-subtext: An open-access literature archive supporting bat taxonomy, ecology, and conservation. 
 ---
 
-![](assets/Chrotopterus_auritus_852_0942.jpeg)
-
-[About](about) / [Search BatLit](search) / [Zenodo Collection](https://zenodo.org/communities/batlit) / [Data Paper](datapaper) / [Contact Us](about) / [Upload Literature](contribute)
+<a class="nav-button" href="about">About</a>
+<a class="nav-button" href="search">Search BatLit</a>
+<a href="https://zenodo.org/communities/batlit" class="nav-button">Zenodo Collection</a>
+<a class="nav-button" href="datapaper">Data Paper</a>
+<a class="nav-button" href="about">Contact Us</a>
+<a class="nav-button" href="contribute">Upload Literature</a>
 
 ## The Project
 
@@ -13,9 +18,8 @@ To address this, Plazi and the GBatNet Bat Eco-Interactions Working Group launch
 
 We invite you to join the Community, contribute your literature, and help build and promote the world’s largest shared bat science archive.
 
-## Cite As 
+<img class="img-inline img-inline-larger" src="assets/vintage-bat-anatomy-patrycja-polechonska.jpg"/>
 
-![](assets/vintage-bat-anatomy-patrycja-polechonska.jpg)
+## Cite As: 
 
 {% include citation.html %}
-
