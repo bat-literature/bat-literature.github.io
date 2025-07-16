@@ -15,7 +15,9 @@ Improvements to BatLit are encouraged! If you feel comfortable, please submit pu
 
 ## Local Enviroment Setup
 
-Configure your local environment to help test changes locally first.
+Configure your local environment to help test changes locally first. 
+
+Tailored for Ubuntu, similar steps can be taken for Mac and other operating systems.
 
 Steps:
 
