@@ -12,9 +12,10 @@ banner-text: Behind the Scenes
 
 ![](../assets/GBatNetEco-Interactions-Working-Group.jpg)
 
+<a href="https://gbatnet"><img class="img-inline" src="../assets/GBatNet-transparent_med-300x300.png"/></a>
+
 ## [GBatNet Eco-Interactions Working Group](https://www.gbatnet.org/interdisciplinary-projects/#eco-interactions)
 
-<a href="https://gbatnet"><img class="img-inline" src="../assets/GBatNet-transparent_med-300x300.png"/></a>
 
 The Global Union of Bat Diversity Networks (GBatNet) is the network of bat networks (and affiliated organizations) that are involved in exploring complementary aspects of bats to facilitate and enhance research addressing bat diversification and sustainability. 
 
