@@ -23,7 +23,7 @@ permalink: /join/
     1. Once approved, you'll receive an email invitation from Zenodo to join the BatLit Community.
     1. Please allow 7–10 days for processing, as this inbox is checked weekly.
 
-### 💡 Need access to a hard-to-find paper?␋ 
+### 💡 Need access to a hard-to-find paper?
 
 Email us the citation and we’ll do our best to add it to the collection. [batlitproject@gmail.com](mailto:batlitproject@gmail.com)
 
