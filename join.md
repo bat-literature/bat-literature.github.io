@@ -1,5 +1,6 @@
 ---
-title: Join Our Community
+title: Get Involved
+permalink: /join/
 ---
 
 ## New Members

@@ -1,5 +1,6 @@
 ---
-title: "Search BatLit"
+title: Search
+permalink: /search/
 ---
 
 

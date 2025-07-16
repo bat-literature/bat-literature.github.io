@@ -1,5 +1,6 @@
 ---
 title: How to Contribute
+permalink: /contribute/
 ---
 
 Thank you for your interest in the Bat Literature Project (BatLit) Zenodo Community! We're excited to support your work by providing access to our growing collection of bat-related literature.

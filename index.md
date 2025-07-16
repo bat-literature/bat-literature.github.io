@@ -1,9 +1,6 @@
 ---
-title: BatLit
+layout: default
 ---
-
-## The Bat Literature Project
-### An open-access literature archive supporting bat taxonomy, ecology, and conservation. 
 
 [About](about) / [Search BatLit](search) / [Zenodo Collection](https://zenodo.org/communities/batlit) / [Data Paper](datapaper) / [Contact Us](about) / [Upload Literature](join)
 

@@ -1,5 +1,7 @@
 ---
-title: Behind the Scenes
+layout: default
+title: About
+permalink: /about/
 ---
 
 ## Contact Us

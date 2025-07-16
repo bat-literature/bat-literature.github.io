@@ -2,11 +2,9 @@
 title: Data Paper
 ---
 
-# BatLit: The Bat Literature Project
-
 ⚠️ this is a work in progress⚠️
 
-[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/datapaper.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new) / [contact](mailto:info@batbase.org)
+[suggest page edits](https://github.com/bat-literature/bat-literature.github.io/edit/main/datapaper.md) / [share feedback](https://github.com/bat-literature/bat-literature.github.io/issues/new)
 
 [Introduction](#introduction) / [Methods](#methods) / [Prerequisites](#prerequisites) / [Results](#results) / [Discussion](#Discussion) / [Reference List](refs)
 

@@ -1,0 +1,10 @@
+title: BatLit - The Bat Literature Project
+description: An open-access literature archive supporting bat taxonomy, ecology, and conservation.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://batlit.org" # the base hostname & protocol for your site
+markdown: kramdown
+theme: minima
+header_pages:
+  - about.md
+  - join.md
+  - contribute.md
