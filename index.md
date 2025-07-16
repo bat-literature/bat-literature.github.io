@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[About](about) / [Search BatLit](search) / [Zenodo Collection](https://zenodo.org/communities/batlit) / [Data Paper](datapaper) / [Contact Us](about) / [Upload Literature](join)
+[About](about) / [Search BatLit](search) / [Zenodo Collection](https://zenodo.org/communities/batlit) / [Data Paper](datapaper) / [Contact Us](about) / [Upload Literature](contribute)
 
 ## The Project
 
