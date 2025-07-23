@@ -4,12 +4,7 @@ banner: assets/Chrotopterus_auritus_852_0942.jpeg
 banner-subtext: An open-access literature archive supporting bat taxonomy, ecology, and conservation. 
 ---
 
-<a class="nav-button" href="about">About</a>
-<a class="nav-button" href="search">Search BatLit</a>
-<a href="https://zenodo.org/communities/batlit" class="nav-button">Zenodo Collection</a>
-<a class="nav-button" href="datapaper">Data Paper</a>
-<a class="nav-button" href="about">Contact Us</a>
-<a class="nav-button" href="contribute">Upload Literature</a>
+
 
 ## The Project
 
