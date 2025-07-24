@@ -12,7 +12,7 @@ header_pages:
     title: Search BatLit
   - url: https://zenodo.org/communities/batlit
     title: Zenodo Collection
-  - url: https://batlit.org/datapaper
+  - page: datapaper.md
     title: Data Paper  
   - page: join.md
     title: Get Involved
