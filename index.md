@@ -4,13 +4,6 @@ banner: assets/Chrotopterus_auritus_852_0942.jpeg
 banner-subtext: An open-access literature archive supporting bat taxonomy, ecology, and conservation. 
 ---
 
-<a class="nav-button" href="about">About</a>
-<a class="nav-button" href="search">Search BatLit</a>
-<a href="https://zenodo.org/communities/batlit" class="nav-button">Zenodo Collection</a>
-<a class="nav-button" href="datapaper">Data Paper</a>
-<a class="nav-button" href="about">Contact Us</a>
-<a class="nav-button" href="contribute">Upload Literature</a>
-
 ## The Project
 
 Bat researchers worldwide contribute to and rely on a vast corpus of literature to build our collective scientific knowledge. Yet in practice, researchers’ engagement with literature is a solo endeavor, creating personal archives of paper copies or PDFs. Rather than the scientific literature being widely and publicly available, researchers employ tedious and expensive methods to find new sources such as scanning bibliographies or using subscription-based search tools. 
