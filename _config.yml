@@ -6,7 +6,15 @@ url: "https://batlit.org" # the base hostname & protocol for your site
 markdown: kramdown
 theme: minima
 header_pages:
-  - about.md
-  - join.md
-  - contribute.md
-  - test.md
+  - page: about.md
+    title: About
+  - page: search.md
+    title: Search BatLit
+  - url: https://zenodo.org/communities/batlit
+    title: Zenodo Collection
+  - page: join.md
+    title: Get Involved
+  - page: about.md
+    title: Contact Us
+  - page: contribute.md
+    title: Upload Literature
