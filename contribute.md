@@ -13,6 +13,7 @@ If you would like to contribute pdfs, email either individual files or see below
 
 Please make sure that your literature includes information on bats specifically. We are interesting in collecting everything including scientific articles, books, theses, news articles, workshop proceedings, white papers, newsletters, etc. 
 
+## Upload Literature
 ## How to Share Your Literature Collection
 
 **Google Drive:**
