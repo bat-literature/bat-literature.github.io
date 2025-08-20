@@ -17,7 +17,7 @@ banner-text: Join Our Community
     1. Set Profile Visibility and Email Visibility to Public
     1. Click “Update preferences”
 1. Complete the Membership Form
-    1. Please fill out this form to help us verify your affiliation: [Membership Form](https://docs.google.com/forms/d/e/1FAIpQLScTFfM3qNvhwTuMY_9xhvywJpcccxAlR4UqEdp4dOlqNyPdVA/viewform)
+    1. Please fill out this form to help us verify your affiliation: [Membership Form](https://docs.google.com/forms/d/e/1FAIpQLSf5l3XbRHHR4Wa-mMPzvIOAb68zADzBoitJQygDKPEJEH9Vpw/viewform?usp=dialog)
     1. Name, affiliation, position, contact info 
     1. Area of Specialization
     1. Educational background and/or advisor’s name
