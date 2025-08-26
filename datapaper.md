@@ -137,7 +137,7 @@ To run these programs, please use some Linux distribution, MacOS, or [Windows Su
 
 Also, please make sure to install [preston](https://github.com/bio-guoda/preston#quickstart), [jq](https://jqlang.github.io/jq/), and [mlr](https://miller.readthedocs.io/en/6.12.0/).  
 
-The tools used in the example workflows are designed to handle lots of data quickly using so-called ["Standard Streams"](https://en.wikipedia.org/wiki/Standard_streams). In addition, they have the ability to run offline after an initial caching (or cloning) of remote resources. If you are unfamiliar with these tools or processing methods and would like to learn more, you may benefit from a Carpentries Lesson like https://librarycarpentry.org/lc-shell/ or many of the other educational materials. Note that some of these tools have been around since the 1970s, are well documented and are likely to stick around a little while longer.  
+The tools used in the example workflows are designed to handle lots of data quickly using so-called ["Standard Streams"](https://en.wikipedia.org/wiki/Standard_streams). In addition, they have the ability to run offline after an initial caching (or cloning) of remote resources. If you are unfamiliar with these tools or processing methods and would like to learn more, you may benefit from a Carpentries Lesson like [https://librarycarpentry.org/lc-shell/](https://librarycarpentry.org/lc-shell/) or many of the other educational materials. Note that some of these tools have been around since the 1970s, are well documented and are likely to stick around a little while longer.  
 
 ### Tracking Zotero 
 
@@ -147,7 +147,7 @@ To track the Zotero group and compile a version of the bat literature corpus, th
 ZOTERO_TOKEN=[SECRET] preston track --algo md5 https://www.zotero.org/groups/5435545/bat_literature_project
 ```
 
-Note that this group has access restrictions for copyright reasons. This is why you need to replace the "[SECRET]" with your personal access token.
+Note that this group has access restrictions for copyright reasons. This is why you need to replace the "[SECRET]" with your personal access token (or API key). See [Zotero Web API documentation](https://www.zotero.org/support/dev/web_api/v3/basics#authentication) on how to create your access token (or API key).
 
 ### Publishing Metadata
 
