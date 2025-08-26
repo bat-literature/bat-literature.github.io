@@ -37,18 +37,22 @@ Also, the paper relies on Zotero and Zenodo documentation to answer any question
 
 The following sections help you get started on Preston and their relation to Zotero and Zenodo.
 
-## Guiding Questions - More Complete Answers 
+## BatLit Publication Workflow 
 
-![a visual representation of the batlit publication workflow](assets/batlit-components.svg) 
+![](assets/batlit-components.svg) 
 
 ## Why Preston? 
 
-Preston allows for creating a versioned snapshot of a Zotero library (or group). Also, Preston allows for depositing this versioned snapshot into Zenodo. At time of writing, 26 Aug 2025, this unique functionality only offered through Preston. 
+Preston allows for creating a versioned snapshot of a Zotero library (or group). 
+
+Also, Preston allows for depositing this versioned snapshot into Zenodo. 
+
+At time of writing, 26 Aug 2025, this publish Zotero-to-Zenodo functionality only offered through Preston. 
 
 ## Preston Basics
 
 1. Tracks (or versions) *Digital* Content
-2. Format Agnostic (*any* digital content)
+2. Format Agnostic (*any* Digital Content)
 3. Allows Signed Data Citations
 
 ## Prequisites
@@ -87,7 +91,7 @@ which should produce...
 hey there!
 ```
 
-## Say Hi and Version It - Step By Step
+## Say Hi and Version It - Step 1
 
 ```
 echo hi there!
@@ -104,7 +108,7 @@ echo hi there! | preston track --algo md5
 Print "hi there!" to output (stdout), then turn this output into input (stdin) of `preston track`. So, this sends "hi there!" to preston and versions (or tracks) the input. The output of preston is a machine readable description of what happened and ends with something like:
 
 ```
-<urn:uuid:...> <http://purl.org/pav/hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> <urn:uuid:...> .
+<...> <...hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> <...> .
 ```
 
 
@@ -119,13 +123,19 @@ echo hi there! | preston track --algo md5 | grep hasVersion
 This prints only the part of the BOM that includes "hasVersion" and should look something like:
 
 ```
-<urn:uuid:X> <http://purl.org/pav/hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> <urn:uuid:...> .
+<urn:uuid:X> <...hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> .
 ```
 
+## Say Hi and Version It - Step 4
+
+
+```
+<urn:uuid:X> <...hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> ...
+```
 This is a statement expressed in rdf/nquad. In this case, it expressed something like: there's this thing ```urn:uuid:X``` that is associated with content that has a cryptographic hash ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```. A cryptographic hash is a unique fingerprint derived from the digital content itself. **If the content and the hash algorithm are the same, the fingerprint is always the same.** This concept is central to internet security as well as things like cryptocurrencies. 
 
  
-## Say Hi and Version It - Step 4
+## Say Hi and Version It - Step 5
 
 Now, we ask Preston to print the versioned content by piping the "hasVersion" statement into ``preston cat```: 
 
@@ -139,7 +149,7 @@ to produce . . .
 hi there!
 ```
 
-## Say Hi and Version It - Step 5
+## Say Hi and Version It - Step 6
 
 Now that we've versioned saying hi, we can print the content using
 
@@ -155,9 +165,11 @@ hi there!
 
 This suggests that Preston *thinks* that ```hash://md5/75c7e31591354f2c82226aa3eb0267c7``` is the cryptographic hash of ```hi there!```. And . . . 
 
-## Say Hi and Version It - Step 6
+## Say Hi and Version It - Step 7
 
 If you know the fingerprint of content (e.g., ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```), you can use it to ask for what *exactly* what you want. And, on getting a result, you can *independently* verify that this is the case using some commonly available cryptographic hash calculators like ```md5sum``` (linux) or ```md5``` (Mac). These calculators are readily available as they are central to internet security and other core applications.
+
+## Say Hi and Version It - Step 7 Continued...
 
 ```
 preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7 | md5sum
@@ -171,7 +183,7 @@ produces:
 
 Showing that an independent tool ```md5sum``` verified that the content you asked for is the content you got!  
 
-## Take Aways
+## Takeaways
 
  * Preston tracks, versions and packages digital content
  * Cryptographic hashes are unique digital fingerprints for digital content.

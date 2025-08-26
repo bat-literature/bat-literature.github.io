@@ -173,28 +173,24 @@ any questions about these platforms.</p>
 <p>The following sections help you get started on Preston and their
 relation to Zotero and Zenodo.</p>
 </section>
-<section id="guiding-questions---more-complete-answers-1"
-class="slide level2">
-<h2>Guiding Questions - More Complete Answers</h2>
-<figure>
-<img data-src="assets/batlit-components.svg"
-alt="a visual representation of the batlit publication workflow" />
-<figcaption aria-hidden="true">a visual representation of the batlit
-publication workflow</figcaption>
-</figure>
+<section id="batlit-publication-workflow" class="slide level2">
+<h2>BatLit Publication Workflow</h2>
+<p><img data-src="assets/batlit-components.svg" /></p>
 </section>
 <section id="why-preston" class="slide level2">
 <h2>Why Preston?</h2>
 <p>Preston allows for creating a versioned snapshot of a Zotero library
-(or group). Also, Preston allows for depositing this versioned snapshot
-into Zenodo. At time of writing, 26 Aug 2025, this unique functionality
-only offered through Preston.</p>
+(or group).</p>
+<p>Also, Preston allows for depositing this versioned snapshot into
+Zenodo.</p>
+<p>At time of writing, 26 Aug 2025, this publish Zotero-to-Zenodo
+functionality only offered through Preston.</p>
 </section>
 <section id="preston-basics" class="slide level2">
 <h2>Preston Basics</h2>
 <ol type="1">
 <li>Tracks (or versions) <em>Digital</em> Content</li>
-<li>Format Agnostic (<em>any</em> digital content)</li>
+<li>Format Agnostic (<em>any</em> Digital Content)</li>
 <li>Allows Signed Data Citations</li>
 </ol>
 </section>
@@ -225,8 +221,8 @@ echo hi there! | preston track --algo md5 | grep hasVersion | preston cat </code
 <p>which should produce…</p>
 <pre><code>hey there!</code></pre>
 </section>
-<section id="say-hi-and-version-it---step-by-step" class="slide level2">
-<h2>Say Hi and Version It - Step By Step</h2>
+<section id="say-hi-and-version-it---step-1" class="slide level2">
+<h2>Say Hi and Version It - Step 1</h2>
 <pre><code>echo hi there!</code></pre>
 <p>Prints “hi there!” to standard output</p>
 </section>
@@ -238,7 +234,7 @@ input (stdin) of <code>preston track</code>. So, this sends “hi there!”
 to preston and versions (or tracks) the input. The output of preston is
 a machine readable description of what happened and ends with something
 like:</p>
-<pre><code>&lt;urn:uuid:...&gt; &lt;http://purl.org/pav/hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; &lt;urn:uuid:...&gt; .</code></pre>
+<pre><code>&lt;...&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; &lt;...&gt; .</code></pre>
 <p>This preston output, or description, is formatted in <a
 href="https://www.w3.org/TR/n-quads/">rdf/nquads</a> and records what
 content was recorded when and by who. This machine readable description
@@ -250,7 +246,11 @@ the tracked content.</p>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion</code></pre>
 <p>This prints only the part of the BOM that includes “hasVersion” and
 should look something like:</p>
-<pre><code>&lt;urn:uuid:X&gt; &lt;http://purl.org/pav/hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; &lt;urn:uuid:...&gt; .</code></pre>
+<pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; .</code></pre>
+</section>
+<section id="say-hi-and-version-it---step-4" class="slide level2">
+<h2>Say Hi and Version It - Step 4</h2>
+<pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; ...</code></pre>
 <p>This is a statement expressed in rdf/nquad. In this case, it
 expressed something like: there’s this thing <code>urn:uuid:X</code>
 that is associated with content that has a cryptographic hash
@@ -261,16 +261,16 @@ same, the fingerprint is always the same.</strong> This concept is
 central to internet security as well as things like
 cryptocurrencies.</p>
 </section>
-<section id="say-hi-and-version-it---step-4" class="slide level2">
-<h2>Say Hi and Version It - Step 4</h2>
+<section id="say-hi-and-version-it---step-5" class="slide level2">
+<h2>Say Hi and Version It - Step 5</h2>
 <p>Now, we ask Preston to print the versioned content by piping the
 “hasVersion” statement into ``preston cat```:</p>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion | preston cat</code></pre>
 <p>to produce . . .</p>
 <pre><code>hi there!</code></pre>
 </section>
-<section id="say-hi-and-version-it---step-5" class="slide level2">
-<h2>Say Hi and Version It - Step 5</h2>
+<section id="say-hi-and-version-it---step-6" class="slide level2">
+<h2>Say Hi and Version It - Step 6</h2>
 <p>Now that we’ve versioned saying hi, we can print the content
 using</p>
 <pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7</code></pre>
@@ -280,8 +280,8 @@ using</p>
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code> is the
 cryptographic hash of <code>hi there!</code>. And . . .</p>
 </section>
-<section id="say-hi-and-version-it---step-6" class="slide level2">
-<h2>Say Hi and Version It - Step 6</h2>
+<section id="say-hi-and-version-it---step-7" class="slide level2">
+<h2>Say Hi and Version It - Step 7</h2>
 <p>If you know the fingerprint of content (e.g.,
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code>), you can use
 it to ask for what <em>exactly</em> what you want. And, on getting a
@@ -290,14 +290,18 @@ using some commonly available cryptographic hash calculators like
 <code>md5sum</code> (linux) or <code>md5</code> (Mac). These calculators
 are readily available as they are central to internet security and other
 core applications.</p>
+</section>
+<section id="say-hi-and-version-it---step-7-continued"
+class="slide level2">
+<h2>Say Hi and Version It - Step 7 Continued…</h2>
 <pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7 | md5sum</code></pre>
 <p>produces:</p>
 <pre><code>75c7e31591354f2c82226aa3eb0267c7  -</code></pre>
 <p>Showing that an independent tool <code>md5sum</code> verified that
 the content you asked for is the content you got!</p>
 </section>
-<section id="take-aways" class="slide level2">
-<h2>Take Aways</h2>
+<section id="takeaways" class="slide level2">
+<h2>Takeaways</h2>
 <ul>
 <li>Preston tracks, versions and packages digital content</li>
 <li>Cryptographic hashes are unique digital fingerprints for digital
