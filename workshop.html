@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute, GloBI)">
+  <meta name="dcterms.date" content="2025-08-26">
+  <title>Mobilizing Bat Literature</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js//dist/theme/serif.css" id="theme">
+  <style>
+  .slides {
+      font-size: 0.75em;
+  }
+  .reveal ul {
+      display: block;
+  }
+  .reveal ol {
+      display: block;
+  }
+
+  img {
+      max-height: 350px !important;
+  }
+
+  figcaption {
+      font-size: 0.6em !important;
+      font-style: italic !important;
+  }
+
+  .subtitle {
+      font-style: italic !important;
+  }
+
+  .date {
+      font-size: 0.75em !important;
+  }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Mobilizing Bat Literature</h1>
+  <p class="subtitle">using versioned snapshots of the Zotero BatLit
+Library</p>
+  <p class="author">Jorrit Poelen (UC Santa Barbara Cheadle Center,
+Ronin Institute, GloBI)</p>
+  <p class="date">2025-08-26</p>
+</section>
+
+<section id="guiding-questions" class="slide level2">
+<h2>Guiding Questions</h2>
+<h3 id="how-to-manage-the-batlit-corpus">How to manage the BatLit
+corpus?</h3>
+<h3 id="how-to-create-versioned-snapshots-of-the-batlit-corpus">How to
+create versioned snapshots of the BatLit corpus?</h3>
+<h3 id="how-to-share-versioned-snapshots-of-the-batlit-corpus">How to
+share versioned snapshots of the BatLit corpus?</h3>
+</section>
+<section id="guiding-questions---brief-answers" class="slide level2">
+<h2>Guiding Questions - Brief Answers</h2>
+<h3 id="how-to-manage-the-batlit-corpus-1">How to manage the BatLit
+corpus?</h3>
+<p>We use <a href="https://zotero.com">Zotero</a> to manage our
+literature corpus.</p>
+<h3 id="how-to-create-versioned-snapshots-of-the-batlit-corpus-1">How to
+create versioned snapshots of the BatLit corpus?</h3>
+<p>We use Preston to version our literature corpus <a href="#/fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>.</p>
+<h3 id="how-to-share-versioned-snapshots-of-the-batlit-corpus-1">How to
+share versioned snapshots of the BatLit corpus?</h3>
+<p>We use <a href="https://zenodo.org">Zenodo</a> to allow versioned
+access to BatLit.</p>
+</section>
+<section id="guiding-questions---more-complete-answers"
+class="slide level2">
+<h2>Guiding Questions - More Complete Answers</h2>
+<p>The <a href="datapaper">BatLit Data Paper</a> describes our BatLit
+workflow and provides specific examples.</p>
+<p>Also, the paper relies on Zotero and Zenodo documentation to answer
+any questions about these platforms.</p>
+<p>The following sections help you get started on Preston and their
+relation to Zotero and Zenodo.</p>
+</section>
+<section id="guiding-questions---more-complete-answers-1"
+class="slide level2">
+<h2>Guiding Questions - More Complete Answers</h2>
+<figure>
+<img data-src="assets/batlit-components.svg"
+alt="a visual representation of the batlit publication workflow" />
+<figcaption aria-hidden="true">a visual representation of the batlit
+publication workflow</figcaption>
+</figure>
+</section>
+<section id="why-preston" class="slide level2">
+<h2>Why Preston?</h2>
+<p>Preston allows for creating a versioned snapshot of a Zotero library
+(or group). Also, Preston allows for depositing this versioned snapshot
+into Zenodo. At time of writing, 26 Aug 2025, this unique functionality
+only offered through Preston.</p>
+</section>
+<section id="preston-basics" class="slide level2">
+<h2>Preston Basics</h2>
+<ol type="1">
+<li>Tracks (or versions) <em>Digital</em> Content</li>
+<li>Format Agnostic (<em>any</em> digital content)</li>
+<li>Allows Signed Data Citations</li>
+</ol>
+</section>
+<section id="prequisites" class="slide level2">
+<h2>Prequisites</h2>
+<ol type="1">
+<li>Familiarity with <a
+href="https://librarycarpentry.org/lc-shell/">Unix Shell</a></li>
+<li>Access to a computer with some Unix Shell</li>
+<li>Install Preston <a href="#/fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+</section>
+<section id="check-preston-version" class="slide level2">
+<h2>Check Preston Version</h2>
+<p>run</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">preston</span> <span class="at">--version</span></span></code></pre></div>
+<p>and verify that this produces something like:</p>
+<pre><code>0.11.0</code></pre>
+</section>
+<section id="say-hi-and-version-it" class="slide level2">
+<h2>Say Hi and Version It</h2>
+<p>Copy and paste this into your commandline.</p>
+<pre><code>mkdir -p some/empty-directory
+cd some/empty-directory
+echo hi there! | preston track --algo md5 | grep hasVersion | preston cat </code></pre>
+<p>which should produce…</p>
+<pre><code>hey there!</code></pre>
+</section>
+<section id="say-hi-and-version-it---step-by-step" class="slide level2">
+<h2>Say Hi and Version It - Step By Step</h2>
+<pre><code>echo hi there!</code></pre>
+<p>Prints “hi there!” to standard output</p>
+</section>
+<section id="say-hi-and-version-it---step-2" class="slide level2">
+<h2>Say Hi and Version It - Step 2</h2>
+<pre><code>echo hi there! | preston track --algo md5</code></pre>
+<p>Print “hi there!” to output (stdout), then turn this output into
+input (stdin) of <code>preston track</code>. So, this sends “hi there!”
+to preston and versions (or tracks) the input. The output of preston is
+a machine readable description of what happened and ends with something
+like:</p>
+<pre><code>&lt;urn:uuid:...&gt; &lt;http://purl.org/pav/hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; &lt;urn:uuid:...&gt; .</code></pre>
+<p>This preston output, or description, is formatted in <a
+href="https://www.w3.org/TR/n-quads/">rdf/nquads</a> and records what
+content was recorded when and by who. This machine readable description
+is also known as the BOM Bill of Materials, manifest or packing slip for
+the tracked content.</p>
+</section>
+<section id="say-hi-and-version-it---step-3" class="slide level2">
+<h2>Say Hi and Version It - Step 3</h2>
+<pre><code>echo hi there! | preston track --algo md5 | grep hasVersion</code></pre>
+<p>This prints only the part of the BOM that includes “hasVersion” and
+should look something like:</p>
+<pre><code>&lt;urn:uuid:X&gt; &lt;http://purl.org/pav/hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; &lt;urn:uuid:...&gt; .</code></pre>
+<p>This is a statement expressed in rdf/nquad. In this case, it
+expressed something like: there’s this thing <code>urn:uuid:X</code>
+that is associated with content that has a cryptographic hash
+<code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code>. A
+cryptographic hash is a unique fingerprint derived from the digital
+content itself. <strong>If the content and the hash algorithm are the
+same, the fingerprint is always the same.</strong> This concept is
+central to internet security as well as things like
+cryptocurrencies.</p>
+</section>
+<section id="say-hi-and-version-it---step-4" class="slide level2">
+<h2>Say Hi and Version It - Step 4</h2>
+<p>Now, we ask Preston to print the versioned content by piping the
+“hasVersion” statement into ``preston cat```:</p>
+<pre><code>echo hi there! | preston track --algo md5 | grep hasVersion | preston cat</code></pre>
+<p>to produce . . .</p>
+<pre><code>hi there!</code></pre>
+</section>
+<section id="say-hi-and-version-it---step-5" class="slide level2">
+<h2>Say Hi and Version It - Step 5</h2>
+<p>Now that we’ve versioned saying hi, we can print the content
+using</p>
+<pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7</code></pre>
+<p>to produce …</p>
+<pre><code>hi there!</code></pre>
+<p>This suggests that Preston <em>thinks</em> that
+<code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code> is the
+cryptographic hash of <code>hi there!</code>. And . . .</p>
+</section>
+<section id="say-hi-and-version-it---step-6" class="slide level2">
+<h2>Say Hi and Version It - Step 6</h2>
+<p>If you know the fingerprint of content (e.g.,
+<code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code>), you can use
+it to ask for what <em>exactly</em> what you want. And, on getting a
+result, you can <em>independently</em> verify that this is the case
+using some commonly available cryptographic hash calculators like
+<code>md5sum</code> (linux) or <code>md5</code> (Mac). These calculators
+are readily available as they are central to internet security and other
+core applications.</p>
+<pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7 | md5sum</code></pre>
+<p>produces:</p>
+<pre><code>75c7e31591354f2c82226aa3eb0267c7  -</code></pre>
+<p>Showing that an independent tool <code>md5sum</code> verified that
+the content you asked for is the content you got!</p>
+</section>
+<section id="take-aways" class="slide level2">
+<h2>Take Aways</h2>
+<ul>
+<li>Preston tracks, versions and packages digital content</li>
+<li>Cryptographic hashes are unique digital fingerprints for digital
+content.</li>
+<li>Cryptographic hashes can be generated independently using commonly
+available tools.</li>
+<li>Cryptographic hashes enable secure citation of digital content</li>
+</ul>
+</section>
+<section id="next-steps" class="slide level2">
+<h2>Next Steps</h2>
+<ul>
+<li>Review BatLit Datapaper</li>
+<li>Create a Zotero Group for Testing</li>
+<li>Track the Zotero Test Group using Preston</li>
+<li>Create a Zenodo Test Community on Zenodo Sandbox</li>
+<li>Publish the Zotero Test Group to the Zenodo Test Community</li>
+<li>Once you feel comfortable, repeat the process with the “real” Zotero
+BatLit Group and associated Zenodo BatLit Community</li>
+</ul>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Elliott M.J., Poelen, J.H. &amp; Fortes, J.A.B. (2023)
+Signing data citations enables data verification and citation
+persistence. <em>Sci Data</em>.
+https://doi.org/10.1038/s41597-023-02230-y <a
+href="https://linker.bio/hash://sha256/f849c870565f608899f183ca261365dce9c9f1c5441b1c779e0db49df9c2a19d">hash://sha256/f849c870565f608899f183ca261365dce9c9f1c5441b1c779e0db49df9c2a19d</a><a
+href="#/fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>https://globalbioticinteractions.org/preston<a
+href="#/fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
