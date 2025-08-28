@@ -198,3 +198,145 @@ Showing that an independent tool ```md5sum``` verified that the content you aske
  * Create a Zenodo Test Community on Zenodo Sandbox 
  * Publish the Zotero Test Group to the Zenodo Test Community
  * Once you feel comfortable, repeat the process with the "real" Zotero BatLit Group and associated Zenodo BatLit Community
+
+ ## Part II - Creating a Snapshot of a Zotero Literature Group
+ 
+ After covering the Preston basics, we now explore how to create a versioned snapshot of a Zotero Literature Collection. 
+ 
+ First, we create a Zotero Group for Testing, then we track the Zotero Test Group using Preston
+
+## Step II.1- Create A Zotero Group for Testing
+
+1. go to https://zotero.org
+2. login using your credentials 
+3. create a new empty private Zotero group for testing
+4. download pdfs associated with:
+ 
+ Halowell, E. (1846). Description of a new species of bat from Western Africa, Pteropus Haldemani. Annals and Magazine of Natural History, 18(120), 356–357. https://doi.org/10.1080/037454809496597 https://doi.org/10.5281/zenodo.13418040 https://zenodo.org/records/13418040/files/Halowell%20-%201846%20-%20Description%20of%20a%20new%20species%20of%20bat%20from%20Wester.pdf
+ 
+ Palmer, C., & Woinarski, J. C. Z. (1999). Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic. Wildlife Research, 26(6), 823-838. https://doi.org/10.5281/zenodo.14817268 https://zenodo.org/records/14817268/files/Palmer%20and%20Woinarski%20-%201999%20-%20Seasonal%20roosts%20and%20foraging%20movements%20of%20the%20blac.pdf 
+6. import the two pdfs into your Zotero Test Group
+
+
+ ## Step II.2 - Get your Zotero API Key 
+ 
+ In order to talk to Zotero using Preston (or any programmatic method) you need a Zotero Web API Key.
+ 
+ 1. search Zotero documentation on getting an API Key
+
+    At time of writing, 2025-08-28, the following web pages 
+
+    https://www.zotero.org/settings/keys
+
+    https://www.zotero.org/settings/security#applications
+
+ 2. Get the API key and record it in a safe location. An API key is a combation of letters and number e.g., ```12345678```
+
+## Step II.3 - Take a snapshot of your Zotero Collection Using Preston
+
+Preston has built in functionality to take a snapshot of a Zotero Collection. 
+
+1. open a command-line terminal
+2. go to your home directory (e.g., ```cd ~```)
+2. create new directory (e.g., ```mkdir batlit-test```)
+3. go into the new directory (e.g., ```cd batlit-test```) 
+4. run the following command
+```
+export ZOTERO_TOKEN=[SECRET]
+preston track https://www.zotero.org/groups/6123963/test_aug
+```
+
+list all the content of the metadata from the Zotero group across all Bill of Materials
+
+```
+preston ls\
+ |  grep hasVersion\
+ | grep "https://api.zotero.org/groups/6123963/items/"\
+ | grep -v "file/view"\
+ | sort\
+ | preston cat
+```
+
+## Step II.4 Make a change and create a new snapshot
+
+1. Change the title of one of the publication in your test Zotero Group
+2. Make a new snapshot version by re-running: 
+
+```
+preston track https://www.zotero.org/groups/6123963/test_aug
+```
+
+## Step II.5 Compare changes in metadata across snapshot versions 
+
+After making a change in a Zotero records, and creating a new snapshot, we can compare the different versions of Bill of Materials associated with these snapshots.
+
+In order to do so, we need to (II.5.1) make a sorted list of all metadata for the most recent Bill of Materials and (II.5.2) make a sorted list of all metadata of a previous Bill of Materials. Finally, (II.5.3) we compare the differences between these metadata snapshots.
+
+
+## Step II.5.1 A sorted list of metadata for most recent Bill of Materials
+
+Create a sorted list metadata statement from the Zotero group for the *most recent* Bill of Materials, and list their content
+
+```
+preston head\
+ | preston cat\
+ | grep hasVersion\
+ | grep "https://api.zotero.org/groups/6123963/items/"\ 
+ | grep -v "file/view"\
+ | sort\
+ | preston cat\
+ > most-recent-metadata.txt
+```
+
+where ```6123963``` is the group id number of your Zotero Test Group.
+
+## Step II.5.2 A sorted list of metadata for a previous version of the Bill of Materials
+
+List all the content of the metadata from the Zotero group for the *oldest* Bill of Materials and print it to a file
+
+```
+preston history\
+ | tail -1\
+ | preston cat\
+ |  grep hasVersion\
+ | grep "https://api.zotero.org/groups/6123963/items/"\
+ | grep -v "file/view"\
+ | sort\
+ | preston cat\
+ > oldest-metadata.txt
+```
+
+where ```6123963``` is the group id number of your Zotero Test Group.
+
+
+## Step II.5.3 Compare changes across metadata associated with two versions of Bill of Materials
+
+Now that we have the Zotero metadata for the most recent Bill of Materials, as well as a previous version, we can 
+use [diff](https://en.wikipedia.org/wiki/Diff) to compare the differences. 
+
+```
+ diff most-recent-metadata.txt oldest-metadata.txt
+```
+
+to produce
+ 
+ ```diff
+71c71
+<         "version": 22,
+---
+>         "version": 20,
+117c117
+<             "version": 22,
+---
+>             "version": 20,
+119c119
+<             "title": "Pteropus test",
+---
+>             "title": "Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic",
+158c158
+<             "dateModified": "2025-08-28T15:41:26Z"
+---
+>             "dateModified": "2025-08-28T15:04:13Z"
+```
+
+In this example the title was changed to ```Pteropus test``` and the diff reflects this. 
