@@ -186,8 +186,8 @@ Zenodo.</p>
 <p>At time of writing, 26 Aug 2025, this publish Zotero-to-Zenodo
 functionality only offered through Preston.</p>
 </section>
-<section id="preston-basics" class="slide level2">
-<h2>Preston Basics</h2>
+<section id="part-i---preston-basics" class="slide level2">
+<h2>Part I - Preston Basics</h2>
 <ol type="1">
 <li>Tracks (or versions) <em>Digital</em> Content</li>
 <li>Format Agnostic (<em>any</em> Digital Content)</li>
@@ -221,13 +221,13 @@ echo hi there! | preston track --algo md5 | grep hasVersion | preston cat </code
 <p>which should produce…</p>
 <pre><code>hey there!</code></pre>
 </section>
-<section id="say-hi-and-version-it---step-1" class="slide level2">
-<h2>Say Hi and Version It - Step 1</h2>
+<section id="step-i.1-say-hi-and-version-it" class="slide level2">
+<h2>Step I.1 Say Hi and Version It</h2>
 <pre><code>echo hi there!</code></pre>
 <p>Prints “hi there!” to standard output</p>
 </section>
-<section id="say-hi-and-version-it---step-2" class="slide level2">
-<h2>Say Hi and Version It - Step 2</h2>
+<section id="step-i.2-say-hi-and-version-it" class="slide level2">
+<h2>Step I.2 Say Hi and Version It</h2>
 <pre><code>echo hi there! | preston track --algo md5</code></pre>
 <p>Print “hi there!” to output (stdout), then turn this output into
 input (stdin) of <code>preston track</code>. So, this sends “hi there!”
@@ -241,15 +241,15 @@ content was recorded when and by who. This machine readable description
 is also known as the BOM Bill of Materials, manifest or packing slip for
 the tracked content.</p>
 </section>
-<section id="say-hi-and-version-it---step-3" class="slide level2">
-<h2>Say Hi and Version It - Step 3</h2>
+<section id="step-i.3---say-hi-and-version-it" class="slide level2">
+<h2>Step I.3 - Say Hi and Version It</h2>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion</code></pre>
 <p>This prints only the part of the BOM that includes “hasVersion” and
 should look something like:</p>
 <pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; .</code></pre>
 </section>
-<section id="say-hi-and-version-it---step-4" class="slide level2">
-<h2>Say Hi and Version It - Step 4</h2>
+<section id="step-i.4---say-hi-and-version-it" class="slide level2">
+<h2>Step I.4 - Say Hi and Version It</h2>
 <pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; ...</code></pre>
 <p>This is a statement expressed in rdf/nquad. In this case, it
 expressed something like: there’s this thing <code>urn:uuid:X</code>
@@ -261,16 +261,16 @@ same, the fingerprint is always the same.</strong> This concept is
 central to internet security as well as things like
 cryptocurrencies.</p>
 </section>
-<section id="say-hi-and-version-it---step-5" class="slide level2">
-<h2>Say Hi and Version It - Step 5</h2>
+<section id="step-i.5---say-hi-and-version-it" class="slide level2">
+<h2>Step I.5 - Say Hi and Version It</h2>
 <p>Now, we ask Preston to print the versioned content by piping the
 “hasVersion” statement into ``preston cat```:</p>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion | preston cat</code></pre>
 <p>to produce . . .</p>
 <pre><code>hi there!</code></pre>
 </section>
-<section id="say-hi-and-version-it---step-6" class="slide level2">
-<h2>Say Hi and Version It - Step 6</h2>
+<section id="step-i.6---say-hi-and-version-it" class="slide level2">
+<h2>Step I.6 - Say Hi and Version It</h2>
 <p>Now that we’ve versioned saying hi, we can print the content
 using</p>
 <pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7</code></pre>
@@ -280,8 +280,8 @@ using</p>
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code> is the
 cryptographic hash of <code>hi there!</code>. And . . .</p>
 </section>
-<section id="say-hi-and-version-it---step-7" class="slide level2">
-<h2>Say Hi and Version It - Step 7</h2>
+<section id="step-i.7---say-hi-and-version-it" class="slide level2">
+<h2>Step I.7 - Say Hi and Version It</h2>
 <p>If you know the fingerprint of content (e.g.,
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code>), you can use
 it to ask for what <em>exactly</em> what you want. And, on getting a
@@ -291,9 +291,9 @@ using some commonly available cryptographic hash calculators like
 are readily available as they are central to internet security and other
 core applications.</p>
 </section>
-<section id="say-hi-and-version-it---step-7-continued"
+<section id="step-i.7---say-hi-and-version-it-continued"
 class="slide level2">
-<h2>Say Hi and Version It - Step 7 Continued…</h2>
+<h2>Step I.7 - Say Hi and Version It Continued…</h2>
 <pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7 | md5sum</code></pre>
 <p>produces:</p>
 <pre><code>75c7e31591354f2c82226aa3eb0267c7  -</code></pre>
@@ -322,7 +322,10 @@ available tools.</li>
 <li>Once you feel comfortable, repeat the process with the “real” Zotero
 BatLit Group and associated Zenodo BatLit Community</li>
 </ul>
-<p>## Part II - Creating a Snapshot of a Zotero Literature Group</p>
+</section>
+<section id="part-ii---creating-a-snapshot-of-a-zotero-literature-group"
+class="slide level2">
+<h2>Part II - Creating a Snapshot of a Zotero Literature Group</h2>
 <p>After covering the Preston basics, we now explore how to create a
 versioned snapshot of a Zotero Literature Collection.</p>
 <p>First, we create a Zotero Group for Testing, then we track the Zotero
@@ -335,20 +338,14 @@ class="slide level2">
 <li>go to https://zotero.org</li>
 <li>login using your credentials</li>
 <li>create a new empty private Zotero group for testing</li>
-<li>download pdfs associated with:</li>
+<li>download pdfs associated with
+https://doi.org/10.5281/zenodo.13418040 and
+https://doi.org/10.5281/zenodo.14817268</li>
+<li>import the two pdfs into your Zotero Test Group</li>
 </ol>
-<p>Halowell, E. (1846). Description of a new species of bat from Western
-Africa, Pteropus Haldemani. Annals and Magazine of Natural History,
-18(120), 356–357. https://doi.org/10.1080/037454809496597
-https://doi.org/10.5281/zenodo.13418040
-https://zenodo.org/records/13418040/files/Halowell%20-%201846%20-%20Description%20of%20a%20new%20species%20of%20bat%20from%20Wester.pdf</p>
-<p>Palmer, C., &amp; Woinarski, J. C. Z. (1999). Seasonal roosts and
-foraging movements of the black flying fox (Pteropus alecto) in the
-Northern Territory: resource tracking in a landscape mosaic. Wildlife
-Research, 26(6), 823-838. https://doi.org/10.5281/zenodo.14817268
-https://zenodo.org/records/14817268/files/Palmer%20and%20Woinarski%20-%201999%20-%20Seasonal%20roosts%20and%20foraging%20movements%20of%20the%20blac.pdf
-6. import the two pdfs into your Zotero Test Group</p>
-<p>## Step II.2 - Get your Zotero API Key</p>
+</section>
+<section id="step-ii.2---get-your-zotero-api-key" class="slide level2">
+<h2>Step II.2 - Get your Zotero API Key</h2>
 <p>In order to talk to Zotero using Preston (or any programmatic method)
 you need a Zotero Web API Key.</p>
 <ol type="1">
@@ -457,22 +454,15 @@ differences.</p>
 <pre><code> diff most-recent-metadata.txt oldest-metadata.txt</code></pre>
 <p>to produce</p>
 <div class="sourceCode" id="cb23"><pre
-class="sourceCode diff"><code class="sourceCode diff"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="dt">71c71</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;         &quot;version&quot;: 22,</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;         &quot;version&quot;: 20,</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="dt">117c117</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;version&quot;: 22,</span></span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;version&quot;: 20,</span></span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="dt">158c158</span></span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;dateModified&quot;: &quot;2025-08-28T15:41:26Z&quot;</span></span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;dateModified&quot;: &quot;2025-08-28T15:04:13Z&quot;</span></span></code></pre></div>
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>[...]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="dt">158c158</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;dateModified&quot;: &quot;2025-08-28T15:41:26Z&quot;</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;dateModified&quot;: &quot;2025-08-28T15:04:13Z&quot;</span></span></code></pre></div>
 <p>In this example the title was changed to <code>Pteropus test</code>
 and the diff reflects this.</p>
 </section>
@@ -482,20 +472,29 @@ and the diff reflects this.</p>
 <li>Create a Zenodo Test Community on Zenodo Sandbox</li>
 <li>Publish the Zotero Test Group to the Zenodo Test Community</li>
 </ul>
-<p>## Part III - Deposit a Zotero Snapshot into Zenodo</p>
+</section>
+<section id="part-iii---deposit-a-zotero-snapshot-into-zenodo"
+class="slide level2">
+<h2>Part III - Deposit a Zotero Snapshot into Zenodo</h2>
 <p>Now that we can make a snapshot of a Zotera group, we’d like to take
 this snapshot and deposit it into Zenodo. In order to do so, we need to
 (1) create a test Zenodo community in their sandbox (2) create a Zenodo
 API key, and (3) upload a snapshot version into Zenodo sandbox using
 Preston.</p>
-<p>## Part III.1 - Create a test Zenodo community</p>
+</section>
+<section id="part-iii.1---create-a-test-zenodo-community"
+class="slide level2">
+<h2>Part III.1 - Create a test Zenodo community</h2>
 <p>Zenodo provides a sandbox to try their platform and experiment.</p>
 <ol type="1">
 <li>go to https://sandbox.zenodo.org</li>
 <li>login</li>
 <li>create a community (e.g., BatLit-Test-20250829)</li>
 </ol>
-<p>## Part III.2 - Generate A Zenodo API Token</p>
+</section>
+<section id="part-iii.2---generate-a-zenodo-api-token"
+class="slide level2">
+<h2>Part III.2 - Generate A Zenodo API Token</h2>
 <p>To deposit content into Zenodo programmatically (e.g., using
 Preston), you need a Zenodo Web API Key / Token.</p>
 <ol type="1">
@@ -503,8 +502,12 @@ Preston), you need a Zenodo Web API Key / Token.</p>
 <li>select account &gt; developer (?)</li>
 <li>generate a new key and record this somewhere safe</li>
 </ol>
-<p>## Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test
-Community</p>
+</section>
+<section
+id="part-iii.3---deposit-a-zotero-snapshot-in-the-zenodo-test-community"
+class="slide level2">
+<h2>Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test
+Community</h2>
 <ol type="1">
 <li>open a command-line terminal</li>
 <li>set the evironment variable for Zenodo API access</li>
