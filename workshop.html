@@ -510,7 +510,7 @@ class="slide level2">
 </ol>
 <pre><code>preston head\
  | preston cat\
- | preston zotero-stream\
+ | preston zotero-stream --community &quot;[your community name]&quot;\
  &gt; zenodo.json</code></pre>
 </section>
 <section id="part-iii.4---deposit-zenodo-records" class="slide level2">
@@ -527,7 +527,10 @@ class="slide level2">
 <pre><code>mkdir logs
 cat zenodo.json\
  | preston track --data-dir logs/data\
- | preston zenodo --data-dir logs/data --remote file://$PWD/data/\
+ | preston zenodo\
+ --data-dir logs/data\
+ --remote file://$PWD/data/\
+ --community &quot;[your community name]&quot;\
  &gt; deposit.log</code></pre>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"

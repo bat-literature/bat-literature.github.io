@@ -360,7 +360,7 @@ To deposit content into Zenodo programmatically (e.g., using Preston), you need 
 ```
 preston head\
  | preston cat\
- | preston zotero-stream\
+ | preston zotero-stream --community "[your community name]"\
  > zenodo.json
 ```
 ## Part III.4 - Deposit Zenodo Records
@@ -377,7 +377,10 @@ preston head\
 mkdir logs
 cat zenodo.json\
  | preston track --data-dir logs/data\
- | preston zenodo --data-dir logs/data --remote file://$PWD/data/\
+ | preston zenodo\
+ --data-dir logs/data\
+ --remote file://$PWD/data/\
+ --community "[your community name]"\
  > deposit.log
 ```
 
