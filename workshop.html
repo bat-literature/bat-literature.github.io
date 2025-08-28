@@ -322,6 +322,209 @@ available tools.</li>
 <li>Once you feel comfortable, repeat the process with the “real” Zotero
 BatLit Group and associated Zenodo BatLit Community</li>
 </ul>
+<p>## Part II - Creating a Snapshot of a Zotero Literature Group</p>
+<p>After covering the Preston basics, we now explore how to create a
+versioned snapshot of a Zotero Literature Collection.</p>
+<p>First, we create a Zotero Group for Testing, then we track the Zotero
+Test Group using Preston</p>
+</section>
+<section id="step-ii.1--create-a-zotero-group-for-testing"
+class="slide level2">
+<h2>Step II.1- Create A Zotero Group for Testing</h2>
+<ol type="1">
+<li>go to https://zotero.org</li>
+<li>login using your credentials</li>
+<li>create a new empty private Zotero group for testing</li>
+<li>download pdfs associated with:</li>
+</ol>
+<p>Halowell, E. (1846). Description of a new species of bat from Western
+Africa, Pteropus Haldemani. Annals and Magazine of Natural History,
+18(120), 356–357. https://doi.org/10.1080/037454809496597
+https://doi.org/10.5281/zenodo.13418040
+https://zenodo.org/records/13418040/files/Halowell%20-%201846%20-%20Description%20of%20a%20new%20species%20of%20bat%20from%20Wester.pdf</p>
+<p>Palmer, C., &amp; Woinarski, J. C. Z. (1999). Seasonal roosts and
+foraging movements of the black flying fox (Pteropus alecto) in the
+Northern Territory: resource tracking in a landscape mosaic. Wildlife
+Research, 26(6), 823-838. https://doi.org/10.5281/zenodo.14817268
+https://zenodo.org/records/14817268/files/Palmer%20and%20Woinarski%20-%201999%20-%20Seasonal%20roosts%20and%20foraging%20movements%20of%20the%20blac.pdf
+6. import the two pdfs into your Zotero Test Group</p>
+<p>## Step II.2 - Get your Zotero API Key</p>
+<p>In order to talk to Zotero using Preston (or any programmatic method)
+you need a Zotero Web API Key.</p>
+<ol type="1">
+<li><p>search Zotero documentation on getting an API Key</p>
+<p>At time of writing, 2025-08-28, the following web pages</p>
+<p>https://www.zotero.org/settings/keys</p>
+<p>https://www.zotero.org/settings/security#applications</p></li>
+<li><p>Get the API key and record it in a safe location. An API key is a
+combation of letters and number e.g., <code>12345678</code></p></li>
+</ol>
+</section>
+<section
+id="step-ii.3---take-a-snapshot-of-your-zotero-collection-using-preston"
+class="slide level2">
+<h2>Step II.3 - Take a snapshot of your Zotero Collection Using
+Preston</h2>
+<p>Preston has built in functionality to take a snapshot of a Zotero
+Collection.</p>
+<ol type="1">
+<li>open a command-line terminal</li>
+<li>go to your home directory (e.g., <code>cd ~</code>)</li>
+<li>create new directory (e.g., <code>mkdir batlit-test</code>)</li>
+<li>go into the new directory (e.g., <code>cd batlit-test</code>)</li>
+<li>run the following command</li>
+</ol>
+<pre><code>export ZOTERO_TOKEN=[SECRET]
+preston track https://www.zotero.org/groups/6123963/test_aug</code></pre>
+<p>list all the content of the metadata from the Zotero group across all
+Bill of Materials</p>
+<pre><code>preston ls\
+ |  grep hasVersion\
+ | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\
+ | grep -v &quot;file/view&quot;\
+ | sort\
+ | preston cat</code></pre>
+</section>
+<section id="step-ii.4-make-a-change-and-create-a-new-snapshot"
+class="slide level2">
+<h2>Step II.4 Make a change and create a new snapshot</h2>
+<ol type="1">
+<li>Change the title of one of the publication in your test Zotero
+Group</li>
+<li>Make a new snapshot version by re-running:</li>
+</ol>
+<pre><code>preston track https://www.zotero.org/groups/6123963/test_aug</code></pre>
+</section>
+<section
+id="step-ii.5-compare-changes-in-metadata-across-snapshot-versions"
+class="slide level2">
+<h2>Step II.5 Compare changes in metadata across snapshot versions</h2>
+<p>After making a change in a Zotero records, and creating a new
+snapshot, we can compare the different versions of Bill of Materials
+associated with these snapshots.</p>
+<p>In order to do so, we need to (II.5.1) make a sorted list of all
+metadata for the most recent Bill of Materials and (II.5.2) make a
+sorted list of all metadata of a previous Bill of Materials. Finally,
+(II.5.3) we compare the differences between these metadata
+snapshots.</p>
+</section>
+<section
+id="step-ii.5.1-a-sorted-list-of-metadata-for-most-recent-bill-of-materials"
+class="slide level2">
+<h2>Step II.5.1 A sorted list of metadata for most recent Bill of
+Materials</h2>
+<p>Create a sorted list metadata statement from the Zotero group for the
+<em>most recent</em> Bill of Materials, and list their content</p>
+<pre><code>preston head\
+ | preston cat\
+ | grep hasVersion\
+ | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\ 
+ | grep -v &quot;file/view&quot;\
+ | sort\
+ | preston cat\
+ &gt; most-recent-metadata.txt</code></pre>
+<p>where <code>6123963</code> is the group id number of your Zotero Test
+Group.</p>
+</section>
+<section
+id="step-ii.5.2-a-sorted-list-of-metadata-for-a-previous-version-of-the-bill-of-materials"
+class="slide level2">
+<h2>Step II.5.2 A sorted list of metadata for a previous version of the
+Bill of Materials</h2>
+<p>List all the content of the metadata from the Zotero group for the
+<em>oldest</em> Bill of Materials and print it to a file</p>
+<pre><code>preston history\
+ | tail -1\
+ | preston cat\
+ |  grep hasVersion\
+ | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\
+ | grep -v &quot;file/view&quot;\
+ | sort\
+ | preston cat\
+ &gt; oldest-metadata.txt</code></pre>
+<p>where <code>6123963</code> is the group id number of your Zotero Test
+Group.</p>
+</section>
+<section
+id="step-ii.5.3-compare-changes-across-metadata-associated-with-two-versions-of-bill-of-materials"
+class="slide level2">
+<h2>Step II.5.3 Compare changes across metadata associated with two
+versions of Bill of Materials</h2>
+<p>Now that we have the Zotero metadata for the most recent Bill of
+Materials, as well as a previous version, we can use <a
+href="https://en.wikipedia.org/wiki/Diff">diff</a> to compare the
+differences.</p>
+<pre><code> diff most-recent-metadata.txt oldest-metadata.txt</code></pre>
+<p>to produce</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="dt">71c71</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;         &quot;version&quot;: 22,</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;         &quot;version&quot;: 20,</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="dt">117c117</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;version&quot;: 22,</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;version&quot;: 20,</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="dt">158c158</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;dateModified&quot;: &quot;2025-08-28T15:41:26Z&quot;</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;dateModified&quot;: &quot;2025-08-28T15:04:13Z&quot;</span></span></code></pre></div>
+<p>In this example the title was changed to <code>Pteropus test</code>
+and the diff reflects this.</p>
+</section>
+<section id="part-ii---next-steps" class="slide level2">
+<h2>Part II - Next Steps</h2>
+<ul>
+<li>Create a Zenodo Test Community on Zenodo Sandbox</li>
+<li>Publish the Zotero Test Group to the Zenodo Test Community</li>
+</ul>
+<p>## Part III - Deposit a Zotero Snapshot into Zenodo</p>
+<p>Now that we can make a snapshot of a Zotera group, we’d like to take
+this snapshot and deposit it into Zenodo. In order to do so, we need to
+(1) create a test Zenodo community in their sandbox (2) create a Zenodo
+API key, and (3) upload a snapshot version into Zenodo sandbox using
+Preston.</p>
+<p>## Part III.1 - Create a test Zenodo community</p>
+<p>Zenodo provides a sandbox to try their platform and experiment.</p>
+<ol type="1">
+<li>go to https://sandbox.zenodo.org</li>
+<li>login</li>
+<li>create a community (e.g., BatLit-Test-20250829)</li>
+</ol>
+<p>## Part III.2 - Generate A Zenodo API Token</p>
+<p>To deposit content into Zenodo programmatically (e.g., using
+Preston), you need a Zenodo Web API Key / Token.</p>
+<ol type="1">
+<li>go to https://sandbox.zenodo.org</li>
+<li>select account &gt; developer (?)</li>
+<li>generate a new key and record this somewhere safe</li>
+</ol>
+<p>## Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test
+Community</p>
+<ol type="1">
+<li>open a command-line terminal</li>
+<li>set the evironment variable for Zenodo API access</li>
+</ol>
+<pre><code>export ZENODO_ENDPOINT=https://sandbox.zenodo.org
+export ZENODO_TOKEN=[your secret token]</code></pre>
+<ol start="3" type="1">
+<li>generate Zenodo metadata for a specific snapshot version</li>
+</ol>
+<pre><code>preston head\
+ | preston cat\
+ | preston zotero-stream\
+&gt; zenodo.json
+
+4. deposit Zenodo records using the Zenodo metadata</code></pre>
+<p>mkdir deposit-logs cat zenodo.json<br />
+| preston track –data-dir deposit-logs/data<br />
+| preston zenodo –data-dir deposit-logs/data –remote
+file://$PWD/data/<br />
+&gt; zenodo-deposit.log ```</p>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
