@@ -233,24 +233,11 @@ Showing that an independent tool ```md5sum``` verified that the content you aske
 Preston has built in functionality to take a snapshot of a Zotero Collection. 
 
 1. open a command-line terminal
-2. go to your home directory (e.g., ```cd ~```)
-2. create new directory (e.g., ```mkdir batlit-test```)
-3. go into the new directory (e.g., ```cd batlit-test```) 
-4. run the following command
+2. go to a newly created new directory (e.g., ```mkdir batlit-test; cd batlit-test```)
+3. track the Zotero group by running the following command:
 ```
 export ZOTERO_TOKEN=[SECRET]
 preston track https://www.zotero.org/groups/6123963/test_aug
-```
-
-list all the content of the metadata from the Zotero group across all Bill of Materials
-
-```
-preston ls\
- |  grep hasVersion\
- | grep "https://api.zotero.org/groups/6123963/items/"\
- | grep -v "file/view"\
- | sort\
- | preston cat
 ```
 
 ## Step II.4 Make a change and create a new snapshot
