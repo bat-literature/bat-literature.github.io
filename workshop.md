@@ -340,3 +340,54 @@ to produce
 ```
 
 In this example the title was changed to ```Pteropus test``` and the diff reflects this. 
+
+## Part II - Next Steps
+ 
+ * Create a Zenodo Test Community on Zenodo Sandbox 
+ * Publish the Zotero Test Group to the Zenodo Test Community
+ 
+ ## Part III - Deposit a Zotero Snapshot into Zenodo
+ 
+ Now that we can make a snapshot of a Zotera group, we'd like to take this snapshot and deposit it into Zenodo. In order to do so, we need to (1) create a test Zenodo community in their sandbox (2) create a Zenodo API key, and (3) upload a snapshot version into Zenodo sandbox using Preston.
+ 
+ ## Part III.1 - Create a test Zenodo community
+ 
+Zenodo provides a sandbox to try their platform and experiment.
+ 
+ 1. go to https://sandbox.zenodo.org
+ 2. login 
+ 3. create a community (e.g., BatLit-Test-20250829)
+
+ ## Part III.2 - Generate A Zenodo API Token
+
+To deposit content into Zenodo programmatically (e.g., using Preston), you need a Zenodo Web API Key / Token.
+
+1. go to https://sandbox.zenodo.org
+2. select account > developer (?)
+3. generate a new key and record this somewhere safe
+
+ ## Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test Community
+ 
+ 1. open a command-line terminal
+ 2. set the evironment variable for Zenodo API access
+ ```
+ export ZENODO_ENDPOINT=https://sandbox.zenodo.org
+ export ZENODO_TOKEN=[your secret token]
+ ```
+ 3. generate Zenodo metadata for a specific snapshot version 
+ ```
+ preston head\
+  | preston cat\
+  | preston zotero-stream\
+ > zenodo.json
+ 
+ 4. deposit Zenodo records using the Zenodo metadata
+ ```
+ mkdir deposit-logs
+ cat zenodo.json\
+  | preston track --data-dir deposit-logs/data\
+ | preston zenodo --data-dir deposit-logs/data --remote file://$PWD/data/\
+ > zenodo-deposit.log
+ ```
+
+
