@@ -459,10 +459,7 @@ class="sourceCode diff"><code class="sourceCode diff"><span id="cb23-1"><a href=
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="dt">158c158</span></span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;dateModified&quot;: &quot;2025-08-28T15:41:26Z&quot;</span></span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;dateModified&quot;: &quot;2025-08-28T15:04:13Z&quot;</span></span></code></pre></div>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>[...]</span></code></pre></div>
 <p>In this example the title was changed to <code>Pteropus test</code>
 and the diff reflects this.</p>
 </section>
@@ -478,9 +475,9 @@ class="slide level2">
 <h2>Part III - Deposit a Zotero Snapshot into Zenodo</h2>
 <p>Now that we can make a snapshot of a Zotera group, we’d like to take
 this snapshot and deposit it into Zenodo. In order to do so, we need to
-(1) create a test Zenodo community in their sandbox (2) create a Zenodo
-API key, and (3) upload a snapshot version into Zenodo sandbox using
-Preston.</p>
+(III.1) create a test Zenodo community in their sandbox (III.2) create a
+Zenodo API key, and (III.3) upload a snapshot version into Zenodo
+sandbox using Preston.</p>
 </section>
 <section id="part-iii.1---create-a-test-zenodo-community"
 class="slide level2">
@@ -504,30 +501,34 @@ Preston), you need a Zenodo Web API Key / Token.</p>
 </ol>
 </section>
 <section
-id="part-iii.3---deposit-a-zotero-snapshot-in-the-zenodo-test-community"
+id="part-iii.3---generate-zenodo-metadata-for-a-zotero-snapshot"
 class="slide level2">
-<h2>Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test
-Community</h2>
+<h2>Part III.3 - Generate Zenodo Metadata for a Zotero Snapshot</h2>
 <ol type="1">
 <li>open a command-line terminal</li>
-<li>set the evironment variable for Zenodo API access</li>
-</ol>
-<pre><code>export ZENODO_ENDPOINT=https://sandbox.zenodo.org
-export ZENODO_TOKEN=[your secret token]</code></pre>
-<ol start="3" type="1">
 <li>generate Zenodo metadata for a specific snapshot version</li>
 </ol>
 <pre><code>preston head\
  | preston cat\
  | preston zotero-stream\
-&gt; zenodo.json
-
-4. deposit Zenodo records using the Zenodo metadata</code></pre>
-<p>mkdir deposit-logs cat zenodo.json<br />
-| preston track –data-dir deposit-logs/data<br />
-| preston zenodo –data-dir deposit-logs/data –remote
-file://$PWD/data/<br />
-&gt; zenodo-deposit.log ```</p>
+ &gt; zenodo.json</code></pre>
+</section>
+<section id="part-iii.4---deposit-zenodo-records" class="slide level2">
+<h2>Part III.4 - Deposit Zenodo Records</h2>
+<ol type="1">
+<li>open a command-line terminal</li>
+<li>set the evironment variable for Zenodo API access</li>
+</ol>
+<pre><code> export ZENODO_ENDPOINT=https://sandbox.zenodo.org
+ export ZENODO_TOKEN=[your secret token]</code></pre>
+<ol start="3" type="1">
+<li>deposit Zenodo records using the Zenodo metadata</li>
+</ol>
+<pre><code>mkdir logs
+cat zenodo.json\
+ | preston track --data-dir logs/data\
+ | preston zenodo --data-dir logs/data --remote file://$PWD/data/\
+ &gt; deposit.log</code></pre>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">

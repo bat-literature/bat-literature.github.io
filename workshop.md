@@ -322,10 +322,7 @@ to produce
 <             "title": "Pteropus test",
 ---
 >             "title": "Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic",
-158c158
-<             "dateModified": "2025-08-28T15:41:26Z"
----
->             "dateModified": "2025-08-28T15:04:13Z"
+[...]
 ```
 
 In this example the title was changed to ```Pteropus test``` and the diff reflects this. 
@@ -337,7 +334,7 @@ In this example the title was changed to ```Pteropus test``` and the diff reflec
  
 ## Part III - Deposit a Zotero Snapshot into Zenodo
  
- Now that we can make a snapshot of a Zotera group, we'd like to take this snapshot and deposit it into Zenodo. In order to do so, we need to (1) create a test Zenodo community in their sandbox (2) create a Zenodo API key, and (3) upload a snapshot version into Zenodo sandbox using Preston.
+ Now that we can make a snapshot of a Zotera group, we'd like to take this snapshot and deposit it into Zenodo. In order to do so, we need to (III.1) create a test Zenodo community in their sandbox (III.2) create a Zenodo API key, and (III.3) upload a snapshot version into Zenodo sandbox using Preston.
  
 ## Part III.1 - Create a test Zenodo community
  
@@ -355,28 +352,32 @@ To deposit content into Zenodo programmatically (e.g., using Preston), you need 
 2. select account > developer (?)
 3. generate a new key and record this somewhere safe
 
-## Part III.3 - Deposit a Zotero Snapshot in the Zenodo Test Community
+## Part III.3 - Generate Zenodo Metadata for a Zotero Snapshot
+ 
+ 1. open a command-line terminal
+ 2. generate Zenodo metadata for a specific snapshot version 
+
+```
+preston head\
+ | preston cat\
+ | preston zotero-stream\
+ > zenodo.json
+```
+## Part III.4 - Deposit Zenodo Records
  
  1. open a command-line terminal
  2. set the evironment variable for Zenodo API access
- ```
+```
  export ZENODO_ENDPOINT=https://sandbox.zenodo.org
  export ZENODO_TOKEN=[your secret token]
- ```
- 3. generate Zenodo metadata for a specific snapshot version 
- ```
- preston head\
-  | preston cat\
-  | preston zotero-stream\
- > zenodo.json
- 
- 4. deposit Zenodo records using the Zenodo metadata
- ```
- mkdir deposit-logs
- cat zenodo.json\
-  | preston track --data-dir deposit-logs/data\
- | preston zenodo --data-dir deposit-logs/data --remote file://$PWD/data/\
- > zenodo-deposit.log
- ```
+```
+ 3. deposit Zenodo records using the Zenodo metadata
 
+```
+mkdir logs
+cat zenodo.json\
+ | preston track --data-dir logs/data\
+ | preston zenodo --data-dir logs/data --remote file://$PWD/data/\
+ > deposit.log
+```
 
