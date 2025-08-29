@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute, GloBI)">
-  <meta name="dcterms.date" content="2025-08-26">
+  <meta name="author" content="Aja Sherman (Bat Eco-Interactions Project)">
   <title>Mobilizing Bat Literature</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -135,7 +135,8 @@
 Library</p>
   <p class="author">Jorrit Poelen (UC Santa Barbara Cheadle Center,
 Ronin Institute, GloBI)</p>
-  <p class="date">2025-08-26</p>
+  <p class="author">Aja Sherman (Bat Eco-Interactions Project)</p>
+  <p class="date">2025-08-26/2025-08-29</p>
 </section>
 
 <section id="guiding-questions" class="slide level2">
@@ -366,21 +367,12 @@ Preston</h2>
 Collection.</p>
 <ol type="1">
 <li>open a command-line terminal</li>
-<li>go to your home directory (e.g., <code>cd ~</code>)</li>
-<li>create new directory (e.g., <code>mkdir batlit-test</code>)</li>
-<li>go into the new directory (e.g., <code>cd batlit-test</code>)</li>
-<li>run the following command</li>
+<li>go to a newly created new directory (e.g.,
+<code>mkdir batlit-test; cd batlit-test</code>)</li>
+<li>track the Zotero group by running the following command:</li>
 </ol>
 <pre><code>export ZOTERO_TOKEN=[SECRET]
-preston track https://www.zotero.org/groups/6123963/test_aug</code></pre>
-<p>list all the content of the metadata from the Zotero group across all
-Bill of Materials</p>
-<pre><code>preston ls\
- |  grep hasVersion\
- | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\
- | grep -v &quot;file/view&quot;\
- | sort\
- | preston cat</code></pre>
+preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug</code></pre>
 </section>
 <section id="step-ii.4-make-a-change-and-create-a-new-snapshot"
 class="slide level2">
@@ -390,7 +382,7 @@ class="slide level2">
 Group</li>
 <li>Make a new snapshot version by re-running:</li>
 </ol>
-<pre><code>preston track https://www.zotero.org/groups/6123963/test_aug</code></pre>
+<pre><code>preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug</code></pre>
 </section>
 <section
 id="step-ii.5-compare-changes-in-metadata-across-snapshot-versions"
@@ -412,7 +404,7 @@ class="slide level2">
 Materials</h2>
 <p>Create a sorted list metadata statement from the Zotero group for the
 <em>most recent</em> Bill of Materials, and list their content</p>
-<pre><code>preston head\
+<pre><code>preston head --algo md5\
  | preston cat\
  | grep hasVersion\
  | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\ 
@@ -430,7 +422,7 @@ class="slide level2">
 Bill of Materials</h2>
 <p>List all the content of the metadata from the Zotero group for the
 <em>oldest</em> Bill of Materials and print it to a file</p>
-<pre><code>preston history\
+<pre><code>preston history --algo md5\
  | tail -1\
  | preston cat\
  |  grep hasVersion\
@@ -453,13 +445,13 @@ href="https://en.wikipedia.org/wiki/Diff">diff</a> to compare the
 differences.</p>
 <pre><code> diff most-recent-metadata.txt oldest-metadata.txt</code></pre>
 <p>to produce</p>
-<div class="sourceCode" id="cb23"><pre
-class="sourceCode diff"><code class="sourceCode diff"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>[...]</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>[...]</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode diff"><code class="sourceCode diff"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>[...]</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="st">&lt;             &quot;title&quot;: &quot;Pteropus test&quot;,</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="kw">---</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="va">&gt;             &quot;title&quot;: &quot;Seasonal roosts and foraging movements of the black flying fox (Pteropus alecto) in the Northern Territory: resource tracking in a landscape mosaic&quot;,</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>[...]</span></code></pre></div>
 <p>In this example the title was changed to <code>Pteropus test</code>
 and the diff reflects this.</p>
 </section>
@@ -496,8 +488,10 @@ class="slide level2">
 Preston), you need a Zenodo Web API Key / Token.</p>
 <ol type="1">
 <li>go to https://sandbox.zenodo.org</li>
-<li>select account &gt; developer (?)</li>
-<li>generate a new key and record this somewhere safe</li>
+<li>select account &gt; applications &gt; personal access token (?) with
+all options (e.g., write access) enabled</li>
+<li>generate a new token (or api key) and record this somewhere
+safe</li>
 </ol>
 </section>
 <section
@@ -508,9 +502,9 @@ class="slide level2">
 <li>open a command-line terminal</li>
 <li>generate Zenodo metadata for a specific snapshot version</li>
 </ol>
-<pre><code>preston head\
+<pre><code>preston head --algo md5\
  | preston cat\
- | preston zotero-stream --community &quot;[your community name]&quot;\
+ | preston zotero-stream --algo md5 --community &quot;[your community name]&quot;\
  &gt; zenodo.json</code></pre>
 </section>
 <section id="part-iii.4---deposit-zenodo-records" class="slide level2">
@@ -526,9 +520,8 @@ class="slide level2">
 </ol>
 <pre><code>mkdir logs
 cat zenodo.json\
- | preston track --data-dir logs/data\
- | preston zenodo\
- --data-dir logs/data\
+ | preston track --algo md5 --data-dir logs/data\
+ | preston zenodo --algo md5 --data-dir logs/data\
  --remote file://$PWD/data/\
  --community &quot;[your community name]&quot;\
  &gt; deposit.log</code></pre>
