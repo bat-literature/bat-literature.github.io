@@ -1,9 +1,10 @@
 ---
 author:
   - Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute, GloBI)
+  - Aja Sherman (Bat Eco-Interactions Project)
 title: "Mobilizing Bat Literature"
 subtitle: "using versioned snapshots of the Zotero BatLit Library"
-date: 2025-08-26
+date: 2025-08-26/2025-08-29
 aspectratio: 169
 ---
 
@@ -237,7 +238,7 @@ Preston has built in functionality to take a snapshot of a Zotero Collection.
 3. track the Zotero group by running the following command:
 ```
 export ZOTERO_TOKEN=[SECRET]
-preston track https://www.zotero.org/groups/6123963/test_aug
+preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug
 ```
 
 ## Step II.4 Make a change and create a new snapshot
@@ -246,7 +247,7 @@ preston track https://www.zotero.org/groups/6123963/test_aug
 2. Make a new snapshot version by re-running: 
 
 ```
-preston track https://www.zotero.org/groups/6123963/test_aug
+preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug
 ```
 
 ## Step II.5 Compare changes in metadata across snapshot versions 
@@ -261,7 +262,7 @@ In order to do so, we need to (II.5.1) make a sorted list of all metadata for th
 Create a sorted list metadata statement from the Zotero group for the *most recent* Bill of Materials, and list their content
 
 ```
-preston head\
+preston head --algo md5\
  | preston cat\
  | grep hasVersion\
  | grep "https://api.zotero.org/groups/6123963/items/"\ 
@@ -278,7 +279,7 @@ where ```6123963``` is the group id number of your Zotero Test Group.
 List all the content of the metadata from the Zotero group for the *oldest* Bill of Materials and print it to a file
 
 ```
-preston history\
+preston history --algo md5\
  | tail -1\
  | preston cat\
  |  grep hasVersion\
@@ -336,8 +337,8 @@ Zenodo provides a sandbox to try their platform and experiment.
 To deposit content into Zenodo programmatically (e.g., using Preston), you need a Zenodo Web API Key / Token.
 
 1. go to https://sandbox.zenodo.org
-2. select account > developer (?)
-3. generate a new key and record this somewhere safe
+2. select account > applications > personal access token (?) with all options (e.g., write access) enabled
+3. generate a new token (or api key) and record this somewhere safe
 
 ## Part III.3 - Generate Zenodo Metadata for a Zotero Snapshot
  
@@ -345,9 +346,9 @@ To deposit content into Zenodo programmatically (e.g., using Preston), you need 
  2. generate Zenodo metadata for a specific snapshot version 
 
 ```
-preston head\
+preston head --algo md5\
  | preston cat\
- | preston zotero-stream --community "[your community name]"\
+ | preston zotero-stream --algo md5 --community "[your community name]"\
  > zenodo.json
 ```
 ## Part III.4 - Deposit Zenodo Records
@@ -363,11 +364,9 @@ preston head\
 ```
 mkdir logs
 cat zenodo.json\
- | preston track --data-dir logs/data\
- | preston zenodo\
- --data-dir logs/data\
+ | preston track --algo md5 --data-dir logs/data\
+ | preston zenodo --algo md5 --data-dir logs/data\
  --remote file://$PWD/data/\
  --community "[your community name]"\
  > deposit.log
 ```
-
