@@ -372,6 +372,22 @@ Collection.</p>
 <pre><code>export ZOTERO_TOKEN=[SECRET]
 preston track --algo md5 [Zotero Group from URL]</code></pre>
 </section>
+<section
+id="step-ii.3.1-a-sorted-list-of-metadata-for-most-recent-bill-of-materials"
+class="slide level2">
+<h2>Step II.3.1 A sorted list of metadata for most recent Bill of
+Materials</h2>
+<p>Create a sorted list metadata statement from the Zotero group for the
+<em>most recent</em> Bill of Materials, and list their content</p>
+<pre><code>preston head --algo md5\
+ | preston cat\
+ | grep hasVersion\
+ | grep &quot;https://api.zotero.org/groups/[Zotero group number]/items/&quot;\ 
+ | grep -v &quot;file/view&quot;\
+ | sort\
+ | preston cat\
+ &gt; metadata-before-change.txt</code></pre>
+</section>
 <section id="step-ii.4-make-a-change-and-create-a-new-snapshot"
 class="slide level2">
 <h2>Step II.4 Make a change and create a new snapshot</h2>
@@ -383,25 +399,12 @@ Group</li>
 <pre><code>preston track --algo md5 [Zotero Group from URL]</code></pre>
 </section>
 <section
-id="step-ii.5-compare-changes-in-metadata-across-snapshot-versions"
+id="step-ii.4.1-a-sorted-list-of-metadata-for-newly-updated-bill-of-materials"
 class="slide level2">
-<h2>Step II.5 Compare changes in metadata across snapshot versions</h2>
-<p>After making a change in a Zotero records, and creating a new
-snapshot, we can compare the different versions of Bill of Materials
-associated with these snapshots.</p>
-<p>In order to do so, we need to (II.5.1) make a sorted list of all
-metadata for the most recent Bill of Materials and (II.5.2) make a
-sorted list of all metadata of a previous Bill of Materials. Finally,
-(II.5.3) we compare the differences between these metadata
-snapshots.</p>
-</section>
-<section
-id="step-ii.5.1-a-sorted-list-of-metadata-for-most-recent-bill-of-materials"
-class="slide level2">
-<h2>Step II.5.1 A sorted list of metadata for most recent Bill of
+<h2>Step II.4.1 A sorted list of metadata for newly updated Bill of
 Materials</h2>
 <p>Create a sorted list metadata statement from the Zotero group for the
-<em>most recent</em> Bill of Materials, and list their content</p>
+newly updated Bill of Materials, and list their content</p>
 <pre><code>preston head --algo md5\
  | preston cat\
  | grep hasVersion\
@@ -409,40 +412,33 @@ Materials</h2>
  | grep -v &quot;file/view&quot;\
  | sort\
  | preston cat\
- &gt; most-recent-metadata.txt</code></pre>
-<p>where <code>[Zotero group number]</code> is the group id number of
-your Zotero Test Group. An example of a Zotero number is: 6151809 .</p>
+ &gt; metadata-after-change.txt</code></pre>
 </section>
 <section
-id="step-ii.5.2-a-sorted-list-of-metadata-for-a-previous-version-of-the-bill-of-materials"
+id="step-ii.5-compare-changes-in-metadata-across-snapshot-versions"
 class="slide level2">
-<h2>Step II.5.2 A sorted list of metadata for a previous version of the
-Bill of Materials</h2>
-<p>List all the content of the metadata from the Zotero group for the
-<em>oldest</em> Bill of Materials and print it to a file</p>
-<pre><code>preston history --algo md5\
- | tail -1\
- | preston cat\
- |  grep hasVersion\
- | grep &quot;https://api.zotero.org/groups/[Zotero group number]/items/&quot;\
- | grep -v &quot;file/view&quot;\
- | sort\
- | preston cat\
- &gt; oldest-metadata.txt</code></pre>
-<p>where <code>[Zotero group number]</code> is the group id number of
-your Zotero Test Group. An example of a Zotero number is: 6151809 .</p>
+<h2>Step II.5 Compare changes in metadata across snapshot versions</h2>
+<p>After making a change in a Zotero records, and creating a new
+snapshot, we can compare the different versions of Bill of Materials
+associated with these snapshots.</p>
+<p>In order to do so, we compare (II.3.1) the sorted list of all
+metadata for associated with an initial Bill of Materials and (II.4.1) a
+sorted list of all metadata associated with a Bill of Materials after a
+change.</p>
+<p>Next, (II.5.1) we compare the differences between these metadata
+snapshots.</p>
 </section>
 <section
-id="step-ii.5.3-compare-changes-across-metadata-associated-with-two-versions-of-bill-of-materials"
+id="step-ii.5.1-compare-changes-across-metadata-associated-with-two-versions-of-bill-of-materials"
 class="slide level2">
-<h2>Step II.5.3 Compare changes across metadata associated with two
+<h2>Step II.5.1 Compare changes across metadata associated with two
 versions of Bill of Materials</h2>
 <p>Now that we have the Zotero metadata for the most recent Bill of
 Materials, as well as a previous version, we can use <a
 href="https://en.wikipedia.org/wiki/Diff">diff</a> to compare the
 differences.</p>
-<pre><code> diff most-recent-metadata.txt oldest-metadata.txt</code></pre>
-<p>to produce</p>
+<pre><code> diff metadata-before-change.txt metadata-after-change.txt</code></pre>
+<p>to produce a result like</p>
 <div class="sourceCode" id="cb22"><pre
 class="sourceCode diff"><code class="sourceCode diff"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>[...]</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="dt">119c119</span></span>
