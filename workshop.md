@@ -211,7 +211,7 @@ Showing that an independent tool ```md5sum``` verified that the content you aske
 1. go to https://zotero.org
 2. login using your credentials 
 3. create a new empty private Zotero group for testing
-4. download pdfs associated with https://doi.org/10.5281/zenodo.13418040 and https://doi.org/10.5281/zenodo.14817268
+4. pick two pdfs 
 6. import the two pdfs into your Zotero Test Group
 
 
@@ -238,7 +238,7 @@ Preston has built in functionality to take a snapshot of a Zotero Collection.
 3. track the Zotero group by running the following command:
 ```
 export ZOTERO_TOKEN=[SECRET]
-preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug
+preston track --algo md5 [Zotero Group from URL]
 ```
 
 ## Step II.4 Make a change and create a new snapshot
@@ -247,7 +247,7 @@ preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug
 2. Make a new snapshot version by re-running: 
 
 ```
-preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug
+preston snapshot --algo md5 [Zotero Group from URL]
 ```
 
 ## Step II.5 Compare changes in metadata across snapshot versions 
@@ -265,14 +265,14 @@ Create a sorted list metadata statement from the Zotero group for the *most rece
 preston head --algo md5\
  | preston cat\
  | grep hasVersion\
- | grep "https://api.zotero.org/groups/6123963/items/"\ 
+ | grep "https://api.zotero.org/groups/[Zotero group number]/items/"\ 
  | grep -v "file/view"\
  | sort\
  | preston cat\
  > most-recent-metadata.txt
 ```
 
-where ```6123963``` is the group id number of your Zotero Test Group.
+where ```[Zotero group number]``` is the group id number of your Zotero Test Group. An example of a Zotero number is: 6151809 .
 
 ## Step II.5.2 A sorted list of metadata for a previous version of the Bill of Materials
 
@@ -283,14 +283,15 @@ preston history --algo md5\
  | tail -1\
  | preston cat\
  |  grep hasVersion\
- | grep "https://api.zotero.org/groups/6123963/items/"\
+ | grep "https://api.zotero.org/groups/[Zotero group number]/items/"\
  | grep -v "file/view"\
  | sort\
  | preston cat\
  > oldest-metadata.txt
 ```
 
-where ```6123963``` is the group id number of your Zotero Test Group.
+where ```[Zotero group number]``` is the group id number of your Zotero Test Group. An example of a Zotero number is: 6151809 .
+
 
 
 ## Step II.5.3 Compare changes across metadata associated with two versions of Bill of Materials
@@ -330,7 +331,7 @@ Zenodo provides a sandbox to try their platform and experiment.
  
  1. go to https://sandbox.zenodo.org
  2. login 
- 3. create a community (e.g., BatLit-Test-20250829)
+ 3. create a Zenodo community. Note a community has a name and a id. Note that ids are lowercase only (e.g., bat-lit-2025-05-05).
 
 ## Part III.2 - Generate A Zenodo API Token
 
@@ -348,9 +349,12 @@ To deposit content into Zenodo programmatically (e.g., using Preston), you need 
 ```
 preston head --algo md5\
  | preston cat\
- | preston zotero-stream --algo md5 --community "[your community name]"\
+ | preston zotero-stream --algo md5 --community "[your community id]"\
  > zenodo.json
 ```
+
+Note: you can find the community id by looking at the browser address bar. E.g., with https://sandbox.zenodo.org/communities/batlit-test-2025-05-05/settings, "batlit-test-2025-05-05" is the community id. 
+
 ## Part III.4 - Deposit Zenodo Records
  
  1. open a command-line terminal
@@ -367,6 +371,6 @@ cat zenodo.json\
  | preston track --algo md5 --data-dir logs/data\
  | preston zenodo --algo md5 --data-dir logs/data\
  --remote file://$PWD/data/\
- --community "[your community name]"\
+ --community "[your community id]"\
  > deposit.log
 ```

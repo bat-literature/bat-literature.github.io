@@ -339,9 +339,7 @@ class="slide level2">
 <li>go to https://zotero.org</li>
 <li>login using your credentials</li>
 <li>create a new empty private Zotero group for testing</li>
-<li>download pdfs associated with
-https://doi.org/10.5281/zenodo.13418040 and
-https://doi.org/10.5281/zenodo.14817268</li>
+<li>pick two pdfs</li>
 <li>import the two pdfs into your Zotero Test Group</li>
 </ol>
 </section>
@@ -372,7 +370,7 @@ Collection.</p>
 <li>track the Zotero group by running the following command:</li>
 </ol>
 <pre><code>export ZOTERO_TOKEN=[SECRET]
-preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug</code></pre>
+preston track --algo md5 [Zotero Group from URL]</code></pre>
 </section>
 <section id="step-ii.4-make-a-change-and-create-a-new-snapshot"
 class="slide level2">
@@ -382,7 +380,7 @@ class="slide level2">
 Group</li>
 <li>Make a new snapshot version by re-running:</li>
 </ol>
-<pre><code>preston track --algo md5 https://www.zotero.org/groups/6123963/test_aug</code></pre>
+<pre><code>preston snapshot --algo md5 [Zotero Group from URL]</code></pre>
 </section>
 <section
 id="step-ii.5-compare-changes-in-metadata-across-snapshot-versions"
@@ -407,13 +405,13 @@ Materials</h2>
 <pre><code>preston head --algo md5\
  | preston cat\
  | grep hasVersion\
- | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\ 
+ | grep &quot;https://api.zotero.org/groups/[Zotero group number]/items/&quot;\ 
  | grep -v &quot;file/view&quot;\
  | sort\
  | preston cat\
  &gt; most-recent-metadata.txt</code></pre>
-<p>where <code>6123963</code> is the group id number of your Zotero Test
-Group.</p>
+<p>where <code>[Zotero group number]</code> is the group id number of
+your Zotero Test Group. An example of a Zotero number is: 6151809 .</p>
 </section>
 <section
 id="step-ii.5.2-a-sorted-list-of-metadata-for-a-previous-version-of-the-bill-of-materials"
@@ -426,13 +424,13 @@ Bill of Materials</h2>
  | tail -1\
  | preston cat\
  |  grep hasVersion\
- | grep &quot;https://api.zotero.org/groups/6123963/items/&quot;\
+ | grep &quot;https://api.zotero.org/groups/[Zotero group number]/items/&quot;\
  | grep -v &quot;file/view&quot;\
  | sort\
  | preston cat\
  &gt; oldest-metadata.txt</code></pre>
-<p>where <code>6123963</code> is the group id number of your Zotero Test
-Group.</p>
+<p>where <code>[Zotero group number]</code> is the group id number of
+your Zotero Test Group. An example of a Zotero number is: 6151809 .</p>
 </section>
 <section
 id="step-ii.5.3-compare-changes-across-metadata-associated-with-two-versions-of-bill-of-materials"
@@ -478,7 +476,8 @@ class="slide level2">
 <ol type="1">
 <li>go to https://sandbox.zenodo.org</li>
 <li>login</li>
-<li>create a community (e.g., BatLit-Test-20250829)</li>
+<li>create a Zenodo community. Note a community has a name and a id.
+Note that ids are lowercase only (e.g., bat-lit-2025-05-05).</li>
 </ol>
 </section>
 <section id="part-iii.2---generate-a-zenodo-api-token"
@@ -504,8 +503,12 @@ class="slide level2">
 </ol>
 <pre><code>preston head --algo md5\
  | preston cat\
- | preston zotero-stream --algo md5 --community &quot;[your community name]&quot;\
+ | preston zotero-stream --algo md5 --community &quot;[your community id]&quot;\
  &gt; zenodo.json</code></pre>
+<p>Note: you can find the community id by looking at the browser address
+bar. E.g., with
+https://sandbox.zenodo.org/communities/batlit-test-2025-05-05/settings,
+“batlit-test-2025-05-05” is the community id.</p>
 </section>
 <section id="part-iii.4---deposit-zenodo-records" class="slide level2">
 <h2>Part III.4 - Deposit Zenodo Records</h2>
@@ -523,7 +526,7 @@ cat zenodo.json\
  | preston track --algo md5 --data-dir logs/data\
  | preston zenodo --algo md5 --data-dir logs/data\
  --remote file://$PWD/data/\
- --community &quot;[your community name]&quot;\
+ --community &quot;[your community id]&quot;\
  &gt; deposit.log</code></pre>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
