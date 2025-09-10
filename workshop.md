@@ -247,7 +247,7 @@ preston track --algo md5 [Zotero Group from URL]
 2. Make a new snapshot version by re-running: 
 
 ```
-preston snapshot --algo md5 [Zotero Group from URL]
+preston track --algo md5 [Zotero Group from URL]
 ```
 
 ## Step II.5 Compare changes in metadata across snapshot versions 
