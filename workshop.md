@@ -369,8 +369,8 @@ Note: you can find the community id by looking at the browser address bar. E.g.,
 mkdir logs
 cat zenodo.json\
  | preston track --algo md5 --data-dir logs/data\
- | preston zenodo --algo md5 --data-dir logs/data\
- --remote file://$PWD/data/\
+ | preston zenodo --algo md5 --data-dir logs/data \
+ --remote file://$PWD/data/ \
  --community "[your community id]"\
  > deposit.log
 ```
