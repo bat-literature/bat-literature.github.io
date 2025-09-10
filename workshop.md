@@ -241,23 +241,7 @@ export ZOTERO_TOKEN=[SECRET]
 preston track --algo md5 [Zotero Group from URL]
 ```
 
-## Step II.4 Make a change and create a new snapshot
-
-1. Change the title of one of the publication in your test Zotero Group
-2. Make a new snapshot version by re-running: 
-
-```
-preston track --algo md5 [Zotero Group from URL]
-```
-
-## Step II.5 Compare changes in metadata across snapshot versions 
-
-After making a change in a Zotero records, and creating a new snapshot, we can compare the different versions of Bill of Materials associated with these snapshots.
-
-In order to do so, we need to (II.5.1) make a sorted list of all metadata for the most recent Bill of Materials and (II.5.2) make a sorted list of all metadata of a previous Bill of Materials. Finally, (II.5.3) we compare the differences between these metadata snapshots.
-
-
-## Step II.5.1 A sorted list of metadata for most recent Bill of Materials
+## Step II.3.1 A sorted list of metadata for most recent Bill of Materials
 
 Create a sorted list metadata statement from the Zotero group for the *most recent* Bill of Materials, and list their content
 
@@ -269,41 +253,53 @@ preston head --algo md5\
  | grep -v "file/view"\
  | sort\
  | preston cat\
- > most-recent-metadata.txt
+ > metadata-before-change.txt
 ```
 
-where ```[Zotero group number]``` is the group id number of your Zotero Test Group. An example of a Zotero number is: 6151809 .
 
-## Step II.5.2 A sorted list of metadata for a previous version of the Bill of Materials
+## Step II.4 Make a change and create a new snapshot
 
-List all the content of the metadata from the Zotero group for the *oldest* Bill of Materials and print it to a file
+1. Change the title of one of the publication in your test Zotero Group
+2. Make a new snapshot version by re-running: 
 
 ```
-preston history --algo md5\
- | tail -1\
+preston track --algo md5 [Zotero Group from URL]
+```
+
+## Step II.4.1 A sorted list of metadata for newly updated Bill of Materials
+
+Create a sorted list metadata statement from the Zotero group for the newly updated Bill of Materials, and list their content
+
+```
+preston head --algo md5\
  | preston cat\
- |  grep hasVersion\
- | grep "https://api.zotero.org/groups/[Zotero group number]/items/"\
+ | grep hasVersion\
+ | grep "https://api.zotero.org/groups/[Zotero group number]/items/"\ 
  | grep -v "file/view"\
  | sort\
  | preston cat\
- > oldest-metadata.txt
+ > metadata-after-change.txt
 ```
 
-where ```[Zotero group number]``` is the group id number of your Zotero Test Group. An example of a Zotero number is: 6151809 .
+## Step II.5 Compare changes in metadata across snapshot versions 
+
+After making a change in a Zotero records, and creating a new snapshot, we can compare the different versions of Bill of Materials associated with these snapshots.
+
+In order to do so, we compare (II.3.1) the sorted list of all metadata for associated with an initial Bill of Materials and (II.4.1) a sorted list of all metadata associated with a Bill of Materials after a change. 
+
+Next, (II.5.1) we compare the differences between these metadata snapshots.
 
 
-
-## Step II.5.3 Compare changes across metadata associated with two versions of Bill of Materials
+## Step II.5.1 Compare changes across metadata associated with two versions of Bill of Materials
 
 Now that we have the Zotero metadata for the most recent Bill of Materials, as well as a previous version, we can 
 use [diff](https://en.wikipedia.org/wiki/Diff) to compare the differences. 
 
 ```
- diff most-recent-metadata.txt oldest-metadata.txt
+ diff metadata-before-change.txt metadata-after-change.txt
 ```
 
-to produce
+to produce a result like
  
  ```diff
 [...]
