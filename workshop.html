@@ -136,7 +136,7 @@ Library</p>
   <p class="author">Jorrit Poelen (UC Santa Barbara Cheadle Center,
 Ronin Institute, GloBI)</p>
   <p class="author">Aja Sherman (Bat Eco-Interactions Project)</p>
-  <p class="date">2025-08-26/2025-08-29</p>
+  <p class="date">2025-08-26/2025-09-17</p>
 </section>
 
 <section id="guiding-questions" class="slide level2">
@@ -524,6 +524,64 @@ cat zenodo.json\
  --remote file://$PWD/data/ \
  --community &quot;[your community id]&quot;\
  &gt; deposit.log</code></pre>
+</section>
+<section id="part-iv---maintenance" class="slide level2">
+<h2>Part IV - Maintenance</h2>
+<p>After initial deposit, metadata in Zotero records may be updated.
+Also, PDFs associated with a Zotero record may be exchanged with a
+different one (e.g., an incorrect pdf was associated with some
+literature record).</p>
+<p>To update metadata of a Zenodo deposit associated with a Zotero
+record, you can re-run Step III.4 after including either
+<code>--update-metadata-only</code> or <code>--new-version</code>.</p>
+<p>With <code>--update-metadata-only</code> an metadata of an existing
+Zenodo record is updated with the Zotero record metadata. No new version
+is created and the pdf attachment is left untouched.</p>
+<p>With <code>--new-version</code> a new version of an existing Zenodo
+record is deposited with updated the Zotero record metadata and the
+associated pdf in Zotero.</p>
+<p>Note that Zenodo record metadata is editable, however Zenodo record
+files are <em>not</em>.</p>
+<p>So, when you need to update a pdf associated with a Zotero record,
+you need to create a <code>--new-version</code>. This is <em>not</em>
+done by default.</p>
+<p>Default behavior is to not update the associated Zenodo record and
+skip the deposit.</p>
+</section>
+<section id="part-iv.1---edit-existing-record-and-update-metadata"
+class="slide level2">
+<h2>Part IV.1 - Edit Existing Record and Update Metadata</h2>
+<ol type="1">
+<li>Update metadata for an already deposited Zotero record.</li>
+<li>Run the deposit workflow with the
+<code>--update-metadata-only</code></li>
+<li>Verify that the metadata of record in Zenodo was updated, but no new
+version was created.</li>
+</ol>
+</section>
+<section
+id="part-iv.2---create-new-record-with-updated-pdf-and-metadata"
+class="slide level2">
+<h2>Part IV.2 - Create New Record with Updated PDF and Metadata</h2>
+<ol type="1">
+<li>Replace a pdf attachment for an already deposited Zotero
+record.</li>
+<li>Run the deposit workflow with the <code>--new-version</code></li>
+<li>Verify that a new version was created for the Zenodo record
+including the updated pdf</li>
+</ol>
+</section>
+<section
+id="part-iv.3---retire-zenodo-deposit-associated-with-deleted-zotero-record"
+class="slide level2">
+<h2>Part IV.3 - Retire Zenodo Deposit Associated with Deleted Zotero
+Record</h2>
+<p>(for now, manual workflow, can be automated if needed) 1. Locate the
+Zenodo Deposit Associated with a Zotero record that no longer exists 2.
+Click on Community :gear: icon “submit to community” in lower right
+panel 3. Submit to the “batlit-retired” community 4. Click on “manage
+communities” 5. If present, remove the deposit from the BatLit and BLR
+communities</p>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">

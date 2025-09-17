@@ -4,7 +4,7 @@ author:
   - Aja Sherman (Bat Eco-Interactions Project)
 title: "Mobilizing Bat Literature"
 subtitle: "using versioned snapshots of the Zotero BatLit Library"
-date: 2025-08-26/2025-08-29
+date: 2025-08-26/2025-09-17
 aspectratio: 169
 ---
 
@@ -370,3 +370,40 @@ cat zenodo.json\
  --community "[your community id]"\
  > deposit.log
 ```
+
+## Part IV - Maintenance
+
+After initial deposit, metadata in Zotero records may be updated. Also, PDFs associated with a Zotero record may be exchanged with a different one (e.g., an incorrect pdf was associated with some literature record). 
+
+To update metadata of a Zenodo deposit associated with a Zotero record, you can re-run Step III.4 after including either ```--update-metadata-only``` or ```--new-version```.
+
+With ```--update-metadata-only``` an metadata of an existing Zenodo record is updated with the Zotero record metadata. No new version is created and the pdf attachment is left untouched. 
+
+With ```--new-version``` a new version of an existing Zenodo record is deposited with updated the Zotero record metadata and the associated pdf in Zotero.
+
+Note that Zenodo record metadata is editable, however Zenodo record files are *not*. 
+
+So, when you need to update a pdf associated with a Zotero record, you need to create a ```--new-version```. This is *not* done by default. 
+
+Default behavior is to not update the associated Zenodo record and skip the deposit.
+
+## Part IV.1  - Edit Existing Record and Update Metadata
+
+1. Update metadata for an already deposited Zotero record.
+2. Run the deposit workflow with the ```--update-metadata-only```
+3. Verify that the metadata of record in Zenodo was updated, but no new version was created.
+
+## Part IV.2  - Create New Record with Updated PDF and Metadata 
+
+1. Replace a pdf attachment for an already deposited Zotero record.
+2. Run the deposit workflow with the ```--new-version```
+3. Verify that a new version was created for the Zenodo record including the updated pdf
+
+## Part IV.3  - Retire Zenodo Deposit Associated with Deleted Zotero Record  
+
+(for now, manual workflow, can be automated if needed)
+1. Locate the Zenodo Deposit Associated with a Zotero record that no longer exists
+2. Click on Community :gear: icon "submit to community" in lower right panel 
+3. Submit to the "batlit-retired" community
+4. Click on "manage communities"
+5. If present, remove the deposit from the BatLit and BLR communities
