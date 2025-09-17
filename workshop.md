@@ -402,6 +402,7 @@ Default behavior is to not update the associated Zenodo record and skip the depo
 ## Part IV.3  - Retire Zenodo Deposit Associated with Deleted Zotero Record  
 
 (for now, manual workflow, can be automated if needed)
+
 1. Locate the Zenodo Deposit Associated with a Zotero record that no longer exists
 2. Click on Community :gear: icon "submit to community" in lower right panel 
 3. Submit to the "batlit-retired" community
