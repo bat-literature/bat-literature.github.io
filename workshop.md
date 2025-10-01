@@ -238,8 +238,10 @@ Preston has built in functionality to take a snapshot of a Zotero Collection.
 3. track the Zotero group by running the following command:
 ```
 export ZOTERO_TOKEN=[SECRET]
-preston track --algo md5 [Zotero Group from URL]
+preston track --algo md5 [Zotero Group URL]
 ```
+(Tokens are a sequence of numbers and letters, e.g. ```TFYhj6g1JtFiq3t5ytooCv333j2wliwMOB60iXaULajaQ01X71DDDDABOsIk```)
+(Zotero Group URL e.g., https://www.zotero.org/groups/6217595)
 
 ## Step II.3.1 A sorted list of metadata for most recent Bill of Materials
 
@@ -255,7 +257,7 @@ preston head --algo md5\
  | preston cat\
  > metadata-before-change.txt
 ```
-
+(replace ```[Zotero group number]``` with the number found in URL, make sure to remove brackets, e.g., https://www.zotero.org/groups/**6217595**) 
 
 ## Step II.4 Make a change and create a new snapshot
 
