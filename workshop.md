@@ -240,7 +240,7 @@ Preston has built in functionality to take a snapshot of a Zotero Collection.
 export ZOTERO_TOKEN=[SECRET]
 preston track --algo md5 [Zotero Group URL]
 ```
-(Tokens are a sequence of numbers and letters, e.g. ```TFYhj6g1JtFiq3t5ytooCv333j2wliwMOB60iXaULajaQ01X71DDDDABOsIk```)
+(Tokens are a sequence of numbers and letters, e.g. ```ziAJAGw4t5sAaP9APRvBYjkX```)
 (Zotero Group URL e.g., https://www.zotero.org/groups/6217595)
 
 ## Step II.3.1 A sorted list of metadata for most recent Bill of Materials
