@@ -370,7 +370,10 @@ Collection.</p>
 <li>track the Zotero group by running the following command:</li>
 </ol>
 <pre><code>export ZOTERO_TOKEN=[SECRET]
-preston track --algo md5 [Zotero Group from URL]</code></pre>
+preston track --algo md5 [Zotero Group URL]</code></pre>
+<p>(Tokens are a sequence of numbers and letters,
+e.g. <code>TFYhj6g1JtFiq3t5ytooCv333j2wliwMOB60iXaULajaQ01X71DDDDABOsIk</code>)
+(Zotero Group URL e.g., https://www.zotero.org/groups/6217595)</p>
 </section>
 <section
 id="step-ii.3.1-a-sorted-list-of-metadata-for-most-recent-bill-of-materials"
@@ -387,6 +390,9 @@ Materials</h2>
  | sort\
  | preston cat\
  &gt; metadata-before-change.txt</code></pre>
+<p>(replace <code>[Zotero group number]</code> with the number found in
+URL, make sure to remove brackets, e.g.,
+https://www.zotero.org/groups/<strong>6217595</strong>)</p>
 </section>
 <section id="step-ii.4-make-a-change-and-create-a-new-snapshot"
 class="slide level2">
