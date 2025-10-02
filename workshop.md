@@ -410,3 +410,48 @@ Default behavior is to not update the associated Zenodo record and skip the depo
 3. Submit to the "batlit-retired" community
 4. Click on "manage communities"
 5. If present, remove the deposit from the BatLit and BLR communities
+
+## Part V.1 - BatLit Release Introduction.
+
+Metadata for BatLit releases are in the data folder of https://github.com/bat-literature/bat-literature.github.io . A new release needs to be linked to the older releases to enable version tracking between versions. This is why we need to clone or update the github repository first before making a snapshot of the BatLit Zotero group. Then, after making the snapshot, we include the tracked metadata and commit this to the repository. Also, we keep a copy of the metadata + pdfs elsewhere. So, you need to backup the data folder including metadata and pdfs. 
+
+## Part V.2 - Clone/Update BatLit Repository 
+
+Make sure to install ```git``` on your system by running:
+
+```
+sudo apt install git
+```
+
+check whether git installed by 
+```
+git --version
+```
+
+this should produce something like:
+
+```
+git version 2.43.0
+```
+
+then, run 
+
+```
+git clone https://github.com/bat-literature/bat-literature.github.io 
+```
+
+to "clone" (or create a copy of) the BatLit repository. By default, the repository is cloned into a folder with the same name as the repository (e.g., ```bat-literature.github.io```). 
+
+
+## Part V.2 - Verify Current BatLit Version
+
+Step 1. go into ```bat-literature.github.io``` directory using ```cd```
+Step 2. run ```preston head --algo md5```
+Step 3. Compare the output of the command with the existing version on https://batlit.org/datapaper
+
+## Part V.2 - Create a Zotero Snapshot
+
+Step 1. Set Zotero API Key with read-only access  to the BatLit Zotero 
+Step 2. Go into the ```bat-literature.github.io``` directory
+Step 3. Verify that a preston history exists by running ```preston history --algo md5```
+Step 4. Create a snapshot of the BatLit Zotero group

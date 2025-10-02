@@ -594,6 +594,50 @@ panel</li>
 communities</li>
 </ol>
 </section>
+<section id="part-v.1---batlit-release-introduction."
+class="slide level2">
+<h2>Part V.1 - BatLit Release Introduction.</h2>
+<p>Metadata for BatLit releases are in the data folder of
+https://github.com/bat-literature/bat-literature.github.io . A new
+release needs to be linked to the older releases to enable version
+tracking between versions. This is why we need to clone or update the
+github repository first before making a snapshot of the BatLit Zotero
+group. Then, after making the snapshot, we include the tracked metadata
+and commit this to the repository. Also, we keep a copy of the metadata
++ pdfs elsewhere. So, you need to backup the data folder including
+metadata and pdfs.</p>
+</section>
+<section id="part-v.2---cloneupdate-batlit-repository"
+class="slide level2">
+<h2>Part V.2 - Clone/Update BatLit Repository</h2>
+<p>Make sure to install <code>git</code> on your system by running:</p>
+<pre><code>sudo apt install git</code></pre>
+<p>check whether git installed by</p>
+<pre><code>git --version</code></pre>
+<p>this should produce something like:</p>
+<pre><code>git version 2.43.0</code></pre>
+<p>then, run</p>
+<pre><code>git clone https://github.com/bat-literature/bat-literature.github.io </code></pre>
+<p>to “clone” (or create a copy of) the BatLit repository. By default,
+the repository is cloned into a folder with the same name as the
+repository (e.g., <code>bat-literature.github.io</code>).</p>
+</section>
+<section id="part-v.2---verify-current-batlit-version"
+class="slide level2">
+<h2>Part V.2 - Verify Current BatLit Version</h2>
+<p>Step 1. go into <code>bat-literature.github.io</code> directory using
+<code>cd</code> Step 2. run <code>preston head --algo md5</code> Step 3.
+Compare the output of the command with the existing version on
+https://batlit.org/datapaper</p>
+</section>
+<section id="part-v.2---create-a-zotero-snapshot" class="slide level2">
+<h2>Part V.2 - Create a Zotero Snapshot</h2>
+<p>Step 1. Set Zotero API Key with read-only access to the BatLit Zotero
+Step 2. Go into the <code>bat-literature.github.io</code> directory Step
+3. Verify that a preston history exists by running
+<code>preston history --algo md5</code> Step 4. Create a snapshot of the
+BatLit Zotero group</p>
+</section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
