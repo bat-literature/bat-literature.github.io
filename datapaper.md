@@ -473,6 +473,14 @@ preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e81
  | pv > /dev/null
 ```
 
+Estimating the total number of pages in the most recent batlit corpus, by running the program ```count.sh``` included in the bat-literature.github.io repository. 
+```
+./bin/count.sh\
+ | tee page-counts.txt
+```
+
+to produce an exhaustive list of number of pages for included batlit literature, one line for each batlit reference.
+
 ## Results
 
 ### Example of Tracked Zotero Record
