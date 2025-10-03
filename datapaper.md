@@ -152,10 +152,15 @@ Note that this group has access restrictions for copyright reasons. This is why 
 
 ### Publishing Metadata
 
-To publish the batlit metadata only (not pdfs), use the following commands
+To publish the batlit metadata from the source directory (e.g., ```batlit-with-pdfs```) to the target directory (e.g., ```batlit-metadata-only```), use the following commands, replacing the directory names when appropriate.
+
+:warning: We do *not* publish the pdfs, only the metadata associated with them. 
 
 ```
-# first copy provenance index
+# first, go into the source directory
+cd [source dir]
+
+# then copy provenance index
 preston cp --algo md5 --type provindex [target dir]/data
 
 # then copy the provenance 
