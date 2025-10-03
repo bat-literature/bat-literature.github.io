@@ -74,7 +74,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.5 | 2024-08-16/2024-08-17 | 50.9 GiB | | 20145 | 29850 | [hash://md5/26f...b20](https://linker.bio/hash://md5/26f7ce5dd404e33c6570edd4ba250d20) |  
  | Bat Literature Corpus | v0.6 | 2024-09-19/2024-09-20 | 44.7GiB | 427105 | 19038 | 22590 | [hash://md5/db7...97b](https://linker.bio/hash://md5/db73e659e8cf16ef50e82bb5e72ae97b) |  
  | Bat Literature Corpus | v0.7 | 2024-12-05/2024-12-06 | 45.2GiB | 431870 | 19268 | 22930 | [hash://md5/ce1...1a3](https://linker.bio/hash://md5/ce1e7618f237ff56e74d51f496e811a3) |  
- | Bat Literature Corpus | v0.8 | 2025-10-02 | 45.5GiB | TBD | 19252 | 22947 | [hash://md5/330...ce0](https://linker.bio/hash://md5/330417efcaa2560c9b8ebcd6fae17ce0) | 
+ | Bat Literature Corpus | v0.8 | 2025-10-02 | 45.5GiB | 432925 | 19252 | 22947 | [hash://md5/330...ce0](https://linker.bio/hash://md5/330417efcaa2560c9b8ebcd6fae17ce0) | 
 
 ## Methods
 
@@ -477,10 +477,11 @@ preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17
 Estimating the total number of pages in the most recent batlit corpus, by running the program ```count.sh``` included in the bat-literature.github.io repository. 
 ```
 ./bin/count.sh\
- | tee page-counts.txt
+ | tee page-counts.txt\
+ | awk '{ page_count += $1; } END { print page_count; }'
 ```
 
-to produce an exhaustive list of number of pages for included batlit literature, one line for each batlit reference.
+to produce an exhaustive list of number of pages for included batlit literature, one line for each batlit reference in ```page-counts.txt``` as well as printing the total sum using ```awk```.
 
 ## Results
 
