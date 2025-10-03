@@ -197,9 +197,6 @@ git commit -am 'add metadata for version 0.x'
 git push
 ```
 
-
-```
-
 ### Depositing To Zenodo
 
 BatLit content and metadata is made available through Zenodo to facilitate access. 
