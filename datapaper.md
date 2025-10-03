@@ -181,21 +181,78 @@ preston ls --algo md5\
 Now that we have the metadata, we can (optionally) add this to a github repository. The example below is assuming that the target directory is a github repository.
 
 ```
+# list status of local repository
+git status
+```
+
+this could look something like:
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data/00/cb/
+        data/01/cf/
+        data/02/07/
+```
+
+to list some of the newly tracked metadata in your local repository. Then, make sure you are working off of the most recent version by pulling in changes from the remote (shared) repository using:
+
+```
 # get the latest repository version from the remote server (e.g., Github)
 git pull --rebase
+```
 
-# list the local changes
-git status
+Then, add your untracked file to the local git repository using:
 
-# after reviewing the status, add the changes in the /data folder using
+```
+# add the changes in the /data folder using
 git add data/*
+# printing the status afterwards
+git status
+```
 
-# now that the new metadata has been added, commit the changes using
+This should generate something like:
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   data/00/cb/00cb5111715f362de0c7507333682ab3
+        new file:   data/01/cf/01cf962885893e692f8fbe8d1be47014
+        new file:   data/02/07/020719e1bd67542a402c3e4be01eb91e
+```
+
+Now that the new metadata has been added, commit the changes locally with a descriptive message using:
+
+```
 git commit -am 'add metadata for version 0.x'
+# print the (new) status using
+git status
+```
 
+Now, the status should look something like:
+
+```
+[main c8aa90910] add metadata for version 0.8; fyi @jhpoelen
+ 425 files changed, 4042003 insertions(+)
+ create mode 100644 data/00/cb/00cb5111715f362de0c7507333682ab3
+ create mode 100644 data/01/cf/01cf962885893e692f8fbe8d1be47014
+ create mode 100644 data/02/07/020719e1bd67542a402c3e4be01eb91e
+```
+
+Following upload (or "push") the changes to the remote server using
+
+```
 # push changes to the remote server (e.g., github)
 git push
 ```
+
+Now, go the the repository website on the remote server (e.g., github) and verify that the commit has been reported. 
 
 ### Depositing To Zenodo
 
