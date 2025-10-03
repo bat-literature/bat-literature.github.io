@@ -442,7 +442,8 @@ Note that after submission of Zenodo-compatible (at least at time of writing) me
 Estimating number of references in a corpus version - 
 
 ```
-preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
+preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17ce0
+\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --remote https://linker.bio\
@@ -454,7 +455,7 @@ preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e81
 Estimating number of associated corpus pdfs - 
 
 ```
-preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
+preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17ce0\
  | grep "file/view"\
  | grep hasVersion\
  | grep hash\
@@ -464,7 +465,7 @@ preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e81
 Estimating the total volume of data for the most recent (i.e. "head") version
 
 ```
-preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
+preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17ce0\
  | grep hasVersion\
  | grep -oE "hash://md5/[a-f0-9]{32}"\
  | sort\
@@ -487,7 +488,7 @@ to produce an exhaustive list of number of pages for included batlit literature,
 An example of a tracked Zotero record generated using
 
 ```bash
-preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3\
+preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17ce0\
  | grep "items[?]"\
  | grep hasVersion\
  | preston cat --remote https://linker.bio\
@@ -610,20 +611,20 @@ The follow bash script was used to generated the content type frequency table be
 ```bash
 cat\
  <(echo count contentType)\
- <(preston cat --remote https://linker.bio hash://md5/ce1e7618f237ff56e74d51f496e811a3 | grep items? | grep hasVersion | preston cat --remote https://linker.bio | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
+ <(preston cat --remote https://linker.bio hash://md5/330417efcaa2560c9b8ebcd6fae17ce0 | grep items? | grep hasVersion | preston cat --remote https://linker.bio | jq --raw-output '.[].data.itemType' | sort | uniq -c | sort -nr)\
  | mlr --ipprint --omd cat 
 ```
 
 Note that there's roughly two kinds of content: top level content like journal articles, books, reports and conference papers. These top level content may have one of more association with associated content like attachments, notes, and annotations. These types are provided by Zotero. You can find background on these contentTypes (aka item types) at https://www.zotero.org/support/kb/item_types_and_fields .  
 
-| count | contentType |
+ count | contentType |
 | --- | --- |
-| 24175 | attachment |
-| 18373 | journalArticle |
-| 637 | note |
-| 360 | book |
-| 282 | bookSection |
-| 99 | report |
+| 24157 | attachment |
+| 18377 | journalArticle |
+| 636 | note |
+| 357 | book |
+| 265 | bookSection |
+| 98 | report |
 | 95 | annotation |
 | 54 | thesis |
 | 34 | conferencePaper |
@@ -632,6 +633,7 @@ Note that there's roughly two kinds of content: top level content like journal a
 | 14 | magazineArticle |
 | 6 | webpage |
 | 2 | newspaperArticle |
+| 1 | videoRecording |
 | 1 | presentation |
 
 ### Literature Record Index
