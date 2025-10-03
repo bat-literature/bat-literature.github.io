@@ -152,7 +152,7 @@ Note that this group has access restrictions for copyright reasons. This is why 
 
 ### Publishing Metadata
 
-To publish the batlit metadata from the source directory (e.g., ```batlit-with-pdfs```) to the target directory (e.g., ```batlit-metadata-only```), use the following commands, replacing the directory names when appropriate.
+To publish the batlit metadata from the source directory (e.g., ```/some/path/batlit-with-pdfs```) to the target directory (e.g., ```/some/path/batlit-metadata-only```), use the following commands, replacing the directory names when appropriate. Please use absolute pathnames starting with a ```/``` to avoid possible confusion. For example, if your source directory is in your home dir (e.g., ```/home/[your username]/batlit-with-pdfs```) use the full path, including the ```/home/[your username]/``` part.
 
 :warning: We do *not* publish the pdfs, only the metadata associated with them. 
 
