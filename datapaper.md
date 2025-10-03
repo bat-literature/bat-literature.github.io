@@ -176,6 +176,30 @@ preston ls --algo md5\
  > /dev/null
 ```
 
+### Committing to Github
+
+Now that we have the metadata, we can (optionally) add this to a github repository. The example below is assuming that the target directory is a github repository.
+
+```
+# get the latest repository version from the remote server (e.g., Github)
+git pull --rebase
+
+# list the local changes
+git status
+
+# after reviewing the status, add the changes in the /data folder using
+git add data/*
+
+# now that the new metadata has been added, commit the changes using
+git commit -am 'add metadata for version 0.x'
+
+# push changes to the remote server (e.g., github)
+git push
+```
+
+
+```
+
 ### Depositing To Zenodo
 
 BatLit content and metadata is made available through Zenodo to facilitate access. 
