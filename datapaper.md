@@ -618,7 +618,7 @@ cat\
 
 Note that there's roughly two kinds of content: top level content like journal articles, books, reports and conference papers. These top level content may have one of more association with associated content like attachments, notes, and annotations. These types are provided by Zotero. You can find background on these contentTypes (aka item types) at https://www.zotero.org/support/kb/item_types_and_fields .  
 
- count | contentType |
+| count | contentType |
 | --- | --- |
 | 24157 | attachment |
 | 18377 | journalArticle |
