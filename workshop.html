@@ -638,6 +638,83 @@ Step 2. Go into the <code>bat-literature.github.io</code> directory Step
 <code>preston history --algo md5</code> Step 4. Create a snapshot of the
 BatLit Zotero group</p>
 </section>
+<section id="part-vi.1--update-the-head-or-most-recent-version"
+class="slide level2">
+<h2>Part VI.1- Update the “HEAD” or most recent version</h2>
+<p>Step 1. open a terminal Step 2. go into the
+<code>bat-literature.github.io</code> directory Step 3. make sure that
+the <code>HEAD</code> file contain the most recent hash of the BatLit
+version by running</p>
+<pre><code>preston head --algo md5 &gt; HEAD</code></pre>
+<p>and verifying that the first hash is the same as the one in the
+<code>HEAD</code> file by running</p>
+<pre><code>cat HEAD</code></pre>
+</section>
+<section id="part-vi.2--update-the-reference-lists-for-websitesearch"
+class="slide level2">
+<h2>Part VI.2- Update the Reference Lists for Website/search</h2>
+<p>Step 1. open a terminal Step 2. go into the
+<code>bat-literature.github.io</code> directory Step 3. verify that the
+program “miller” is installed by running</p>
+<pre><code>mlr --version</code></pre>
+<p>If not install, run:</p>
+<pre><code>sudo apt install miller</code></pre>
+<p>Step 4. to generate a table of the most recent bat lit references,
+run the command:</p>
+<pre><code>bin/list-refs.sh\
+ | tee zotero/refs.csv</code></pre>
+<p>Step 4. inspect the file <code>zotero/refs.csv</code></p>
+<p>Step 5. Now, generate the files <code>zotero/refs.tsv</code>,
+<code>zotero/refs-100.csv</code> and
+<code>zotero/refs-100.tsv</code></p>
+<p>using
+<code>cat zotero/refs.csv\   | mlr --icsv --otsvlite cat\    &gt; zotero/refs.tsv</code></p>
+<pre><code>cat zotero/refs.csv\
+ | head -n101\
+  &gt; zotero/refs-100.csv</code></pre>
+<pre><code> cat zotero/refs.csv\
+  | head -n101\
+   &gt; zotero/refs-100.csv</code></pre>
+</section>
+<section id="part-vi.3--link-batlit-references-to-their-zenodo-deposits"
+class="slide level2">
+<h2>Part VI.3- Link BatLit references to their Zenodo deposits</h2>
+<p>Now that we’ve created a reference table for the versioned Zotero
+records in <code>zotero/refs.csv</code>, we’d like to add the Zenodo
+deposits associated with the Zotero records.</p>
+<p>For instance, the Zotero record identified by
+<code>urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9</code> is
+associated a reference with title “Lagos Bat Virus, an Under-Reported
+Rabies-Related Lyssavirus”. This reference is included in some specific
+row in the file <code>zotero/refs.csv</code>.</p>
+<p>Following, we’d like to link this Zotero records to their counterpart
+in Zenodo. We do this via the identifier
+<code>urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9</code> . This
+identifier is embedded in the Zenodo deposits, and can be used to locate
+them in Zenodo.</p>
+<p>Finding a record associated with
+<code>urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9</code> can be
+done using:</p>
+<p>https://zenodo.org/search?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3ANBLJKXN9%22</p>
+<p>which would generate some point-and-click result through a
+webpage.</p>
+<p>In order to make it easier to link straight from https://batlit.org
+to Zenodo, we have an automated workflow that programmatically queries
+Zenodo for the Zotero URNs in the BatLit reference list, and saves the
+result as a additional table column.</p>
+<p>First, we run the queries and save the results using:</p>
+<pre><code>bin/track-zenodo-associations.sh</code></pre>
+<p>(take a while, because it runs ~20k queries against the Zenodo
+API)</p>
+<p>then, after getting the results, we generate an enriched version of
+refs.csv using</p>
+<pre><code>bin/refs2zenodo.sh\
+ &gt; zenodo/refs.csv</code></pre>
+<p>This enriched version contains a Zenodo doi’s associated with Zotero
+records.</p>
+<p>Repeat steps from previous zotero/ refs files to generate tsv and
+summary versions.</p>
+</section>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />

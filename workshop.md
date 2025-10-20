@@ -455,3 +455,104 @@ Step 1. Set Zotero API Key with read-only access  to the BatLit Zotero
 Step 2. Go into the ```bat-literature.github.io``` directory
 Step 3. Verify that a preston history exists by running ```preston history --algo md5```
 Step 4. Create a snapshot of the BatLit Zotero group
+
+## Part VI.1- Update the "HEAD" or most recent version
+
+Step 1. open a terminal
+Step 2. go into the ```bat-literature.github.io``` directory
+Step 3. make sure that the ```HEAD``` file contain the most recent hash of the BatLit version by running 
+```
+preston head --algo md5 > HEAD
+``` 
+and verifying that the first hash is the same as the one in the ```HEAD``` file by running
+```
+cat HEAD
+```
+
+## Part VI.2- Update the Reference Lists for Website/search 
+
+Step 1. open a terminal
+Step 2. go into the ```bat-literature.github.io``` directory
+Step 3. verify that the program "miller" is installed by running
+
+```
+mlr --version
+```
+
+If not install, run:
+
+```
+sudo apt install miller
+``` 
+
+Step 4. to generate a table of the most recent bat lit references, run the command:
+```
+bin/list-refs.sh\
+ | tee zotero/refs.csv
+ ```
+ 
+ Step 4. inspect the file ```zotero/refs.csv```
+ 
+ Step 5. Now, generate the files ```zotero/refs.tsv```, ```zotero/refs-100.csv``` and ```zotero/refs-100.tsv```
+ 
+ using 
+ ```
+ cat zotero/refs.csv\
+  | mlr --icsv --otsvlite cat\
+   > zotero/refs.tsv
+```
+
+ ```
+ cat zotero/refs.csv\
+  | head -n101\
+   > zotero/refs-100.csv
+```
+
+```
+ cat zotero/refs.csv\
+  | head -n101\
+   > zotero/refs-100.csv
+```
+
+## Part VI.3- Link BatLit references to their Zenodo deposits
+
+Now that we've created a reference table for the versioned Zotero records in ```zotero/refs.csv```, we'd like to add the Zenodo deposits associated with the Zotero records. 
+
+For instance, the Zotero record identified by 
+```urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9``` is associated a reference with title "Lagos Bat Virus, an Under-Reported Rabies-Related Lyssavirus". 
+This reference is included in some specific row in the file ```zotero/refs.csv```.
+
+Following, we'd like to link this Zotero records to their counterpart in Zenodo. We do this via the identifier ```urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9``` . This identifier is embedded in the Zenodo deposits, and can be used to locate them in Zenodo. 
+
+Finding a record associated with ```urn:lsid:zotero.org:groups:5435545:items:NBLJKXN9```   can be done using:
+
+https://zenodo.org/search?q=%22urn%3Alsid%3Azotero.org%3Agroups%3A5435545%3Aitems%3ANBLJKXN9%22
+
+which would generate some point-and-click result through a webpage. 
+
+In order to make it easier to link straight from https://batlit.org to Zenodo, we have an automated workflow that programmatically queries Zenodo for the Zotero URNs in the BatLit reference list, and saves the result as a additional table column.
+
+First, we run the queries and save the results using:
+
+```
+bin/track-zenodo-associations.sh
+```
+
+(take a while, because it runs ~20k queries against the Zenodo API)
+
+then, after getting the results, we generate an enriched version of refs.csv using
+
+```
+bin/refs2zenodo.sh\
+ > zenodo/refs.csv
+```
+
+This enriched version contains a Zenodo doi's associated with Zotero records.
+
+Repeat steps from previous zotero/ refs files to generate tsv and summary versions.
+
+
+
+
+
+
