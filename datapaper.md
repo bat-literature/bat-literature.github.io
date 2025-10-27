@@ -651,47 +651,78 @@ First 3 records shown below as an example. This data is also used to create the 
 Note that ```id``` points to the records as seen on Zotero, ```attachment``` points to the attachment records as seen on Zotero, ```attachmentId``` is the signature/hash of the associated pdf, ```corpusId``` is the signature/hash of the applicable [BatLit version](#version-history). 
 
 ```
-authors      Douglas
-date         1967
-title        Article: The Natural History of the Ghost Bat, Macroderma Gigas (Microchiroptera Megadermatidae), in Western Australia
-journal      Western Australia. The Western Australian Naturalist
-type         journalArticle
-volume       10
-issue        
-pages        125-138
-doi          
-id           https://www.zotero.org/groups/bat_literature_project/items/M5MZ6NSB
-attachment   https://api.zotero.org/groups/5435545/items/223GU789
-attachmentId hash://md5/5e3f7fac483550be7983c6096e9e9800
-corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+authors                Vora | Hannah | Lieberman | Vale | Plowright | Bernstein
+date                   2022-05
+title                  Want to prevent pandemics? Stop spillovers
+journal                Nature
+type                   journalArticle
+volume                 605
+issue                  7910
+pages                  419-422
+doi                    10.1038/d41586-022-01312-y
+id                     https://www.zotero.org/groups/bat_literature_project/items/A5RNP5YH
+attachment             https://api.zotero.org/groups/5435545/items/223P42N5
+attachmentId           hash://md5/85c89cedcc23b072f98f3c22ad731029
+corpusId               hash://md5/330417efcaa2560c9b8ebcd6fae17ce0
+alternativeDoi         10.5281/zenodo.14822460
+alternativeDoiUrl      https://doi.org/10.5281/zenodo.14822460
+zenodoResponseCorpusId hash://md5/510ea4383290c96d75e6190f83578d21
 
-authors      Vora | Hannah | Lieberman | Vale | Plowright | Bernstein
-date         2022-05
-title        Want to prevent pandemics? Stop spillovers
-journal      Nature
-type         journalArticle
-volume       605
-issue        7910
-pages        419-422
-doi          10.1038/d41586-022-01312-y
-id           https://www.zotero.org/groups/bat_literature_project/items/A5RNP5YH
-attachment   https://api.zotero.org/groups/5435545/items/223P42N5
-attachmentId hash://md5/85c89cedcc23b072f98f3c22ad731029
-corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+authors                Otto | Rall | Brose
+date                   12/2007
+title                  Allometric degree distributions facilitate food-web stability
+journal                Nature
+type                   journalArticle
+volume                 450
+issue                  7173
+pages                  1226-1229
+doi                    10.1038/nature06359
+id                     https://www.zotero.org/groups/bat_literature_project/items/6RAB386Y
+attachment             https://api.zotero.org/groups/5435545/items/225DJR2Q
+attachmentId           hash://md5/6bdc818006c01cac3dd90eec4b337289
+corpusId               hash://md5/330417efcaa2560c9b8ebcd6fae17ce0
+alternativeDoi         10.5281/zenodo.13409129
+alternativeDoiUrl      https://doi.org/10.5281/zenodo.13409129
+zenodoResponseCorpusId hash://md5/510ea4383290c96d75e6190f83578d21
 
-authors      Otto | Rall | Brose
-date         12/2007
-title        Allometric degree distributions facilitate food-web stability
-journal      Nature
-type         journalArticle
-volume       450
-issue        7173
-pages        1226-1229
-doi          10.1038/nature06359
-id           https://www.zotero.org/groups/bat_literature_project/items/6RAB386Y
-attachment   https://api.zotero.org/groups/5435545/items/225DJR2Q
-attachmentId hash://md5/6bdc818006c01cac3dd90eec4b337289
-corpusId     hash://md5/ce1e7618f237ff56e74d51f496e811a3
+authors                Horáček | Maul | Smith | Barkai | Gopher
+date                   2013
+title                  Bat remains (Mammalia, Chiroptera) from the Middle Pleistocene site of Qesem Cave, Israel, with the first Pleistocene record of fruit bats in the Mediterranean region
+journal                Palaeontologia Electronica
+type                   journalArticle
+volume                 
+issue                  
+pages                  
+doi                    10.26879/380
+id                     https://www.zotero.org/groups/bat_literature_project/items/U7ZDRXSP
+attachment             https://api.zotero.org/groups/5435545/items/225PBHZA
+attachmentId           hash://md5/6b90b5beb4a8f39a49b39a55b0467d4f
+corpusId               hash://md5/330417efcaa2560c9b8ebcd6fae17ce0
+alternativeDoi         10.5281/zenodo.13448551
+alternativeDoiUrl      https://doi.org/10.5281/zenodo.13448551
+zenodoResponseCorpusId hash://md5/510ea4383290c96d75e6190f83578d21
 ```
+
+The table below describes the header of the refs.csv table. 
+
+| column name | description | example |
+| --- | --- | --- |
+| authors | pipe limited list of author last names |  ```Vora | Hannah | Lieberman | Vale | Plowright | Bernstein``` |
+| date | publication date | ```2022-05``` | 
+| title | publication title | ```Want to prevent pandemics? Stop spillovers``` | 
+| journal | journal title | ```Nature``` | 
+| type | publication type | ```journalArticle``` | 
+| volume | journal volume | ```605``` |
+| issue | journal issue | ```7910``` | 
+| pages | publication page numbers | ```419-422``` |
+| doi | digital object identifier (DOI) issued by the publisher | ```10.1038/d41586-022-01312-y``` |
+| id | identifier of the Zotero records associated with this reference | ```https://www.zotero.org/groups/bat_literature_project/items/A5RNP5YH``` | 
+| attachment | identifier of the attachment associated with the Zotero record | ```https://api.zotero.org/groups/5435545/items/223P42N5``` | 
+| attachmentId | content signature of the Zotero record attachment | ```hash://md5/85c89cedcc23b072f98f3c22ad731029``` | 
+| corpusId | content signature of the associated BatLit (Bill of Material) Version, this is also referred to as the BatLit corpus version. |  ```hash://md5/330417efcaa2560c9b8ebcd6fae17ce0``` | 
+| alternativeDoi | digital object identifier (DOI) of the Zenodo deposit associated with this reference | ```10.5281/zenodo.14822460``` | 
+| alternativeDoiUrl | url notation of the  alternativeDoi  | ```https://doi.org/10.5281/zenodo.14822460``` | 
+| zenodoResponseCorpusId | content signature of the bill of materials describing the relations between Zotero records and their associated Zenodo deposits | ```hash://md5/510ea4383290c96d75e6190f83578d21``` | 
+
 
 ## Discussion
