@@ -1,4 +1,3 @@
----
 author:
   - Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute, GloBI)
   - Aja Sherman (Bat Eco-Interactions Project)
@@ -92,7 +91,7 @@ which should produce...
 hey there!
 ```
 
-## Step I.1 Say Hi and Version It
+## Part I.1 Say Hi and Version It
 
 ```
 echo hi there!
@@ -100,7 +99,7 @@ echo hi there!
 
 Prints "hi there!" to standard output
 
-## Step I.2 Say Hi and Version It
+## Part I.2 Say Hi and Version It
 
 ```
 echo hi there! | preston track --algo md5
@@ -115,7 +114,7 @@ Print "hi there!" to output (stdout), then turn this output into input (stdin) o
 
 This preston output, or description, is formatted in [rdf/nquads](https://www.w3.org/TR/n-quads/) and records what content was recorded when and by who. This machine readable description is also known as the BOM Bill of Materials, manifest or packing slip for the tracked content.
 
-## Step I.3 - Say Hi and Version It
+## Part I.3 - Say Hi and Version It
 
 ```
 echo hi there! | preston track --algo md5 | grep hasVersion
@@ -136,7 +135,7 @@ This prints only the part of the BOM that includes "hasVersion" and should look 
 This is a statement expressed in rdf/nquad. In this case, it expressed something like: there's this thing ```urn:uuid:X``` that is associated with content that has a cryptographic hash ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```. A cryptographic hash is a unique fingerprint derived from the digital content itself. **If the content and the hash algorithm are the same, the fingerprint is always the same.** This concept is central to internet security as well as things like cryptocurrencies. 
 
  
-## Step I.5 - Say Hi and Version It
+## Part I.5 - Say Hi and Version It
 
 Now, we ask Preston to print the versioned content by piping the "hasVersion" statement into ``preston cat```: 
 
@@ -150,7 +149,7 @@ to produce . . .
 hi there!
 ```
 
-## Step I.6 - Say Hi and Version It
+## Part I.6 - Say Hi and Version It
 
 Now that we've versioned saying hi, we can print the content using
 
@@ -166,11 +165,11 @@ hi there!
 
 This suggests that Preston *thinks* that ```hash://md5/75c7e31591354f2c82226aa3eb0267c7``` is the cryptographic hash of ```hi there!```. And . . . 
 
-## Step I.7 - Say Hi and Version It 
+## Part I.7 - Say Hi and Version It 
 
 If you know the fingerprint of content (e.g., ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```), you can use it to ask for what *exactly* what you want. And, on getting a result, you can *independently* verify that this is the case using some commonly available cryptographic hash calculators like ```md5sum``` (linux) or ```md5``` (Mac). These calculators are readily available as they are central to internet security and other core applications.
 
-## Step I.7 - Say Hi and Version It Continued...
+## Part I.7 - Say Hi and Version It Continued...
 
 ```
 preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7 | md5sum
@@ -191,7 +190,7 @@ Showing that an independent tool ```md5sum``` verified that the content you aske
  * Cryptographic hashes can be generated independently using commonly available tools.
  * Cryptographic hashes enable secure citation of digital content
 
-## Next Steps
+## Up Next
  
  * Review BatLit Datapaper 
  * Create a Zotero Group for Testing
@@ -215,7 +214,7 @@ Showing that an independent tool ```md5sum``` verified that the content you aske
 6. import the two pdfs into your Zotero Test Group
 
 
-## Step II.2 - Get your Zotero API Key 
+## Part II.2 - Get your Zotero API Key 
  
  In order to talk to Zotero using Preston (or any programmatic method) you need a Zotero Web API Key.
  
@@ -243,7 +242,7 @@ preston track --algo md5 [Zotero Group URL]
 (Tokens are a sequence of numbers and letters, e.g. ```ziAJAGw4t5sAaP9APRvBYjkX```)
 (Zotero Group URL e.g., https://www.zotero.org/groups/6217595)
 
-## Step II.3.1 A sorted list of metadata for most recent Bill of Materials
+## Part II.3.1 A sorted list of metadata for most recent Bill of Materials
 
 Create a sorted list metadata statement from the Zotero group for the *most recent* Bill of Materials, and list their content
 
@@ -259,7 +258,7 @@ preston head --algo md5\
 ```
 (replace ```[Zotero group number]``` with the number found in URL, make sure to remove brackets, e.g., https://www.zotero.org/groups/**6217595**) 
 
-## Step II.4 Make a change and create a new snapshot
+## Part II.4 Make a change and create a new snapshot
 
 1. Change the title of one of the publication in your test Zotero Group
 2. Make a new snapshot version by re-running: 
@@ -268,7 +267,7 @@ preston head --algo md5\
 preston track --algo md5 [Zotero Group from URL]
 ```
 
-## Step II.4.1 A sorted list of metadata for newly updated Bill of Materials
+## Part II.4.1 A sorted list of metadata for newly updated Bill of Materials
 
 Create a sorted list metadata statement from the Zotero group for the newly updated Bill of Materials, and list their content
 
@@ -283,7 +282,7 @@ preston head --algo md5\
  > metadata-after-change.txt
 ```
 
-## Step II.5 Compare changes in metadata across snapshot versions 
+## Part II.5 Compare changes in metadata across snapshot versions 
 
 After making a change in a Zotero records, and creating a new snapshot, we can compare the different versions of Bill of Materials associated with these snapshots.
 
@@ -292,7 +291,7 @@ In order to do so, we compare (II.3.1) the sorted list of all metadata for assoc
 Next, (II.5.1) we compare the differences between these metadata snapshots.
 
 
-## Step II.5.1 Compare changes across metadata associated with two versions of Bill of Materials
+## Part II.5.1 Compare changes across metadata associated with two versions of Bill of Materials
 
 Now that we have the Zotero metadata for the most recent Bill of Materials, as well as a previous version, we can 
 use [diff](https://en.wikipedia.org/wiki/Diff) to compare the differences. 
@@ -445,22 +444,22 @@ to "clone" (or create a copy of) the BatLit repository. By default, the reposito
 
 ## Part V.2 - Verify Current BatLit Version
 
-Step 1. go into ```bat-literature.github.io``` directory using ```cd```
-Step 2. run ```preston head --algo md5```
-Step 3. Compare the output of the command with the existing version on https://batlit.org/datapaper
+1. go into ```bat-literature.github.io``` directory using ```cd```
+2. run ```preston head --algo md5```
+3. Compare the output of the command with the existing version on https://batlit.org/datapaper
 
 ## Part V.2 - Create a Zotero Snapshot
 
-Step 1. Set Zotero API Key with read-only access  to the BatLit Zotero 
-Step 2. Go into the ```bat-literature.github.io``` directory
-Step 3. Verify that a preston history exists by running ```preston history --algo md5```
-Step 4. Create a snapshot of the BatLit Zotero group
+1. Set Zotero API Key with read-only access  to the BatLit Zotero 
+2. Go into the ```bat-literature.github.io``` directory
+3. Verify that a preston history exists by running ```preston history --algo md5```
+4. Create a snapshot of the BatLit Zotero group
 
 ## Part VI.1- Update the "HEAD" or most recent version
 
-Step 1. open a terminal
-Step 2. go into the ```bat-literature.github.io``` directory
-Step 3. make sure that the ```HEAD``` file contain the most recent hash of the BatLit version by running 
+1. open a terminal
+2. go into the ```bat-literature.github.io``` directory
+3. make sure that the ```HEAD``` file contain the most recent hash of the BatLit version by running 
 ```
 preston head --algo md5 > HEAD
 ``` 
@@ -471,9 +470,9 @@ cat HEAD
 
 ## Part VI.2- Update the Reference Lists for Website/search 
 
-Step 1. open a terminal
-Step 2. go into the ```bat-literature.github.io``` directory
-Step 3. verify that the program "miller" is installed by running
+1. open a terminal
+2. go into the ```bat-literature.github.io``` directory
+3. verify that the program "miller" is installed by running
 
 ```
 mlr --version
@@ -485,15 +484,15 @@ If not install, run:
 sudo apt install miller
 ``` 
 
-Step 4. to generate a table of the most recent bat lit references, run the command:
+4. to generate a table of the most recent bat lit references, run the command:
 ```
 bin/list-refs.sh\
  | tee zotero/refs.csv
  ```
  
- Step 4. inspect the file ```zotero/refs.csv```
+5. inspect the file ```zotero/refs.csv```
  
- Step 5. Now, generate the files ```zotero/refs.tsv```, ```zotero/refs-100.csv``` and ```zotero/refs-100.tsv```
+6. Now, generate the files ```zotero/refs.tsv```, ```zotero/refs-100.csv``` and ```zotero/refs-100.tsv```
  
  using 
  ```
