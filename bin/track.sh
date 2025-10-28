@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# assumes ZENODO_TOKEN available as environment variables.
+# assumes ZOTERO_TOKEN available as environment variables.
 #
 
 SCRIPT_DIR=$(dirname $0)
