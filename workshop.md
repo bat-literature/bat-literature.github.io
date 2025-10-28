@@ -1,3 +1,4 @@
+---
 author:
   - Jorrit Poelen (UC Santa Barbara Cheadle Center, Ronin Institute, GloBI)
   - Aja Sherman (Bat Eco-Interactions Project)
@@ -442,13 +443,13 @@ git clone https://github.com/bat-literature/bat-literature.github.io
 to "clone" (or create a copy of) the BatLit repository. By default, the repository is cloned into a folder with the same name as the repository (e.g., ```bat-literature.github.io```). 
 
 
-## Part V.2 - Verify Current BatLit Version
+## Part V.3 - Verify Current BatLit Version
 
 1. go into ```bat-literature.github.io``` directory using ```cd```
 2. run ```preston head --algo md5```
 3. Compare the output of the command with the existing version on https://batlit.org/datapaper
 
-## Part V.2 - Create a Zotero Snapshot
+## Part V.4 - Create a Zotero Snapshot
 
 1. Set Zotero API Key with read-only access  to the BatLit Zotero 
 2. Go into the ```bat-literature.github.io``` directory
