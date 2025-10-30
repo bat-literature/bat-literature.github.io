@@ -1,0 +1,89 @@
+#!/bin/bash
+#
+# Creates a snapshot (aka a bill of material) associated with the literature references in Zotero group
+#
+#
+
+set -x
+
+SCRIPT_DIR=$(realpath $(dirname $0))
+
+ZOTERO_GROUP_URL="https://example.org"
+TOKEN=
+COMMUNITY_OPTS="--community batlit,biosyslit" 
+
+DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
+mkdir -p ${DIST_DIR_REL}/data ${DIST_DIR_REL}/tmp
+ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zenodo 
+
+DIST_DIR=$(realpath ${DIST_DIR_REL})
+DATA_DIR_ZOTERO=$(realpath ${SCRIPT_DIR}/../target/zotero/data)
+
+DIST_DATA_DIR=$(realpath ${DIST_DIR}/data)
+DIST_TMP_DIR=$(realpath ${DIST_DIR}/tmp)
+
+DATA_DIR=${SCRIPT_DIR}/../data
+
+PRESTON_OPTS="--algo md5 --data-dir ${DATA_DIR} --remote file://${DIST_DATA_DIR}"
+PRESTON_SNAPSHOT_OPTS="--algo md5 --data-dir ${DIST_DATA_DIR} --remote file://${DATA_DIR}"
+PRESTON_ZOTERO_SNAPSHOT_OPTS="--algo md5 --data-dir ${DIST_DATA_DIR} --remote file://${DATA_DIR_ZOTERO}"
+
+snapshot_id() {
+  preston head ${PRESTON_OPTS}
+}
+
+echo Depositing records in Zenodo...
+
+gather_config() {
+  read -s -p "Enter Zenodo API Token: " TOKEN
+  echo
+  read -s -p "Enter Zenodo Endpoint URL: " ENDPOINT
+  echo
+}
+gather_config
+
+export ZENODO_TOKEN="${TOKEN}"
+export ZENODO_ENDPOINT="${ENDPOINT}"
+
+echo Current snapshot has id:
+echo $(snapshot_id)
+
+echo "Creating next snapshot (this may take a while)"
+
+LOG="${DIST_DIR/deposit.nq}"
+LOG_ERROR="${DIST_DIR/deposit.err}"
+
+generate_zenodo_metadata() {
+  echo "generating Zenodo metadata from most recent Zotero snapshot with id $(preston head ${PRESTON_OPTS}). "
+  preston head ${PRESTON_OPTS}\
+  | preston cat ${PRESTON_OPTS}\
+  | preston zotero-stream ${PRESTON_OPTS} ${COMMUNITY_OPTS}\
+  | preston track ${PRESTON_SNAPSHOT_OPTS}
+}
+
+generate_zenodo_metadata
+
+deposit_records() {
+  ZENODO_UPDATE_OPT=$1
+  preston head ${PRESTON_SNAPSHOT_OPTS}\
+  | preston cat ${PRESTON_SNAPSHOT_OPTS}\
+  | preston zenodo ${ZENODO_UPDATE_OPT} ${PRESTON_ZOTERO_OPTS} ${COMMUNITY_OPTS}\
+  1>> $LOG\
+  2>> $LOG_ERROR\ 
+} 
+
+deposit_records ""
+deposit_records "--update-metadata-only"
+
+associate_records() {
+  ${SCRIPT_DIR}/bin/track-zenodo-associations.sh
+}
+
+${SCRIPT_DIR}/list-refs.sh > ${SCRIPT_DIR}/../zenodo/refs.csv
+cat ${SCRIPT_DIR}/../zenodo/refs.csv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.csv
+cat ${SCRIPT_DIR}/../zenodo/refs.csv | mlr --icsv --otsvlite cat > ${SCRIPT_DIR}/../zenodo/refs.tsv
+cat ${SCRIPT_DIR}/../zenodo/refs.tsv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.tsv
+
+echo "Zenodo deposit of $(snapshot_id) complete."
+echo "Please review local changes and commit when approved." 
+echo "Then, inspect associated Zenodo records."
