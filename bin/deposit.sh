@@ -70,13 +70,19 @@ deposit_records() {
   2>> $LOG_ERROR\ 
 } 
 
-#deposit_records ""
-#deposit_records "--update-metadata-only"
+echo "first deposit new records, skipping existing"
+deposit_records ""
+echo "then, update all metadata with existing Zenodo deposits"
+deposit_records "--update-metadata-only"
+
 
 associate_records() {
   ${SCRIPT_DIR}/track-zenodo-associations.sh
 }
+echo "record associations between Zotero records and Zenodo deposits"
 associate_records
+
+echo "update literature reference list"
 
 ${SCRIPT_DIR}/list-refs.sh > ${SCRIPT_DIR}/../zenodo/refs.csv
 cat ${SCRIPT_DIR}/../zenodo/refs.csv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.csv
