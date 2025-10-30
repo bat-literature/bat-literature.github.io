@@ -40,7 +40,7 @@ gather_config() {
   read -s -p "Enter Zenodo Endpoint URL: " ENDPOINT
   echo
 }
-#gather_config
+gather_config
 
 export ZENODO_TOKEN="${TOKEN}"
 export ZENODO_ENDPOINT="${ENDPOINT}"
