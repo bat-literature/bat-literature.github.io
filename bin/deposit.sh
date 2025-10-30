@@ -4,7 +4,7 @@
 #
 #
 
-set -x
+set -xe
 
 SCRIPT_DIR=$(realpath $(dirname $0))
 
@@ -17,16 +17,16 @@ mkdir -p ${DIST_DIR_REL}/data ${DIST_DIR_REL}/tmp
 ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zenodo 
 
 DIST_DIR=$(realpath ${DIST_DIR_REL})
-DATA_DIR_ZOTERO=$(realpath ${SCRIPT_DIR}/../target/zotero/data)
+DATA_DIR_ZOTERO=${SCRIPT_DIR}/../target/zotero/data
 
 DIST_DATA_DIR=$(realpath ${DIST_DIR}/data)
 DIST_TMP_DIR=$(realpath ${DIST_DIR}/tmp)
 
 DATA_DIR=${SCRIPT_DIR}/../data
 
-PRESTON_OPTS="--algo md5 --data-dir ${DATA_DIR} --remote file://${DIST_DATA_DIR}"
-PRESTON_SNAPSHOT_OPTS="--algo md5 --data-dir ${DIST_DATA_DIR} --remote file://${DATA_DIR}"
-PRESTON_ZOTERO_SNAPSHOT_OPTS="--algo md5 --data-dir ${DIST_DATA_DIR} --remote file://${DATA_DIR_ZOTERO}"
+PRESTON_OPTS="--algo md5 --data-dir ${DATA_DIR}"
+PRESTON_SNAPSHOT_OPTS="--algo md5 --data-dir ${DIST_DATA_DIR}"
+PRESTON_ZOTERO_SNAPSHOT_OPTS="--algo md5 --no-cache --data-dir ${DIST_DATA_DIR} --remote file://${DATA_DIR_ZOTERO}"
 
 snapshot_id() {
   preston head ${PRESTON_OPTS}
@@ -40,15 +40,13 @@ gather_config() {
   read -s -p "Enter Zenodo Endpoint URL: " ENDPOINT
   echo
 }
-gather_config
+#gather_config
 
 export ZENODO_TOKEN="${TOKEN}"
 export ZENODO_ENDPOINT="${ENDPOINT}"
 
 echo Current snapshot has id:
 echo $(snapshot_id)
-
-echo "Creating next snapshot (this may take a while)"
 
 LOG="${DIST_DIR/deposit.nq}"
 LOG_ERROR="${DIST_DIR/deposit.err}"
@@ -57,7 +55,7 @@ generate_zenodo_metadata() {
   echo "generating Zenodo metadata from most recent Zotero snapshot with id $(preston head ${PRESTON_OPTS}). "
   preston head ${PRESTON_OPTS}\
   | preston cat ${PRESTON_OPTS}\
-  | preston zotero-stream ${PRESTON_OPTS} ${COMMUNITY_OPTS}\
+  | preston zotero-stream ${PRESTON_ZOTERO_SNAPSHOT_OPTS} ${COMMUNITY_OPTS}\
   | preston track ${PRESTON_SNAPSHOT_OPTS}
 }
 
@@ -67,17 +65,18 @@ deposit_records() {
   ZENODO_UPDATE_OPT=$1
   preston head ${PRESTON_SNAPSHOT_OPTS}\
   | preston cat ${PRESTON_SNAPSHOT_OPTS}\
-  | preston zenodo ${ZENODO_UPDATE_OPT} ${PRESTON_ZOTERO_OPTS} ${COMMUNITY_OPTS}\
+  | preston zenodo ${ZENODO_UPDATE_OPT} ${PRESTON_ZOTERO_SNAPSHOT_OPTS} ${COMMUNITY_OPTS}\
   1>> $LOG\
   2>> $LOG_ERROR\ 
 } 
 
-deposit_records ""
-deposit_records "--update-metadata-only"
+#deposit_records ""
+#deposit_records "--update-metadata-only"
 
 associate_records() {
-  ${SCRIPT_DIR}/bin/track-zenodo-associations.sh
+  ${SCRIPT_DIR}/track-zenodo-associations.sh
 }
+associate_records
 
 ${SCRIPT_DIR}/list-refs.sh > ${SCRIPT_DIR}/../zenodo/refs.csv
 cat ${SCRIPT_DIR}/../zenodo/refs.csv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.csv
