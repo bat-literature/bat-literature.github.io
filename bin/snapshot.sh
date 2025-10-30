@@ -14,7 +14,7 @@ TOKEN=
 
 DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
 mkdir -p ${DIST_DIR_REL}/data ${DIST_DIR_REL}/tmp
-ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/current 
+ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zotero 
 
 DIST_DIR=$(realpath ${DIST_DIR_REL})
 

@@ -5,7 +5,7 @@
 
 set -x
 
-SCRIPT_DIR=$(dirname $0)
+SCRIPT_DIR=$(realpath $(dirname $0))
 DATA_DIR="${SCRIPT_DIR}/../zenodo"
 
 ZENODO_VERSION=$(preston head --algo md5 --data-dir "${DATA_DIR}")
