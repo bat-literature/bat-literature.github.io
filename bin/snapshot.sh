@@ -85,6 +85,9 @@ echo -ne "${VERSION_NEXT},"\
 preston head ${PRESTON_OPTS}\
  >> ${SCRIPT_DIR}/../_data/versions.csv 
 
+echo $(preston head $PRESTON_OPTS}\
+ > ${SCRIPT_DIR}/../versions/${VERSION_NEXT}
+
 echo "Zotero snapshot ${VERSION_NEXT} complete."
 echo "Please review local changes and commit when approved." 
 echo "Then, proceed with bin/deposit.sh to deposit associated records with Zenodo."
