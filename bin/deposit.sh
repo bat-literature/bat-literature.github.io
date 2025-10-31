@@ -10,11 +10,10 @@ SCRIPT_DIR=$(realpath $(dirname $0))
 
 ZOTERO_GROUP_URL="https://example.org"
 TOKEN=
-COMMUNITY_OPTS="--community batlit,biosyslit" 
 
 DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
 mkdir -p ${DIST_DIR_REL}/data ${DIST_DIR_REL}/tmp
-ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zenodo 
+ln -n -f -s ${DIST_DIR_REL}/ ${SCRIPT_DIR}/../target/zenodo 
 
 DIST_DIR=$(realpath ${DIST_DIR_REL})
 DATA_DIR_ZOTERO=${SCRIPT_DIR}/../target/zotero/data
@@ -32,18 +31,43 @@ snapshot_id() {
   preston head ${PRESTON_OPTS}
 }
 
-echo Depositing records in Zenodo...
+
+PS3="Please select Zenodo deposit method: "
+
+select lng in "Update Metadata" "Deposit New Versions" "Add New Only"
+do
+    case $lng in
+        "Update Metadata")
+           ZENODO_UPDATE_OPT="--update-metadata-only"; 
+           echo "$lng - that's what we're talking about"; break;;
+        "Deposit New Versions")
+           ZENODO_UPDATE_OPT="--new-version"; 
+           echo "$lng - is your VM ready?"; break;;
+        "Add New Only")
+           ZENODO_UPDATE_OPT=""; 
+           echo "$lng - let's prepare for a lot of compilation"; break;;
+        *)
+           echo "Try again";;
+    esac
+done
+
+echo $ZENODO_UPDATE_OPT
+
+echo Depositing records in Zenodo
 
 gather_config() {
   read -s -p "Enter Zenodo API Token: " TOKEN
   echo
-  read -s -p "Enter Zenodo Endpoint URL: " ENDPOINT
+  read -p "Enter Zenodo Endpoint URL: " ENDPOINT
   echo
+  read -p "Enter Zenodo Communities (comma separated): " COMMUNITIES
+
 }
 gather_config
 
 export ZENODO_TOKEN="${TOKEN}"
 export ZENODO_ENDPOINT="${ENDPOINT}"
+COMMUNITY_OPTS="--community ${COMMUNITIES}" 
 
 echo Current snapshot has id:
 echo $(snapshot_id)
@@ -62,18 +86,12 @@ generate_zenodo_metadata() {
 generate_zenodo_metadata
 
 deposit_records() {
-  ZENODO_UPDATE_OPT=$1
   preston head ${PRESTON_SNAPSHOT_OPTS}\
   | preston cat ${PRESTON_SNAPSHOT_OPTS}\
-  | preston zenodo ${ZENODO_UPDATE_OPT} ${PRESTON_ZOTERO_SNAPSHOT_OPTS} ${COMMUNITY_OPTS}\
-  1>> $LOG\
-  2>> $LOG_ERROR\ 
+  | preston zenodo ${ZENODO_UPDATE_OPT} ${PRESTON_ZOTERO_SNAPSHOT_OPTS} ${COMMUNITY_OPTS}
 } 
 
-echo "first deposit new records, skipping existing"
-deposit_records ""
-echo "then, update all metadata with existing Zenodo deposits"
-deposit_records "--update-metadata-only"
+deposit_records
 
 
 associate_records() {
@@ -82,9 +100,9 @@ associate_records() {
 echo "record associations between Zotero records and Zenodo deposits"
 associate_records
 
-echo "update literature reference list"
+echo "update literature reference list with Zenodo associations"
 
-${SCRIPT_DIR}/list-refs.sh > ${SCRIPT_DIR}/../zenodo/refs.csv
+${SCRIPT_DIR}/list-refs-zenodo.sh > ${SCRIPT_DIR}/../zenodo/refs.csv
 cat ${SCRIPT_DIR}/../zenodo/refs.csv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.csv
 cat ${SCRIPT_DIR}/../zenodo/refs.csv | mlr --icsv --otsvlite cat > ${SCRIPT_DIR}/../zenodo/refs.tsv
 cat ${SCRIPT_DIR}/../zenodo/refs.tsv | head -n101 > ${SCRIPT_DIR}/../zenodo/refs-100.tsv
