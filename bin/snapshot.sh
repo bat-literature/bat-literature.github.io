@@ -14,7 +14,7 @@ TOKEN=
 
 DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
 mkdir -p ${DIST_DIR_REL}/data ${DIST_DIR_REL}/tmp
-ln -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zotero 
+ln -n -f -s ${DIST_DIR_REL} ${SCRIPT_DIR}/../target/zotero 
 
 DIST_DIR=$(realpath ${DIST_DIR_REL})
 
@@ -84,6 +84,9 @@ echo -ne "${VERSION_NEXT},"\
  >> ${SCRIPT_DIR}/../_data/versions.csv  
 preston head ${PRESTON_OPTS}\
  >> ${SCRIPT_DIR}/../_data/versions.csv 
+
+echo $(preston head $PRESTON_OPTS}\
+ > ${SCRIPT_DIR}/../versions/${VERSION_NEXT}
 
 echo "Zotero snapshot ${VERSION_NEXT} complete."
 echo "Please review local changes and commit when approved." 
