@@ -11,7 +11,7 @@
 # The scripted workflow prompts user to enter Zotero API Key and Zotero Group URL before creating the snapshot.
 #
 # Requirements:
-# This workflow relies on the commandline programs Preston, mlr, jq, pv. Please make sure to install them before running this workflow.
+# This workflow relies on the commandline programs Preston, mlr, jq. Please make sure to install them before running this workflow.
 # 
  
 
@@ -76,7 +76,6 @@ preston head --no-progress ${PRESTON_OPTS}\
  | grep "https://api.zotero.org/groups/"\
  | grep -v "file/view"\
  | preston cat --no-progress ${PRESTON_OPTS}\
- | pv\
  > /dev/null 
 
 echo "updating refs"
