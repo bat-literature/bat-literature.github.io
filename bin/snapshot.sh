@@ -1,8 +1,19 @@
 #!/bin/bash
 #
-# Creates a snapshot (aka a bill of material) associated with the literature references in Zotero group
+# Creates a snapshot (aka a bill of material) associated with the literature references in Zotero group.
+# Following, the metadata associated with the snapshot appended to the data/ folder. 
+# Also, the zotero/refs files are updated as well as the _data/versions.csv and versions/ directory. 
+# Once this workflow completes, the results can be shared by committing the changes to a git repository if desired.
 #
+# Usage:
+# ./bin/snapshot.sh
+# 
+# The scripted workflow prompts user to enter Zotero API Key and Zotero Group URL before creating the snapshot.
 #
+# Requirements:
+# This workflow relies on the commandline programs Preston, mlr, jq, pv. Please make sure to install them before running this workflow.
+# 
+ 
 
 set -x
 
