@@ -96,7 +96,7 @@ echo -ne "${VERSION_NEXT},"\
 preston head ${PRESTON_OPTS}\
  >> ${SCRIPT_DIR}/../_data/versions.csv 
 
-echo $(preston head $PRESTON_OPTS}\
+echo $(preston head $PRESTON_OPTS})\
  > ${SCRIPT_DIR}/../versions/${VERSION_NEXT}
 
 echo "Zotero snapshot ${VERSION_NEXT} complete."
