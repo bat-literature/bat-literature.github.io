@@ -1,7 +1,17 @@
 #!/bin/bash
 #
-# Creates a snapshot (aka a bill of material) associated with the literature references in Zotero group
+# Deposit previously tracked Zotero literature records in Zenodo
 #
+# Usage: 
+#
+# ./deposit.sh
+#
+# Prompts user for Zenodo endpoint url, Zenodo community id, Zenodo API token, and method of update.
+#
+# Deposit methods include:
+#  - only add new records - skips deposits associated with existing Zotero records, only deposit new records
+#  - update metadata only - updates all Zenodo record metadata associated with existing deposits.
+#  - new version - create new version for new and existing deposits associated with tracked Zotero records.
 #
 
 set -xe
@@ -95,7 +105,7 @@ deposit_records
 
 
 associate_records() {
-  ${SCRIPT_DIR}/track-zenodo-associations.sh
+  ${SCRIPT_DIR}/track-zenodo-associations.sh "${ZENODO_ENDPOINT}" $(echo ${COMMUNITIES} | tr ',' '\n' | head -1)
 }
 echo "record associations between Zotero records and Zenodo deposits"
 associate_records
