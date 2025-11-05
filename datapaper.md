@@ -639,12 +639,13 @@ Note that there's roughly two kinds of content: top level content like journal a
 
 ### Literature Record Index
 
-Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) against a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 3 records in the table below, as well as files in tsv/csv formats include 100 records and all records.
+Literature records can be extracted from this corpus in various ways. As an example, we show the output of an executed script in [bin/list-refs.sh](bin/list-refs.sh) against a recent version of the BatLit Corpus. For ease of processing, we've included a sample of 3 records in the table below, as well as files in RIS/tsv/csv formats include 100 records and all records.
 
 | filenames | description |
 | --- | --- |
 | [refs-100.tsv](refs-100.tsv) / [refs-100.csv](refs-100.csv) | author/date/title/journal of first 100 records
 | [refs.tsv](refs.tsv) / [refs.csv](refs.csv) | author/date/title/journal of all records
+| [refs.ris](refs.ris) | author/date/title/journal of all records in RIS format 
 
 First 3 records shown below as an example. This data is also used to create the [BatLit References Page](refs). This page adds links to the references to facilitate searches on Zenodo.
 

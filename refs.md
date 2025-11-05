@@ -7,7 +7,7 @@ permalink: /search/
 {% assign version = site.data.versions | sort: "name" | last -%}
 Bibiographic References for BatLit **{{ version.name }}** ```{{ version.id }}```
 
-Looking for all BatLit references? Download [refs.csv](refs.csv), [refs.tsv](refs.tsv) or visit [Zenodo's BatLit Community](https://zenodo.org/communities/batlit) .
+Looking for all BatLit references? Download [refs.ris](refs.ris), [refs.csv](refs.csv), [refs.tsv](refs.tsv) or visit [Zenodo's BatLit Community](https://zenodo.org/communities/batlit) .
 
 {% include search.html %}
 
