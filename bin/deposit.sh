@@ -14,7 +14,7 @@
 #  - new version - create new version for new and existing deposits associated with tracked Zotero records.
 #
 
-set -xe
+set -e
 
 SCRIPT_DIR=$(realpath $(dirname $0))
 
