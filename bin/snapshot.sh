@@ -20,7 +20,7 @@ set -x
 SCRIPT_DIR=$(realpath $(dirname $0))
 
 ZOTERO_GROUP_URL="https://example.org"
-TOKEN=
+ZOTERO_TOKEN=
 
 
 DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
@@ -44,13 +44,11 @@ snapshot_id() {
 echo Creating a Zotero Snapshot...
 
 gather_config() {
-  read -s -p "Enter Zotero API Token: " TOKEN
+  read -s -p "Enter Zotero API Token: " ZOTERO_TOKEN
   echo
   read -p "Enter Zotero Group URL: " ZOTERO_GROUP_URL
 }
 gather_config
-
-export ZOTERO_TOKEN="${TOKEN}"
 
 echo Current snapshot has id:
 echo $(snapshot_id)
