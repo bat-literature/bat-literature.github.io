@@ -15,12 +15,12 @@
 # 
  
 
-set -x
+#set -x
 
 SCRIPT_DIR=$(realpath $(dirname $0))
 
 ZOTERO_GROUP_URL="https://example.org"
-ZOTERO_TOKEN=
+TOKEN=
 
 
 DIST_DIR_REL=${SCRIPT_DIR}/../target/$(uuidgen)
@@ -44,7 +44,7 @@ snapshot_id() {
 echo Creating a Zotero Snapshot...
 
 gather_config() {
-  read -s -p "Enter Zotero API Token: " ZOTERO_TOKEN
+  read -s -p "Enter Zotero API Token: " TOKEN
   echo
   read -p "Enter Zotero Group URL: " ZOTERO_GROUP_URL
 }
@@ -60,8 +60,8 @@ LOG_ERROR="${DIST_DIR/snapshot.err}"
 
 make_snapshot() {
   # first, populate history index
-  preston history ${PRESTON_SNAPSHOT_OPTS}
-
+  preston history --no-progress ${PRESTON_SNAPSHOT_OPTS}
+  export ZOTERO_TOKEN="$TOKEN"
   preston track ${PRESTON_SNAPSHOT_OPTS} ${ZOTERO_GROUP_URL}
 }
 
