@@ -48,7 +48,7 @@ Preston allows for creating a versioned snapshot of a Zotero library (or group).
 
 Also, Preston allows for depositing this versioned snapshot into Zenodo. 
 
-At time of writing, 26 Aug 2025, this publish Zotero-to-Zenodo functionality only offered through Preston. 
+At time of writing, 26 Aug 2025, this publish Zotero-to-Zenodo functionality is only offered through Preston. 
 
 ## Part I - Preston Basics
 
