@@ -92,7 +92,7 @@ which should produce...
 hey there!
 ```
 
-## Part I.1 Say Hi and Version It
+## Part I.1 Say Hi and Version It - Step By Step
 
 ```
 echo hi there!
@@ -100,7 +100,7 @@ echo hi there!
 
 Prints "hi there!" to standard output
 
-## Part I.2 Say Hi and Version It
+## Part I.2 Say Hi and Version It - Step By Step
 
 ```
 echo hi there! | preston track --algo md5
@@ -113,9 +113,9 @@ Print "hi there!" to output (stdout), then turn this output into input (stdin) o
 ```
 
 
-This preston output, or description, is formatted in [rdf/nquads](https://www.w3.org/TR/n-quads/) and records what content was recorded when and by who. This machine readable description is also known as the BOM Bill of Materials, manifest or packing slip for the tracked content.
+This preston output, or description, is formatted in [rdf/nquads](https://www.w3.org/TR/n-quads/) and records what content was recorded when and by who. This machine readable description is also known as the Bill of Materials (BOM), manifest, or packing slip, for the tracked content.
 
-## Part I.3 - Say Hi and Version It
+## Part I.3 - Say Hi and Version It - Step By Step
 
 ```
 echo hi there! | preston track --algo md5 | grep hasVersion
@@ -127,7 +127,7 @@ This prints only the part of the BOM that includes "hasVersion" and should look 
 <urn:uuid:X> <...hasVersion> <hash://md5/75c7e31591354f2c82226aa3eb0267c7> .
 ```
 
-## Step I.4 - Say Hi and Version It
+## Step I.4 - Say Hi and Version It - Step By Step
 
 
 ```
@@ -136,7 +136,7 @@ This prints only the part of the BOM that includes "hasVersion" and should look 
 This is a statement expressed in rdf/nquad. In this case, it expressed something like: there's this thing ```urn:uuid:X``` that is associated with content that has a cryptographic hash ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```. A cryptographic hash is a unique fingerprint derived from the digital content itself. **If the content and the hash algorithm are the same, the fingerprint is always the same.** This concept is central to internet security as well as things like cryptocurrencies. 
 
  
-## Part I.5 - Say Hi and Version It
+## Part I.5 - Say Hi and Version It - Step By Step
 
 Now, we ask Preston to print the versioned content by piping the "hasVersion" statement into ``preston cat```: 
 
@@ -150,7 +150,7 @@ to produce . . .
 hi there!
 ```
 
-## Part I.6 - Say Hi and Version It
+## Part I.6 - Say Hi and Version It - Step By Step
 
 Now that we've versioned saying hi, we can print the content using
 
@@ -166,7 +166,7 @@ hi there!
 
 This suggests that Preston *thinks* that ```hash://md5/75c7e31591354f2c82226aa3eb0267c7``` is the cryptographic hash of ```hi there!```. And . . . 
 
-## Part I.7 - Say Hi and Version It 
+## Part I.7 - Say Hi and Version It - Step By Step
 
 If you know the fingerprint of content (e.g., ```hash://md5/75c7e31591354f2c82226aa3eb0267c7```), you can use it to ask for what *exactly* what you want. And, on getting a result, you can *independently* verify that this is the case using some commonly available cryptographic hash calculators like ```md5sum``` (linux) or ```md5``` (Mac). These calculators are readily available as they are central to internet security and other core applications.
 
@@ -184,7 +184,7 @@ produces:
 
 Showing that an independent tool ```md5sum``` verified that the content you asked for is the content you got!  
 
-## Takeaways
+## Part I - Takeaways
 
  * Preston tracks, versions and packages digital content
  * Cryptographic hashes are unique digital fingerprints for digital content.

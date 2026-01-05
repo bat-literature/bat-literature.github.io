@@ -222,13 +222,15 @@ echo hi there! | preston track --algo md5 | grep hasVersion | preston cat </code
 <p>which should produce…</p>
 <pre><code>hey there!</code></pre>
 </section>
-<section id="part-i.1-say-hi-and-version-it" class="slide level2">
-<h2>Part I.1 Say Hi and Version It</h2>
+<section id="part-i.1-say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.1 Say Hi and Version It - Step By Step</h2>
 <pre><code>echo hi there!</code></pre>
 <p>Prints “hi there!” to standard output</p>
 </section>
-<section id="part-i.2-say-hi-and-version-it" class="slide level2">
-<h2>Part I.2 Say Hi and Version It</h2>
+<section id="part-i.2-say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.2 Say Hi and Version It - Step By Step</h2>
 <pre><code>echo hi there! | preston track --algo md5</code></pre>
 <p>Print “hi there!” to output (stdout), then turn this output into
 input (stdin) of <code>preston track</code>. So, this sends “hi there!”
@@ -239,18 +241,20 @@ like:</p>
 <p>This preston output, or description, is formatted in <a
 href="https://www.w3.org/TR/n-quads/">rdf/nquads</a> and records what
 content was recorded when and by who. This machine readable description
-is also known as the BOM Bill of Materials, manifest or packing slip for
-the tracked content.</p>
+is also known as the Bill of Materials (BOM), manifest, or packing slip,
+for the tracked content.</p>
 </section>
-<section id="part-i.3---say-hi-and-version-it" class="slide level2">
-<h2>Part I.3 - Say Hi and Version It</h2>
+<section id="part-i.3---say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.3 - Say Hi and Version It - Step By Step</h2>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion</code></pre>
 <p>This prints only the part of the BOM that includes “hasVersion” and
 should look something like:</p>
 <pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; .</code></pre>
 </section>
-<section id="step-i.4---say-hi-and-version-it" class="slide level2">
-<h2>Step I.4 - Say Hi and Version It</h2>
+<section id="step-i.4---say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Step I.4 - Say Hi and Version It - Step By Step</h2>
 <pre><code>&lt;urn:uuid:X&gt; &lt;...hasVersion&gt; &lt;hash://md5/75c7e31591354f2c82226aa3eb0267c7&gt; ...</code></pre>
 <p>This is a statement expressed in rdf/nquad. In this case, it
 expressed something like: there’s this thing <code>urn:uuid:X</code>
@@ -262,16 +266,18 @@ same, the fingerprint is always the same.</strong> This concept is
 central to internet security as well as things like
 cryptocurrencies.</p>
 </section>
-<section id="part-i.5---say-hi-and-version-it" class="slide level2">
-<h2>Part I.5 - Say Hi and Version It</h2>
+<section id="part-i.5---say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.5 - Say Hi and Version It - Step By Step</h2>
 <p>Now, we ask Preston to print the versioned content by piping the
 “hasVersion” statement into ``preston cat```:</p>
 <pre><code>echo hi there! | preston track --algo md5 | grep hasVersion | preston cat</code></pre>
 <p>to produce . . .</p>
 <pre><code>hi there!</code></pre>
 </section>
-<section id="part-i.6---say-hi-and-version-it" class="slide level2">
-<h2>Part I.6 - Say Hi and Version It</h2>
+<section id="part-i.6---say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.6 - Say Hi and Version It - Step By Step</h2>
 <p>Now that we’ve versioned saying hi, we can print the content
 using</p>
 <pre><code>preston cat hash://md5/75c7e31591354f2c82226aa3eb0267c7</code></pre>
@@ -281,8 +287,9 @@ using</p>
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code> is the
 cryptographic hash of <code>hi there!</code>. And . . .</p>
 </section>
-<section id="part-i.7---say-hi-and-version-it" class="slide level2">
-<h2>Part I.7 - Say Hi and Version It</h2>
+<section id="part-i.7---say-hi-and-version-it---step-by-step"
+class="slide level2">
+<h2>Part I.7 - Say Hi and Version It - Step By Step</h2>
 <p>If you know the fingerprint of content (e.g.,
 <code>hash://md5/75c7e31591354f2c82226aa3eb0267c7</code>), you can use
 it to ask for what <em>exactly</em> what you want. And, on getting a
@@ -301,8 +308,8 @@ class="slide level2">
 <p>Showing that an independent tool <code>md5sum</code> verified that
 the content you asked for is the content you got!</p>
 </section>
-<section id="takeaways" class="slide level2">
-<h2>Takeaways</h2>
+<section id="part-i---takeaways" class="slide level2">
+<h2>Part I - Takeaways</h2>
 <ul>
 <li>Preston tracks, versions and packages digital content</li>
 <li>Cryptographic hashes are unique digital fingerprints for digital
