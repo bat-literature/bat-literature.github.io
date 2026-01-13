@@ -336,7 +336,7 @@ Zenodo provides a sandbox to try their platform and experiment.
 To deposit content into Zenodo programmatically (e.g., using Preston), you need a Zenodo Web API Key / Token.
 
 1. go to https://sandbox.zenodo.org
-2. select account > applications > personal access token (?) with all options (e.g., write access) enabled
+2. select account > applications > personal access token (?) with all options (e.g., write access, publish) enabled
 3. generate a new token (or api key) and record this somewhere safe
 
 ## Part III.3 - Generate Zenodo Metadata for a Zotero Snapshot
