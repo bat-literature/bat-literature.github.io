@@ -15,7 +15,7 @@ set -x
 SCRIPT_DIR=$(dirname $0)
 DATA_DIR="${SCRIPT_DIR}/../zenodo"
 
-ZENODO_ENDPOINT_URL=${1:-https://zenodo.org/}
+ZENODO_ENDPOINT_URL=${1:-https://zenodo.org}
 ZENODO_COMMUNITY=${2:-batlit}
 
 preston track --data-dir "${DATA_DIR}" \
