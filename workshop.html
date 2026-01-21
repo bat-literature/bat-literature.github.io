@@ -497,7 +497,7 @@ Preston), you need a Zenodo Web API Key / Token.</p>
 <ol type="1">
 <li>go to https://sandbox.zenodo.org</li>
 <li>select account &gt; applications &gt; personal access token (?) with
-all options (e.g., write access) enabled</li>
+all options (e.g., write access, publish) enabled</li>
 <li>generate a new token (or api key) and record this somewhere
 safe</li>
 </ol>
@@ -566,8 +566,12 @@ class="slide level2">
 <h2>Part IV.1 - Edit Existing Record and Update Metadata</h2>
 <ol type="1">
 <li>Update metadata for an already deposited Zotero record.</li>
-<li>Run the deposit workflow with the
+<li>Re-run the III.4 depositdeposit workflow with the
 <code>--update-metadata-only</code></li>
+</ol>
+<pre><code>[...]
+ | preston zenodo --update-metadata-only --algo md5 [...]</code></pre>
+<ol start="3" type="1">
 <li>Verify that the metadata of record in Zenodo was updated, but no new
 version was created.</li>
 </ol>
@@ -579,7 +583,12 @@ class="slide level2">
 <ol type="1">
 <li>Replace a pdf attachment for an already deposited Zotero
 record.</li>
-<li>Run the deposit workflow with the <code>--new-version</code></li>
+<li>Re-run the III.4 deposit workflow with the
+<code>--new-version</code></li>
+</ol>
+<pre><code>[...]
+ | preston zenodo --new-version --algo md5 [...]</code></pre>
+<ol start="3" type="1">
 <li>Verify that a new version was created for the Zenodo record
 including the updated pdf</li>
 </ol>

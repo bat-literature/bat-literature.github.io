@@ -392,13 +392,21 @@ Default behavior is to not update the associated Zenodo record and skip the depo
 ## Part IV.1  - Edit Existing Record and Update Metadata
 
 1. Update metadata for an already deposited Zotero record.
-2. Run the deposit workflow with the ```--update-metadata-only```
+2. Re-run the III.4 depositdeposit workflow with the ```--update-metadata-only```
+```
+[...]
+ | preston zenodo --update-metadata-only --algo md5 [...]
+```
 3. Verify that the metadata of record in Zenodo was updated, but no new version was created.
 
 ## Part IV.2  - Create New Record with Updated PDF and Metadata 
 
 1. Replace a pdf attachment for an already deposited Zotero record.
-2. Run the deposit workflow with the ```--new-version```
+2. Re-run the III.4 deposit workflow with the ```--new-version``` 
+```
+[...]
+ | preston zenodo --new-version --algo md5 [...]
+```
 3. Verify that a new version was created for the Zenodo record including the updated pdf
 
 ## Part IV.3  - Retire Zenodo Deposit Associated with Deleted Zotero Record  
