@@ -392,7 +392,7 @@ Default behavior is to not update the associated Zenodo record and skip the depo
 ## Part IV.1  - Edit Existing Record and Update Metadata
 
 1. Update metadata for an already deposited Zotero record.
-2. Re-run the III.4 depositdeposit workflow with the ```--update-metadata-only```
+2. Re-run the III.4 deposit workflow with the ```--update-metadata-only```
 ```
 [...]
  | preston zenodo --update-metadata-only --algo md5 [...]
