@@ -241,7 +241,7 @@ export ZOTERO_TOKEN=[SECRET]
 preston track --algo md5 [Zotero Group URL]
 ```
 (Tokens are a sequence of numbers and letters, e.g. ```ziAJAGw4t5sAaP9APRvBYjkX```)
-(Zotero Group URL e.g., https://www.zotero.org/groups/6217595)
+(Zotero Group URL e.g., https://www.zotero.org/groups/6217595 :warning: make sure to use the numeric group id and *not* the group alias - so, instead of ```https://www.zotero.org/groups/bat_literature_project``` use ```https://www.zotero.org/groups/5435545``` :warning:)
 
 ## Part II.3.1 A sorted list of metadata for most recent Bill of Materials
 
