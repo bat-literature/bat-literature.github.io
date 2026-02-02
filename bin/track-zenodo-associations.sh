@@ -23,7 +23,7 @@ preston track --data-dir "${DATA_DIR}" \
  -f <(bash "${SCRIPT_DIR}/list-refs.sh" \
  | mlr --csv cut -f id \
  | tail -n+2 \
- | sed 's+groups/bat_literature_project/items/+groups/5435545/items+g' \
+ | sed 's+groups/bat_literature_project/items/+groups/5435545/items/+g' \
  | grep -oE '[0-9]+/items/[A-Z0-9]+$' \
  | tr '/' ':' \
  | sed 's+^+urn:lsid:zotero.org:groups:+g' \
