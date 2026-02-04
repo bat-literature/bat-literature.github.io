@@ -75,7 +75,7 @@ If you have any comments, suggestions, or questions, please open [an issue](http
  | Bat Literature Corpus | v0.6 | 2024-09-19/2024-09-20 | 19038 | 22590 | [hash://md5/db7...97b](https://linker.bio/hash://md5/db73e659e8cf16ef50e82bb5e72ae97b) |  
  | Bat Literature Corpus | v0.7 | 2024-12-05/2024-12-06 | 19268 | 22930 | [hash://md5/ce1...1a3](https://linker.bio/hash://md5/ce1e7618f237ff56e74d51f496e811a3) |  
  | Bat Literature Corpus | v0.8 | 2025-10-02 | 19252 | 22947 | [hash://md5/330...ce0](https://linker.bio/hash://md5/330417efcaa2560c9b8ebcd6fae17ce0) | 
- | Bat Literature Corpus | v0.9 | 2025-12-20 | 21757 | 25471 | [hash://md5/1cd...6f5](https://linker.bio/hash://md5/1cda41b660daf15c156f1e4cabf8c6f5) | 
+ | Bat Literature Corpus | v0.9 | 2025-12-19/2025-12-20 | 21757 | 25471 | [hash://md5/1cd...6f5](https://linker.bio/hash://md5/1cda41b660daf15c156f1e4cabf8c6f5) | 
 
 ## Methods
 
