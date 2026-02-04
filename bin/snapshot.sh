@@ -83,6 +83,8 @@ cat ${SCRIPT_DIR}/../zotero/refs.csv | head -n101 > ${SCRIPT_DIR}/../zotero/refs
 cat ${SCRIPT_DIR}/../zotero/refs.csv | mlr --icsv --otsvlite cat > ${SCRIPT_DIR}/../zotero/refs.tsv
 cat ${SCRIPT_DIR}/../zotero/refs.tsv | head -n101 > ${SCRIPT_DIR}/../zotero/refs-100.tsv
 
+${SCRIPT_DIR}/list-refs-ris.sh > ${SCRIPT_DIR}/../refs.ris
+
 VERSION=$(cat ${SCRIPT_DIR}/../_data/versions.csv | tail -n1 | grep -oE "^[^,]+")
 VERSION_SUFFIX=$(echo $VERSION | grep -oE "[0-9]+$")
 VERSION_SUFFIX_NEXT=$((VERSION_SUFFIX+1))
