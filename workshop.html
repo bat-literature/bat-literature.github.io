@@ -533,7 +533,7 @@ https://sandbox.zenodo.org/communities/batlit-test-2025-05-05/settings,
 <ol start="3" type="1">
 <li>deposit Zenodo records using the Zenodo metadata</li>
 </ol>
-<pre><code>mkdir logs
+<pre><code>mkdir -p logs
 cat zenodo.json\
  | preston track --algo md5 --data-dir logs/data\
  | preston zenodo --algo md5 --data-dir logs/data \

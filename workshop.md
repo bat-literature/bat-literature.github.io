@@ -364,7 +364,7 @@ Note: you can find the community id by looking at the browser address bar. E.g.,
  3. deposit Zenodo records using the Zenodo metadata
 
 ```
-mkdir logs
+mkdir -p logs
 cat zenodo.json\
  | preston track --algo md5 --data-dir logs/data\
  | preston zenodo --algo md5 --data-dir logs/data \
