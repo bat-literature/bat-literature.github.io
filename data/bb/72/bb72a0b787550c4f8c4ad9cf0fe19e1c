@@ -1,0 +1,968 @@
+[
+    {
+        "key": "C96PESW3",
+        "version": 18,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/C96PESW3",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/C96PESW3",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZAMP96AY",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "C96PESW3",
+            "version": 18,
+            "parentItem": "ZAMP96AY",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-01-15T21:35:47Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/12435139",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/GZYTSWWC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "NDI2GZ93",
+        "version": 18,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/NDI2GZ93",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/NDI2GZ93",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/C6TNBTHZ",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "NDI2GZ93",
+            "version": 18,
+            "parentItem": "C6TNBTHZ",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2023-08-29T17:01:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34641882",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/I27F3WTZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "AR8S2P9X",
+        "version": 15,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/AR8S2P9X",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/AR8S2P9X",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/ZSNCBZRH",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "AR8S2P9X",
+            "version": 15,
+            "parentItem": "ZSNCBZRH",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T20:01:37Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/22966143",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/GUR7VLT5"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "AWFSIIHU",
+        "version": 15,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/AWFSIIHU",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/AWFSIIHU",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/L3PMUDNN",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "AWFSIIHU",
+            "version": 15,
+            "parentItem": "L3PMUDNN",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2022-04-25T14:44:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34627297",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/2FTKX6JK"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "PXPX4EM8",
+        "version": 14,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/PXPX4EM8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/PXPX4EM8",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/UJJQ8KLJ",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "PXPX4EM8",
+            "version": 14,
+            "parentItem": "UJJQ8KLJ",
+            "itemType": "note",
+            "note": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6EQ2QDV9"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "BGTTCLDP",
+        "version": 13,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/BGTTCLDP",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/BGTTCLDP",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/L9K7FXL5",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "BGTTCLDP",
+            "version": 13,
+            "parentItem": "L9K7FXL5",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-23T21:07:03Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/19287830",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/UZ2ZM5FR"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "K4XMS279",
+        "version": 12,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/K4XMS279",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/K4XMS279",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/3VDS26ZW",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "K4XMS279",
+            "version": 12,
+            "parentItem": "3VDS26ZW",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2019-01-23T04:20:26Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/23378666",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/4A6R2RFW"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "7DPSAFYC",
+        "version": 11,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/7DPSAFYC",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/7DPSAFYC",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/TIZ89MQU",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "7DPSAFYC",
+            "version": 11,
+            "parentItem": "TIZ89MQU",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-20T13:43:54Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27543045",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/CAK6FRDC"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "JZIY3R2T",
+        "version": 10,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/JZIY3R2T",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/JZIY3R2T",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/GCKFQ5V4",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "JZIY3R2T",
+            "version": 10,
+            "parentItem": "GCKFQ5V4",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-06-07T19:35:35Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/31947873",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/TR9V93AU"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "4Z3LEH3M",
+        "version": 9,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/4Z3LEH3M",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/4Z3LEH3M",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/XQQ6PBCE",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "4Z3LEH3M",
+            "version": 9,
+            "parentItem": "XQQ6PBCE",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-06-17T23:05:37Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/34119013",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/TQ6HQ5RG"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QLU5P94Y",
+        "version": 8,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QLU5P94Y",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QLU5P94Y",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/D92SQQPG",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QLU5P94Y",
+            "version": 8,
+            "parentItem": "D92SQQPG",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-04-22T19:58:29Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27676249",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/RWDUXGQR"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "DVYWYXGW",
+        "version": 7,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/DVYWYXGW",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/DVYWYXGW",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/QNJRRM6F",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "DVYWYXGW",
+            "version": 7,
+            "parentItem": "QNJRRM6F",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2020-02-13T16:43:57Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/30942884",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/6348A7V8"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "C3H9NM5W",
+        "version": 6,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/C3H9NM5W",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/C3H9NM5W",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/Z3UEM58G",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "C3H9NM5W",
+            "version": 6,
+            "parentItem": "Z3UEM58G",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PubMed entry",
+            "accessDate": "2021-05-25T00:36:00Z",
+            "url": "http://www.ncbi.nlm.nih.gov/pubmed/27822541",
+            "note": "",
+            "contentType": "text/html",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/QQGDYINE"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "3EB72HY5",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/3EB72HY5",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/3EB72HY5",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "numChildren": 0
+        },
+        "data": {
+            "key": "3EB72HY5",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "note",
+            "note": "<b>From Duplicate 2 (<i>Geomyces destructans sp. nov. associated with bat white-nose syndrome</i> - Gargas, Andrea; Trest, M T; Christensen, M; Volk, T J; Blehert, D S)<br/>\n</b><br/>\nNULL",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/ZV3Z39XZ"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "HI5JMH3U",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/HI5JMH3U",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/HI5JMH3U",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "HI5JMH3U",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "",
+            "accessDate": "",
+            "url": "http://openurl.ingenta.com/content/xref?genre=article&issn=0093-4666&volume=108&issue=1&spage=147",
+            "note": "",
+            "contentType": "",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/E3JA9FW4"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    },
+    {
+        "key": "QUIXPB8A",
+        "version": 5,
+        "library": {
+            "type": "group",
+            "id": 5435545,
+            "name": "Bat Literature Project",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/bat_literature_project",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/5435545/items/QUIXPB8A",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/bat_literature_project/items/QUIXPB8A",
+                "type": "text/html"
+            },
+            "up": {
+                "href": "https://api.zotero.org/groups/5435545/items/5SXGVCZ2",
+                "type": "application/json"
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 6296343,
+                "username": "deeannreeder",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/deeannreeder",
+                        "type": "text/html"
+                    }
+                }
+            }
+        },
+        "data": {
+            "key": "QUIXPB8A",
+            "version": 5,
+            "parentItem": "5SXGVCZ2",
+            "itemType": "attachment",
+            "linkMode": "linked_url",
+            "title": "PDF",
+            "accessDate": "",
+            "url": "http://botit.botany.wisc.edu/TOMS_FUNGI/147gargas9-73.pdf",
+            "note": "",
+            "contentType": "application/pdf",
+            "charset": "",
+            "tags": [],
+            "relations": {
+                "owl:sameAs": "http://zotero.org/groups/2446996/items/Q85NDXEH"
+            },
+            "dateAdded": "2024-03-06T17:23:11Z",
+            "dateModified": "2024-03-06T17:23:11Z"
+        }
+    }
+]
