@@ -265,11 +265,11 @@ The following workflow can be used to deposit versioned BatLit records into Zeno
 In (a), we convert the tracked Zotero metadata into the Zenodo metadata using [preston zotero-stream]: 
 
 ```bash
-preston cat $(preston head --algo md5)\
- | preston zotero-stream\
- --anchor $(preston head --algo md5)\
- --algo md5\
- --communities batlit,biosyslit\
+preston cat $(preston head --algo md5) \
+ | preston zotero-stream \
+ --anchor $(preston head --algo md5) \
+ --algo md5 \
+ --communities batlit \
  > zenodo.json
 ```
 
@@ -386,10 +386,10 @@ An example a single line from such metadata generated from a versioned BatLit co
 Now, after generating the metadata, in (b), we deposit the records into the desired Zenodo community after tracking their version:
 
 ```bash
-cat zenodo.json\
- | preston track --algo md5\
- | ZENODO_TOKEN=[SECRET] preston zenodo --algo md5 --communities batlit,biosyslit\
- 1> transfer.nq\
+cat zenodo.json \
+ | preston track --algo md5 \
+ | ZENODO_TOKEN=[SECRET] preston zenodo --algo md5 --communities batlit \
+ 1> transfer.nq \
  2> transfer.err
 ```
 
