@@ -9,7 +9,7 @@ banner-text: How to Contribute
 Thank you for your interest in the Bat Literature Project (BatLit) Zenodo Community! We're excited to support your work by providing access to our growing collection of bat-related literature.
 
 
-If you would like to contribute pdfs, email either individual files or see below for how to provide access to a shared google or dropbox file to batlitproject@gmail.com.
+If you would like to contribute pdfs, email either individual files or see below for how to provide access to a shared google or dropbox file to [batlitproject@gmail.com](batlitproject@gmail.com).
 
 Please make sure that your literature includes information on bats specifically. We are interesting in collecting everything including scientific articles, books, theses, news articles, workshop proceedings, white papers, newsletters, etc. 
 
