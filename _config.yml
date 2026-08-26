@@ -16,7 +16,7 @@ header_pages:
     title: Data Paper  
   - page: join.md
     title: Get Involved
-  - page: contribute.md
-    title: Upload Literature
   - page: most-wanted.md
     title: Most Wanted
+  - page: contribute.md
+    title: Upload Literature
