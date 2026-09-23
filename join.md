@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Get Involved
+title: Join
 permalink: /join/
 banner: ../assets/vintage-bat-anatomy-patrycja-polechonska.jpg
 banner-text: Join Our Community
